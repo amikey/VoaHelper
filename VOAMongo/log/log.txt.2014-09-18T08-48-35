@@ -1,0 +1,147 @@
+2014-09-17T20:25:09.170+0800 [initandlisten] MongoDB starting : pid=6756 port=27017 dbpath=G:\eclipseVOA\VOAMongo\data 32-bit host=90XXI1OB0VROXRP
+2014-09-17T20:25:09.171+0800 [initandlisten] 
+2014-09-17T20:25:09.171+0800 [initandlisten] ** NOTE: This is a 32 bit MongoDB binary.
+2014-09-17T20:25:09.171+0800 [initandlisten] **       32 bit builds are limited to less than 2GB of data (or less with --journal).
+2014-09-17T20:25:09.171+0800 [initandlisten] **       Note that journaling defaults to off for 32 bit and is currently off.
+2014-09-17T20:25:09.171+0800 [initandlisten] **       See http://dochub.mongodb.org/core/32bit
+2014-09-17T20:25:09.171+0800 [initandlisten] 
+2014-09-17T20:25:09.171+0800 [initandlisten] targetMinOS: Windows XP SP3
+2014-09-17T20:25:09.171+0800 [initandlisten] db version v2.6.3
+2014-09-17T20:25:09.171+0800 [initandlisten] git version: 255f67a66f9603c59380b2a389e386910bbb52cb
+2014-09-17T20:25:09.172+0800 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+2014-09-17T20:25:09.172+0800 [initandlisten] allocator: system
+2014-09-17T20:25:09.172+0800 [initandlisten] options: { storage: { dbPath: "G:\eclipseVOA\VOAMongo\data" }, systemLog: { destination: "file", path: "G:\eclipseVOA\VOAMongo\log\log.txt" } }
+2014-09-17T20:25:09.724+0800 [initandlisten] waiting for connections on port 27017
+2014-09-17T20:26:09.500+0800 [clientcursormon] mem (MB) res:193 virt:902
+2014-09-17T20:26:09.500+0800 [clientcursormon]  mapped:800
+2014-09-17T20:26:09.500+0800 [clientcursormon]  connections:0
+2014-09-17T20:26:09.579+0800 [PeriodicTaskRunner] task: DBConnectionPool-cleaner took: 85ms
+2014-09-17T20:26:09.611+0800 [PeriodicTaskRunner] task: WriteBackManager::cleaner took: 31ms
+2014-09-17T20:26:09.956+0800 [TTLMonitor] query Articles.system.indexes query: { expireAfterSeconds: { $exists: true } } planSummary: COLLSCAN ntoreturn:0 ntoskip:0 nscanned:2 nscannedObjects:2 keyUpdates:0 numYields:0 locks(micros) r:452217 nreturned:0 reslen:20 451ms
+2014-09-17T20:30:42.111+0800 [initandlisten] connection accepted from 127.0.0.1:49828 #1 (1 connection now open)
+2014-09-17T20:30:52.003+0800 [initandlisten] connection accepted from 127.0.0.1:49839 #2 (2 connections now open)
+2014-09-17T20:31:09.531+0800 [clientcursormon] mem (MB) res:194 virt:901
+2014-09-17T20:31:09.531+0800 [clientcursormon]  mapped:800
+2014-09-17T20:31:09.531+0800 [clientcursormon]  connections:2
+2014-09-17T20:36:09.554+0800 [clientcursormon] mem (MB) res:193 virt:901
+2014-09-17T20:36:09.554+0800 [clientcursormon]  mapped:800
+2014-09-17T20:36:09.554+0800 [clientcursormon]  connections:2
+2014-09-17T20:41:09.584+0800 [clientcursormon] mem (MB) res:193 virt:901
+2014-09-17T20:41:09.584+0800 [clientcursormon]  mapped:800
+2014-09-17T20:41:09.584+0800 [clientcursormon]  connections:2
+2014-09-17T20:46:09.614+0800 [clientcursormon] mem (MB) res:161 virt:901
+2014-09-17T20:46:09.614+0800 [clientcursormon]  mapped:800
+2014-09-17T20:46:09.641+0800 [clientcursormon]  connections:2
+2014-09-17T20:51:09.664+0800 [clientcursormon] mem (MB) res:161 virt:901
+2014-09-17T20:51:09.664+0800 [clientcursormon]  mapped:800
+2014-09-17T20:51:09.664+0800 [clientcursormon]  connections:2
+2014-09-17T20:56:09.685+0800 [clientcursormon] mem (MB) res:161 virt:901
+2014-09-17T20:56:09.685+0800 [clientcursormon]  mapped:800
+2014-09-17T20:56:09.685+0800 [clientcursormon]  connections:2
+2014-09-17T20:59:41.061+0800 [conn2] query voas.listening query: { $query: {}, $orderby: { time: -1 } } planSummary: COLLSCAN, COLLSCAN ntoskip:0 nscanned:3940 nscannedObjects:3940 keyUpdates:0 numYields:576 locks(micros) r:2560432 nreturned:1 reslen:3656 1591ms
+2014-09-17T20:59:46.582+0800 [conn2] query Readings.readings query: { $query: {}, $orderby: { time: -1 } } planSummary: COLLSCAN, COLLSCAN ntoskip:0 nscanned:773 nscannedObjects:773 keyUpdates:0 numYields:186 locks(micros) r:184695 nreturned:1 reslen:6234 192ms
+2014-09-17T21:01:09.711+0800 [clientcursormon] mem (MB) res:155 virt:901
+2014-09-17T21:01:09.711+0800 [clientcursormon]  mapped:800
+2014-09-17T21:01:09.711+0800 [clientcursormon]  connections:2
+2014-09-17T21:01:45.177+0800 [conn2] query voas.listening query: { $query: {}, $orderby: { time: -1 } } planSummary: COLLSCAN, COLLSCAN ntoskip:0 nscanned:3940 nscannedObjects:3940 keyUpdates:0 numYields:0 locks(micros) r:178009 nreturned:1 reslen:3656 177ms
+2014-09-17T21:06:09.739+0800 [clientcursormon] mem (MB) res:26 virt:901
+2014-09-17T21:06:09.739+0800 [clientcursormon]  mapped:800
+2014-09-17T21:06:09.739+0800 [clientcursormon]  connections:2
+2014-09-17T21:11:09.771+0800 [clientcursormon] mem (MB) res:26 virt:901
+2014-09-17T21:11:09.771+0800 [clientcursormon]  mapped:800
+2014-09-17T21:11:09.771+0800 [clientcursormon]  connections:2
+2014-09-17T21:13:30.380+0800 [conn2] killcursors: found 0 of 1
+2014-09-17T21:16:09.803+0800 [clientcursormon] mem (MB) res:26 virt:901
+2014-09-17T21:16:09.803+0800 [clientcursormon]  mapped:800
+2014-09-17T21:16:09.803+0800 [clientcursormon]  connections:2
+2014-09-17T21:16:56.644+0800 [conn2] query Readings.readings query: { name: "" } planSummary: COLLSCAN ntoskip:0 nscanned:773 nscannedObjects:773 keyUpdates:0 numYields:0 locks(micros) r:261527 nreturned:0 reslen:20 261ms
+2014-09-17T21:18:05.282+0800 [conn2] query Articles.articles query: { name: "关于论毅力" } planSummary: COLLSCAN ntoskip:0 nscanned:337 nscannedObjects:337 keyUpdates:0 numYields:101 locks(micros) r:464029 nreturned:1 reslen:3581 383ms
+2014-09-17T21:18:09.815+0800 [clientcursormon] mem (MB) res:30 virt:901
+2014-09-17T21:18:09.815+0800 [clientcursormon]  mapped:800
+2014-09-17T21:18:09.815+0800 [clientcursormon]  connections:2
+2014-09-17T21:23:09.839+0800 [clientcursormon] mem (MB) res:30 virt:901
+2014-09-17T21:23:09.839+0800 [clientcursormon]  mapped:800
+2014-09-17T21:23:09.839+0800 [clientcursormon]  connections:2
+2014-09-17T21:28:09.865+0800 [clientcursormon] mem (MB) res:30 virt:901
+2014-09-17T21:28:09.865+0800 [clientcursormon]  mapped:800
+2014-09-17T21:28:09.865+0800 [clientcursormon]  connections:2
+2014-09-17T21:31:09.369+0800 [conn2] query voas.listening query: { title: "" } planSummary: COLLSCAN ntoskip:0 nscanned:3940 nscannedObjects:3940 keyUpdates:0 numYields:0 locks(micros) r:1302340 nreturned:0 reslen:20 1302ms
+2014-09-17T21:33:09.893+0800 [clientcursormon] mem (MB) res:31 virt:901
+2014-09-17T21:33:09.893+0800 [clientcursormon]  mapped:800
+2014-09-17T21:33:09.893+0800 [clientcursormon]  connections:2
+2014-09-17T21:38:09.921+0800 [clientcursormon] mem (MB) res:31 virt:901
+2014-09-17T21:38:09.921+0800 [clientcursormon]  mapped:800
+2014-09-17T21:38:09.921+0800 [clientcursormon]  connections:2
+2014-09-17T21:43:09.950+0800 [clientcursormon] mem (MB) res:31 virt:901
+2014-09-17T21:43:09.950+0800 [clientcursormon]  mapped:800
+2014-09-17T21:43:09.950+0800 [clientcursormon]  connections:2
+2014-09-17T21:48:09.981+0800 [clientcursormon] mem (MB) res:31 virt:901
+2014-09-17T21:48:09.981+0800 [clientcursormon]  mapped:800
+2014-09-17T21:48:09.981+0800 [clientcursormon]  connections:2
+2014-09-17T21:53:10.008+0800 [clientcursormon] mem (MB) res:31 virt:901
+2014-09-17T21:53:10.008+0800 [clientcursormon]  mapped:800
+2014-09-17T21:53:10.008+0800 [clientcursormon]  connections:2
+2014-09-17T21:58:10.033+0800 [clientcursormon] mem (MB) res:31 virt:901
+2014-09-17T21:58:10.033+0800 [clientcursormon]  mapped:800
+2014-09-17T21:58:10.033+0800 [clientcursormon]  connections:2
+2014-09-17T22:03:10.057+0800 [clientcursormon] mem (MB) res:31 virt:901
+2014-09-17T22:03:10.057+0800 [clientcursormon]  mapped:800
+2014-09-17T22:03:10.057+0800 [clientcursormon]  connections:2
+2014-09-17T22:08:10.089+0800 [clientcursormon] mem (MB) res:31 virt:901
+2014-09-17T22:08:10.089+0800 [clientcursormon]  mapped:800
+2014-09-17T22:08:10.089+0800 [clientcursormon]  connections:2
+2014-09-17T22:13:10.114+0800 [clientcursormon] mem (MB) res:31 virt:901
+2014-09-17T22:13:10.114+0800 [clientcursormon]  mapped:800
+2014-09-17T22:13:10.114+0800 [clientcursormon]  connections:2
+2014-09-17T22:18:10.138+0800 [clientcursormon] mem (MB) res:31 virt:901
+2014-09-17T22:18:10.138+0800 [clientcursormon]  mapped:800
+2014-09-17T22:18:10.138+0800 [clientcursormon]  connections:2
+2014-09-17T22:23:10.174+0800 [clientcursormon] mem (MB) res:31 virt:901
+2014-09-17T22:23:10.174+0800 [clientcursormon]  mapped:800
+2014-09-17T22:23:10.174+0800 [clientcursormon]  connections:2
+2014-09-17T22:28:10.200+0800 [clientcursormon] mem (MB) res:31 virt:901
+2014-09-17T22:28:10.200+0800 [clientcursormon]  mapped:800
+2014-09-17T22:28:10.200+0800 [clientcursormon]  connections:2
+2014-09-17T22:33:10.226+0800 [clientcursormon] mem (MB) res:31 virt:901
+2014-09-17T22:33:10.226+0800 [clientcursormon]  mapped:800
+2014-09-17T22:33:10.226+0800 [clientcursormon]  connections:2
+2014-09-17T22:38:10.252+0800 [clientcursormon] mem (MB) res:31 virt:901
+2014-09-17T22:38:10.252+0800 [clientcursormon]  mapped:800
+2014-09-17T22:38:10.252+0800 [clientcursormon]  connections:2
+2014-09-17T22:43:10.279+0800 [clientcursormon] mem (MB) res:31 virt:901
+2014-09-17T22:43:10.279+0800 [clientcursormon]  mapped:800
+2014-09-17T22:43:10.279+0800 [clientcursormon]  connections:2
+2014-09-17T22:48:10.308+0800 [clientcursormon] mem (MB) res:31 virt:901
+2014-09-17T22:48:10.308+0800 [clientcursormon]  mapped:800
+2014-09-17T22:48:10.308+0800 [clientcursormon]  connections:2
+2014-09-17T22:53:10.332+0800 [clientcursormon] mem (MB) res:31 virt:901
+2014-09-17T22:53:10.332+0800 [clientcursormon]  mapped:800
+2014-09-17T22:53:10.332+0800 [clientcursormon]  connections:2
+2014-09-17T22:58:10.355+0800 [clientcursormon] mem (MB) res:31 virt:901
+2014-09-17T22:58:10.355+0800 [clientcursormon]  mapped:800
+2014-09-17T22:58:10.355+0800 [clientcursormon]  connections:2
+2014-09-17T23:03:10.380+0800 [clientcursormon] mem (MB) res:31 virt:901
+2014-09-17T23:03:10.380+0800 [clientcursormon]  mapped:800
+2014-09-17T23:03:10.380+0800 [clientcursormon]  connections:2
+2014-09-17T23:08:10.404+0800 [clientcursormon] mem (MB) res:3 virt:901
+2014-09-17T23:08:10.404+0800 [clientcursormon]  mapped:800
+2014-09-17T23:08:10.404+0800 [clientcursormon]  connections:2
+2014-09-17T23:13:10.433+0800 [clientcursormon] mem (MB) res:3 virt:901
+2014-09-17T23:13:10.452+0800 [clientcursormon]  mapped:800
+2014-09-17T23:13:10.452+0800 [clientcursormon]  connections:2
+2014-09-17T23:18:10.482+0800 [clientcursormon] mem (MB) res:3 virt:901
+2014-09-17T23:18:10.482+0800 [clientcursormon]  mapped:800
+2014-09-17T23:18:10.482+0800 [clientcursormon]  connections:2
+2014-09-17T23:21:29.458+0800 CTRL_CLOSE_EVENT signal
+2014-09-17T23:21:29.894+0800 [consoleTerminate] got CTRL_CLOSE_EVENT, will terminate after current cmd ends
+2014-09-17T23:21:30.061+0800 [consoleTerminate] now exiting
+2014-09-17T23:21:30.061+0800 [consoleTerminate] dbexit: 
+2014-09-17T23:21:30.061+0800 [consoleTerminate] shutdown: going to close listening sockets...
+2014-09-17T23:21:30.122+0800 [consoleTerminate] closing listening socket: 700
+2014-09-17T23:21:30.236+0800 [consoleTerminate] shutdown: going to flush diaglog...
+2014-09-17T23:21:30.236+0800 [consoleTerminate] shutdown: going to close sockets...
+2014-09-17T23:21:30.341+0800 [consoleTerminate] shutdown: waiting for fs preallocator...
+2014-09-17T23:21:30.405+0800 [consoleTerminate] shutdown: closing all files...
+2014-09-17T23:21:30.849+0800 [consoleTerminate] closeAllFiles() finished
+2014-09-17T23:21:30.849+0800 [consoleTerminate] shutdown: removing fs lock...
+2014-09-17T23:21:30.976+0800 [consoleTerminate] dbexit: really exiting now

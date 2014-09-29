@@ -1,0 +1,2 @@
+2014-08-27T16:28:05.658+0800 Trying to install Windows service 'MongoDB'
+2014-08-27T16:28:05.660+0800 There is already a service named 'MongoDB', aborting

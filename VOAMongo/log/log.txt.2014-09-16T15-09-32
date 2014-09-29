@@ -1,0 +1,1145 @@
+2014-09-15T20:34:32.794+0800 [initandlisten] MongoDB starting : pid=19228 port=27017 dbpath=G:\eclipseVOA\VOAMongo\data 32-bit host=90XXI1OB0VROXRP
+2014-09-15T20:34:32.794+0800 [initandlisten] 
+2014-09-15T20:34:32.794+0800 [initandlisten] ** NOTE: This is a 32 bit MongoDB binary.
+2014-09-15T20:34:32.794+0800 [initandlisten] **       32 bit builds are limited to less than 2GB of data (or less with --journal).
+2014-09-15T20:34:32.794+0800 [initandlisten] **       Note that journaling defaults to off for 32 bit and is currently off.
+2014-09-15T20:34:32.794+0800 [initandlisten] **       See http://dochub.mongodb.org/core/32bit
+2014-09-15T20:34:32.794+0800 [initandlisten] 
+2014-09-15T20:34:32.795+0800 [initandlisten] targetMinOS: Windows XP SP3
+2014-09-15T20:34:32.795+0800 [initandlisten] db version v2.6.3
+2014-09-15T20:34:32.795+0800 [initandlisten] git version: 255f67a66f9603c59380b2a389e386910bbb52cb
+2014-09-15T20:34:32.795+0800 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+2014-09-15T20:34:32.795+0800 [initandlisten] allocator: system
+2014-09-15T20:34:32.795+0800 [initandlisten] options: { storage: { dbPath: "G:\eclipseVOA\VOAMongo\data" }, systemLog: { destination: "file", path: "G:\eclipseVOA\VOAMongo\log\log.txt" } }
+2014-09-15T20:34:33.613+0800 [initandlisten] waiting for connections on port 27017
+2014-09-15T20:34:33.613+0800 [initandlisten] connection accepted from 127.0.0.1:61971 #1 (1 connection now open)
+2014-09-15T20:34:33.614+0800 [initandlisten] connection accepted from 127.0.0.1:61972 #2 (2 connections now open)
+2014-09-15T20:34:33.615+0800 [initandlisten] connection accepted from 127.0.0.1:61973 #3 (3 connections now open)
+2014-09-15T20:34:33.615+0800 [conn3] killcursors: found 0 of 2
+2014-09-15T20:34:33.616+0800 [conn3] killcursors: found 0 of 1
+2014-09-15T20:34:33.616+0800 [conn3] killcursors: found 0 of 2
+2014-09-15T20:34:35.472+0800 [initandlisten] connection accepted from 127.0.0.1:61976 #4 (4 connections now open)
+2014-09-15T20:34:37.934+0800 [initandlisten] connection accepted from 127.0.0.1:61979 #5 (5 connections now open)
+2014-09-15T20:35:33.139+0800 [clientcursormon] mem (MB) res:186 virt:751
+2014-09-15T20:35:33.139+0800 [clientcursormon]  mapped:640
+2014-09-15T20:35:33.139+0800 [clientcursormon]  connections:5
+2014-09-15T20:40:33.157+0800 [clientcursormon] mem (MB) res:185 virt:748
+2014-09-15T20:40:33.157+0800 [clientcursormon]  mapped:640
+2014-09-15T20:40:33.157+0800 [clientcursormon]  connections:5
+2014-09-15T20:45:33.181+0800 [clientcursormon] mem (MB) res:185 virt:748
+2014-09-15T20:45:33.181+0800 [clientcursormon]  mapped:640
+2014-09-15T20:45:33.181+0800 [clientcursormon]  connections:5
+2014-09-15T20:50:33.199+0800 [clientcursormon] mem (MB) res:185 virt:748
+2014-09-15T20:50:33.199+0800 [clientcursormon]  mapped:640
+2014-09-15T20:50:33.199+0800 [clientcursormon]  connections:5
+2014-09-15T20:55:33.223+0800 [clientcursormon] mem (MB) res:185 virt:748
+2014-09-15T20:55:33.223+0800 [clientcursormon]  mapped:640
+2014-09-15T20:55:33.223+0800 [clientcursormon]  connections:5
+2014-09-15T21:00:33.249+0800 [clientcursormon] mem (MB) res:185 virt:748
+2014-09-15T21:00:33.249+0800 [clientcursormon]  mapped:640
+2014-09-15T21:00:33.249+0800 [clientcursormon]  connections:5
+2014-09-15T21:05:33.266+0800 [clientcursormon] mem (MB) res:185 virt:748
+2014-09-15T21:05:33.266+0800 [clientcursormon]  mapped:640
+2014-09-15T21:05:33.266+0800 [clientcursormon]  connections:5
+2014-09-15T21:10:33.289+0800 [clientcursormon] mem (MB) res:185 virt:748
+2014-09-15T21:10:33.289+0800 [clientcursormon]  mapped:640
+2014-09-15T21:10:33.289+0800 [clientcursormon]  connections:5
+2014-09-15T21:15:33.308+0800 [clientcursormon] mem (MB) res:3 virt:748
+2014-09-15T21:15:33.308+0800 [clientcursormon]  mapped:640
+2014-09-15T21:15:33.308+0800 [clientcursormon]  connections:5
+2014-09-15T21:20:33.335+0800 [clientcursormon] mem (MB) res:3 virt:748
+2014-09-15T21:20:33.335+0800 [clientcursormon]  mapped:640
+2014-09-15T21:20:33.335+0800 [clientcursormon]  connections:5
+2014-09-15T21:25:33.359+0800 [clientcursormon] mem (MB) res:3 virt:748
+2014-09-15T21:25:33.359+0800 [clientcursormon]  mapped:640
+2014-09-15T21:25:33.359+0800 [clientcursormon]  connections:5
+2014-09-15T21:30:33.381+0800 [clientcursormon] mem (MB) res:3 virt:748
+2014-09-15T21:30:33.381+0800 [clientcursormon]  mapped:640
+2014-09-15T21:30:33.381+0800 [clientcursormon]  connections:5
+2014-09-15T21:35:33.399+0800 [clientcursormon] mem (MB) res:3 virt:748
+2014-09-15T21:35:33.399+0800 [clientcursormon]  mapped:640
+2014-09-15T21:35:33.399+0800 [clientcursormon]  connections:5
+2014-09-15T21:40:33.426+0800 [clientcursormon] mem (MB) res:3 virt:748
+2014-09-15T21:40:33.426+0800 [clientcursormon]  mapped:640
+2014-09-15T21:40:33.426+0800 [clientcursormon]  connections:5
+2014-09-15T21:45:33.462+0800 [clientcursormon] mem (MB) res:3 virt:748
+2014-09-15T21:45:33.475+0800 [clientcursormon]  mapped:640
+2014-09-15T21:45:33.475+0800 [clientcursormon]  connections:5
+2014-09-15T21:50:33.497+0800 [clientcursormon] mem (MB) res:3 virt:748
+2014-09-15T21:50:33.497+0800 [clientcursormon]  mapped:640
+2014-09-15T21:50:33.497+0800 [clientcursormon]  connections:5
+2014-09-15T21:55:33.517+0800 [clientcursormon] mem (MB) res:3 virt:748
+2014-09-15T21:55:33.517+0800 [clientcursormon]  mapped:640
+2014-09-15T21:55:33.517+0800 [clientcursormon]  connections:5
+2014-09-15T22:00:33.558+0800 [clientcursormon] mem (MB) res:3 virt:748
+2014-09-15T22:00:33.558+0800 [clientcursormon]  mapped:640
+2014-09-15T22:00:33.558+0800 [clientcursormon]  connections:5
+2014-09-15T22:05:30.693+0800 [initandlisten] connection accepted from 127.0.0.1:60939 #6 (6 connections now open)
+2014-09-15T22:05:31.473+0800 [conn3] query Articles.articles query: { $query: {}, $orderby: { time: -1 } } planSummary: COLLSCAN, COLLSCAN ntoskip:0 nscanned:539 nscannedObjects:539 keyUpdates:0 numYields:1 locks(micros) r:6840895 nreturned:1 reslen:1440 5745ms
+2014-09-15T22:05:32.326+0800 [conn6] query Articles.articles query: { $query: {}, $orderby: { time: -1 } } planSummary: COLLSCAN cursorid:95072133445 ntoreturn:0 ntoskip:0 nscanned:539 nscannedObjects:539 scanAndOrder:1 keyUpdates:0 numYields:0 locks(micros) r:347748 nreturned:101 reslen:311453 347ms
+2014-09-15T22:05:32.353+0800 [conn3] query Articles.articles query: { $query: {}, $orderby: { time: -1 } } planSummary: COLLSCAN cursorid:95898368308 ntoreturn:0 ntoskip:0 nscanned:539 nscannedObjects:539 scanAndOrder:1 keyUpdates:0 numYields:0 locks(micros) r:528522 nreturned:101 reslen:311453 528ms
+2014-09-15T22:05:33.583+0800 [clientcursormon] mem (MB) res:8 virt:749
+2014-09-15T22:05:33.583+0800 [clientcursormon]  mapped:640
+2014-09-15T22:05:33.583+0800 [clientcursormon]  connections:6
+2014-09-15T22:10:33.605+0800 [clientcursormon] mem (MB) res:8 virt:749
+2014-09-15T22:10:33.605+0800 [clientcursormon]  mapped:640
+2014-09-15T22:10:33.605+0800 [clientcursormon]  connections:6
+2014-09-15T22:15:33.636+0800 [clientcursormon] mem (MB) res:8 virt:749
+2014-09-15T22:15:33.636+0800 [clientcursormon]  mapped:640
+2014-09-15T22:15:33.636+0800 [clientcursormon]  connections:6
+2014-09-15T22:20:33.657+0800 [clientcursormon] mem (MB) res:8 virt:749
+2014-09-15T22:20:33.657+0800 [clientcursormon]  mapped:640
+2014-09-15T22:20:33.657+0800 [clientcursormon]  connections:6
+2014-09-15T22:25:33.678+0800 [clientcursormon] mem (MB) res:8 virt:749
+2014-09-15T22:25:33.678+0800 [clientcursormon]  mapped:640
+2014-09-15T22:25:33.678+0800 [clientcursormon]  connections:6
+2014-09-15T22:30:33.696+0800 [clientcursormon] mem (MB) res:8 virt:749
+2014-09-15T22:30:33.696+0800 [clientcursormon]  mapped:640
+2014-09-15T22:30:33.696+0800 [clientcursormon]  connections:6
+2014-09-15T22:31:36.963+0800 [conn3] query Readings.readings query: { $query: {}, $orderby: { time: -1 } } planSummary: COLLSCAN, COLLSCAN ntoskip:0 nscanned:773 nscannedObjects:773 keyUpdates:0 numYields:0 locks(micros) r:866710 nreturned:1 reslen:6234 866ms
+2014-09-15T22:32:33.703+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-15T22:32:33.703+0800 [clientcursormon]  mapped:640
+2014-09-15T22:32:33.703+0800 [clientcursormon]  connections:6
+2014-09-15T22:37:33.722+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-15T22:37:33.722+0800 [clientcursormon]  mapped:640
+2014-09-15T22:37:33.722+0800 [clientcursormon]  connections:6
+2014-09-15T22:41:59.780+0800 [conn3] killcursors: found 0 of 1
+2014-09-15T22:42:33.753+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-15T22:42:33.753+0800 [clientcursormon]  mapped:640
+2014-09-15T22:42:33.753+0800 [clientcursormon]  connections:6
+2014-09-15T22:47:33.770+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-15T22:47:33.770+0800 [clientcursormon]  mapped:640
+2014-09-15T22:47:33.770+0800 [clientcursormon]  connections:6
+2014-09-15T22:52:33.817+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-15T22:52:33.821+0800 [clientcursormon]  mapped:640
+2014-09-15T22:52:33.821+0800 [clientcursormon]  connections:6
+2014-09-15T22:57:33.842+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-15T22:57:33.842+0800 [clientcursormon]  mapped:640
+2014-09-15T22:57:33.842+0800 [clientcursormon]  connections:6
+2014-09-15T23:02:33.865+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-15T23:02:33.865+0800 [clientcursormon]  mapped:640
+2014-09-15T23:02:33.865+0800 [clientcursormon]  connections:6
+2014-09-15T23:07:33.885+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-15T23:07:33.885+0800 [clientcursormon]  mapped:640
+2014-09-15T23:07:33.885+0800 [clientcursormon]  connections:6
+2014-09-15T23:12:33.915+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-15T23:12:33.915+0800 [clientcursormon]  mapped:640
+2014-09-15T23:12:33.915+0800 [clientcursormon]  connections:6
+2014-09-15T23:17:33.946+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-15T23:17:33.946+0800 [clientcursormon]  mapped:640
+2014-09-15T23:17:33.946+0800 [clientcursormon]  connections:6
+2014-09-15T23:22:33.966+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-15T23:22:33.966+0800 [clientcursormon]  mapped:640
+2014-09-15T23:22:33.966+0800 [clientcursormon]  connections:6
+2014-09-15T23:27:33.998+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-15T23:27:33.998+0800 [clientcursormon]  mapped:640
+2014-09-15T23:27:33.998+0800 [clientcursormon]  connections:6
+2014-09-15T23:32:34.040+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-15T23:32:34.040+0800 [clientcursormon]  mapped:640
+2014-09-15T23:32:34.040+0800 [clientcursormon]  connections:6
+2014-09-15T23:37:34.091+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-15T23:37:34.091+0800 [clientcursormon]  mapped:640
+2014-09-15T23:37:34.091+0800 [clientcursormon]  connections:6
+2014-09-15T23:42:34.114+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-15T23:42:34.114+0800 [clientcursormon]  mapped:640
+2014-09-15T23:42:34.114+0800 [clientcursormon]  connections:6
+2014-09-15T23:47:34.148+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-15T23:47:34.148+0800 [clientcursormon]  mapped:640
+2014-09-15T23:47:34.148+0800 [clientcursormon]  connections:6
+2014-09-15T23:52:34.171+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-15T23:52:34.171+0800 [clientcursormon]  mapped:640
+2014-09-15T23:52:34.171+0800 [clientcursormon]  connections:6
+2014-09-15T23:57:34.190+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-15T23:57:34.190+0800 [clientcursormon]  mapped:640
+2014-09-15T23:57:34.190+0800 [clientcursormon]  connections:6
+2014-09-16T00:02:34.227+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T00:02:34.227+0800 [clientcursormon]  mapped:640
+2014-09-16T00:02:34.227+0800 [clientcursormon]  connections:6
+2014-09-16T00:07:34.261+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T00:07:34.261+0800 [clientcursormon]  mapped:640
+2014-09-16T00:07:34.261+0800 [clientcursormon]  connections:6
+2014-09-16T00:12:34.281+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T00:12:34.281+0800 [clientcursormon]  mapped:640
+2014-09-16T00:12:34.281+0800 [clientcursormon]  connections:6
+2014-09-16T00:17:34.304+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T00:17:34.304+0800 [clientcursormon]  mapped:640
+2014-09-16T00:17:34.304+0800 [clientcursormon]  connections:6
+2014-09-16T00:22:34.324+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T00:22:34.324+0800 [clientcursormon]  mapped:640
+2014-09-16T00:22:34.324+0800 [clientcursormon]  connections:6
+2014-09-16T00:27:34.381+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T00:27:34.381+0800 [clientcursormon]  mapped:640
+2014-09-16T00:27:34.381+0800 [clientcursormon]  connections:6
+2014-09-16T00:32:34.400+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T00:32:34.400+0800 [clientcursormon]  mapped:640
+2014-09-16T00:32:34.400+0800 [clientcursormon]  connections:6
+2014-09-16T00:37:34.421+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T00:37:34.421+0800 [clientcursormon]  mapped:640
+2014-09-16T00:37:34.421+0800 [clientcursormon]  connections:6
+2014-09-16T00:42:34.439+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T00:42:34.439+0800 [clientcursormon]  mapped:640
+2014-09-16T00:42:34.439+0800 [clientcursormon]  connections:6
+2014-09-16T00:47:34.459+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T00:47:34.459+0800 [clientcursormon]  mapped:640
+2014-09-16T00:47:34.459+0800 [clientcursormon]  connections:6
+2014-09-16T00:52:34.483+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T00:52:34.483+0800 [clientcursormon]  mapped:640
+2014-09-16T00:52:34.483+0800 [clientcursormon]  connections:6
+2014-09-16T00:57:34.538+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T00:57:34.538+0800 [clientcursormon]  mapped:640
+2014-09-16T00:57:34.538+0800 [clientcursormon]  connections:6
+2014-09-16T01:02:34.557+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T01:02:34.557+0800 [clientcursormon]  mapped:640
+2014-09-16T01:02:34.557+0800 [clientcursormon]  connections:6
+2014-09-16T01:07:34.582+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T01:07:34.582+0800 [clientcursormon]  mapped:640
+2014-09-16T01:07:34.582+0800 [clientcursormon]  connections:6
+2014-09-16T01:12:34.613+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T01:12:34.613+0800 [clientcursormon]  mapped:640
+2014-09-16T01:12:34.613+0800 [clientcursormon]  connections:6
+2014-09-16T01:17:34.642+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T01:17:34.642+0800 [clientcursormon]  mapped:640
+2014-09-16T01:17:34.642+0800 [clientcursormon]  connections:6
+2014-09-16T01:22:34.702+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T01:22:34.702+0800 [clientcursormon]  mapped:640
+2014-09-16T01:22:34.702+0800 [clientcursormon]  connections:6
+2014-09-16T01:27:34.749+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T01:27:34.749+0800 [clientcursormon]  mapped:640
+2014-09-16T01:27:34.749+0800 [clientcursormon]  connections:6
+2014-09-16T01:32:34.780+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T01:32:34.780+0800 [clientcursormon]  mapped:640
+2014-09-16T01:32:34.780+0800 [clientcursormon]  connections:6
+2014-09-16T01:37:34.816+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T01:37:34.816+0800 [clientcursormon]  mapped:640
+2014-09-16T01:37:34.816+0800 [clientcursormon]  connections:6
+2014-09-16T01:42:34.852+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T01:42:34.852+0800 [clientcursormon]  mapped:640
+2014-09-16T01:42:34.852+0800 [clientcursormon]  connections:6
+2014-09-16T01:47:34.878+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T01:47:34.878+0800 [clientcursormon]  mapped:640
+2014-09-16T01:47:34.878+0800 [clientcursormon]  connections:6
+2014-09-16T01:52:34.908+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T01:52:34.908+0800 [clientcursormon]  mapped:640
+2014-09-16T01:52:34.908+0800 [clientcursormon]  connections:6
+2014-09-16T01:57:34.925+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T01:57:34.925+0800 [clientcursormon]  mapped:640
+2014-09-16T01:57:34.933+0800 [clientcursormon]  connections:6
+2014-09-16T02:02:34.956+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T02:02:34.956+0800 [clientcursormon]  mapped:640
+2014-09-16T02:02:34.956+0800 [clientcursormon]  connections:6
+2014-09-16T02:07:35.028+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T02:07:35.028+0800 [clientcursormon]  mapped:640
+2014-09-16T02:07:35.028+0800 [clientcursormon]  connections:6
+2014-09-16T02:12:35.050+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T02:12:35.050+0800 [clientcursormon]  mapped:640
+2014-09-16T02:12:35.050+0800 [clientcursormon]  connections:6
+2014-09-16T02:17:35.094+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T02:17:35.094+0800 [clientcursormon]  mapped:640
+2014-09-16T02:17:35.094+0800 [clientcursormon]  connections:6
+2014-09-16T02:22:35.115+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T02:22:35.115+0800 [clientcursormon]  mapped:640
+2014-09-16T02:22:35.115+0800 [clientcursormon]  connections:6
+2014-09-16T02:27:35.174+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T02:27:35.174+0800 [clientcursormon]  mapped:640
+2014-09-16T02:27:35.174+0800 [clientcursormon]  connections:6
+2014-09-16T02:32:35.192+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T02:32:35.192+0800 [clientcursormon]  mapped:640
+2014-09-16T02:32:35.192+0800 [clientcursormon]  connections:6
+2014-09-16T02:37:35.226+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T02:37:35.226+0800 [clientcursormon]  mapped:640
+2014-09-16T02:37:35.244+0800 [clientcursormon]  connections:6
+2014-09-16T02:42:35.275+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T02:42:35.275+0800 [clientcursormon]  mapped:640
+2014-09-16T02:42:35.275+0800 [clientcursormon]  connections:6
+2014-09-16T02:47:35.310+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T02:47:35.310+0800 [clientcursormon]  mapped:640
+2014-09-16T02:47:35.310+0800 [clientcursormon]  connections:6
+2014-09-16T02:52:35.360+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T02:52:35.371+0800 [clientcursormon]  mapped:640
+2014-09-16T02:52:35.371+0800 [clientcursormon]  connections:6
+2014-09-16T02:57:35.405+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T02:57:35.405+0800 [clientcursormon]  mapped:640
+2014-09-16T02:57:35.405+0800 [clientcursormon]  connections:6
+2014-09-16T03:02:35.482+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T03:02:35.482+0800 [clientcursormon]  mapped:640
+2014-09-16T03:02:35.482+0800 [clientcursormon]  connections:6
+2014-09-16T03:07:35.519+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T03:07:35.519+0800 [clientcursormon]  mapped:640
+2014-09-16T03:07:35.519+0800 [clientcursormon]  connections:6
+2014-09-16T03:12:35.556+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T03:12:35.556+0800 [clientcursormon]  mapped:640
+2014-09-16T03:12:35.556+0800 [clientcursormon]  connections:6
+2014-09-16T03:17:35.589+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T03:17:35.589+0800 [clientcursormon]  mapped:640
+2014-09-16T03:17:35.589+0800 [clientcursormon]  connections:6
+2014-09-16T03:22:35.631+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T03:22:35.631+0800 [clientcursormon]  mapped:640
+2014-09-16T03:22:35.631+0800 [clientcursormon]  connections:6
+2014-09-16T03:27:35.750+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T03:27:35.750+0800 [clientcursormon]  mapped:640
+2014-09-16T03:27:35.750+0800 [clientcursormon]  connections:6
+2014-09-16T03:32:35.790+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T03:32:35.790+0800 [clientcursormon]  mapped:640
+2014-09-16T03:32:35.790+0800 [clientcursormon]  connections:6
+2014-09-16T03:37:35.825+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T03:37:35.825+0800 [clientcursormon]  mapped:640
+2014-09-16T03:37:35.825+0800 [clientcursormon]  connections:6
+2014-09-16T03:42:35.952+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T03:42:35.952+0800 [clientcursormon]  mapped:640
+2014-09-16T03:42:35.952+0800 [clientcursormon]  connections:6
+2014-09-16T03:47:36.022+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T03:47:36.022+0800 [clientcursormon]  mapped:640
+2014-09-16T03:47:36.022+0800 [clientcursormon]  connections:6
+2014-09-16T03:52:36.092+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T03:52:36.092+0800 [clientcursormon]  mapped:640
+2014-09-16T03:52:36.092+0800 [clientcursormon]  connections:6
+2014-09-16T03:57:36.133+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T03:57:36.133+0800 [clientcursormon]  mapped:640
+2014-09-16T03:57:36.133+0800 [clientcursormon]  connections:6
+2014-09-16T04:02:36.258+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T04:02:36.258+0800 [clientcursormon]  mapped:640
+2014-09-16T04:02:36.258+0800 [clientcursormon]  connections:6
+2014-09-16T04:07:36.381+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T04:07:36.381+0800 [clientcursormon]  mapped:640
+2014-09-16T04:07:36.381+0800 [clientcursormon]  connections:6
+2014-09-16T04:12:36.472+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T04:12:36.472+0800 [clientcursormon]  mapped:640
+2014-09-16T04:12:36.472+0800 [clientcursormon]  connections:6
+2014-09-16T04:17:36.625+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T04:17:36.625+0800 [clientcursormon]  mapped:640
+2014-09-16T04:17:36.625+0800 [clientcursormon]  connections:6
+2014-09-16T04:22:36.712+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T04:22:36.712+0800 [clientcursormon]  mapped:640
+2014-09-16T04:22:36.712+0800 [clientcursormon]  connections:6
+2014-09-16T04:27:36.819+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T04:27:36.819+0800 [clientcursormon]  mapped:640
+2014-09-16T04:27:36.819+0800 [clientcursormon]  connections:6
+2014-09-16T04:32:36.887+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T04:32:36.887+0800 [clientcursormon]  mapped:640
+2014-09-16T04:32:36.887+0800 [clientcursormon]  connections:6
+2014-09-16T04:37:37.023+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T04:37:37.023+0800 [clientcursormon]  mapped:640
+2014-09-16T04:37:37.023+0800 [clientcursormon]  connections:6
+2014-09-16T04:42:37.049+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T04:42:37.049+0800 [clientcursormon]  mapped:640
+2014-09-16T04:42:37.049+0800 [clientcursormon]  connections:6
+2014-09-16T04:47:37.085+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T04:47:37.085+0800 [clientcursormon]  mapped:640
+2014-09-16T04:47:37.085+0800 [clientcursormon]  connections:6
+2014-09-16T04:52:37.229+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T04:52:37.229+0800 [clientcursormon]  mapped:640
+2014-09-16T04:52:37.229+0800 [clientcursormon]  connections:6
+2014-09-16T04:57:37.280+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T04:57:37.280+0800 [clientcursormon]  mapped:640
+2014-09-16T04:57:37.280+0800 [clientcursormon]  connections:6
+2014-09-16T05:02:37.397+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T05:02:37.397+0800 [clientcursormon]  mapped:640
+2014-09-16T05:02:37.397+0800 [clientcursormon]  connections:6
+2014-09-16T05:07:37.480+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T05:07:37.480+0800 [clientcursormon]  mapped:640
+2014-09-16T05:07:37.480+0800 [clientcursormon]  connections:6
+2014-09-16T05:12:37.610+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T05:12:37.610+0800 [clientcursormon]  mapped:640
+2014-09-16T05:12:37.610+0800 [clientcursormon]  connections:6
+2014-09-16T05:17:37.828+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T05:17:37.828+0800 [clientcursormon]  mapped:640
+2014-09-16T05:17:37.828+0800 [clientcursormon]  connections:6
+2014-09-16T05:22:37.965+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T05:22:37.965+0800 [clientcursormon]  mapped:640
+2014-09-16T05:22:37.965+0800 [clientcursormon]  connections:6
+2014-09-16T05:27:38.040+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T05:27:38.040+0800 [clientcursormon]  mapped:640
+2014-09-16T05:27:38.040+0800 [clientcursormon]  connections:6
+2014-09-16T05:32:38.195+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T05:32:38.195+0800 [clientcursormon]  mapped:640
+2014-09-16T05:32:38.195+0800 [clientcursormon]  connections:6
+2014-09-16T05:37:38.253+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T05:37:38.253+0800 [clientcursormon]  mapped:640
+2014-09-16T05:37:38.253+0800 [clientcursormon]  connections:6
+2014-09-16T05:42:38.375+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T05:42:38.375+0800 [clientcursormon]  mapped:640
+2014-09-16T05:42:38.375+0800 [clientcursormon]  connections:6
+2014-09-16T05:47:38.409+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T05:47:38.409+0800 [clientcursormon]  mapped:640
+2014-09-16T05:47:38.409+0800 [clientcursormon]  connections:6
+2014-09-16T05:52:38.524+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T05:52:38.524+0800 [clientcursormon]  mapped:640
+2014-09-16T05:52:38.524+0800 [clientcursormon]  connections:6
+2014-09-16T05:57:38.607+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T05:57:38.608+0800 [clientcursormon]  mapped:640
+2014-09-16T05:57:38.608+0800 [clientcursormon]  connections:6
+2014-09-16T06:02:38.810+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T06:02:38.810+0800 [clientcursormon]  mapped:640
+2014-09-16T06:02:38.810+0800 [clientcursormon]  connections:6
+2014-09-16T06:07:38.900+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T06:07:38.900+0800 [clientcursormon]  mapped:640
+2014-09-16T06:07:38.900+0800 [clientcursormon]  connections:6
+2014-09-16T06:12:38.955+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T06:12:38.955+0800 [clientcursormon]  mapped:640
+2014-09-16T06:12:38.955+0800 [clientcursormon]  connections:6
+2014-09-16T06:17:39.014+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T06:17:39.015+0800 [clientcursormon]  mapped:640
+2014-09-16T06:17:39.015+0800 [clientcursormon]  connections:6
+2014-09-16T06:22:39.193+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T06:22:39.193+0800 [clientcursormon]  mapped:640
+2014-09-16T06:22:39.193+0800 [clientcursormon]  connections:6
+2014-09-16T06:27:39.338+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T06:27:39.338+0800 [clientcursormon]  mapped:640
+2014-09-16T06:27:39.338+0800 [clientcursormon]  connections:6
+2014-09-16T06:32:39.486+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T06:32:39.486+0800 [clientcursormon]  mapped:640
+2014-09-16T06:32:39.486+0800 [clientcursormon]  connections:6
+2014-09-16T06:37:39.636+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T06:37:39.636+0800 [clientcursormon]  mapped:640
+2014-09-16T06:37:39.636+0800 [clientcursormon]  connections:6
+2014-09-16T06:42:40.026+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T06:42:40.026+0800 [clientcursormon]  mapped:640
+2014-09-16T06:42:40.026+0800 [clientcursormon]  connections:6
+2014-09-16T06:47:40.176+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T06:47:40.176+0800 [clientcursormon]  mapped:640
+2014-09-16T06:47:40.176+0800 [clientcursormon]  connections:6
+2014-09-16T06:52:40.292+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T06:52:40.292+0800 [clientcursormon]  mapped:640
+2014-09-16T06:52:40.292+0800 [clientcursormon]  connections:6
+2014-09-16T06:57:40.389+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T06:57:40.389+0800 [clientcursormon]  mapped:640
+2014-09-16T06:57:40.389+0800 [clientcursormon]  connections:6
+2014-09-16T07:02:40.820+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T07:02:40.821+0800 [clientcursormon]  mapped:640
+2014-09-16T07:02:40.821+0800 [clientcursormon]  connections:6
+2014-09-16T07:07:41.003+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T07:07:41.003+0800 [clientcursormon]  mapped:640
+2014-09-16T07:07:41.003+0800 [clientcursormon]  connections:6
+2014-09-16T07:12:41.143+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T07:12:41.143+0800 [clientcursormon]  mapped:640
+2014-09-16T07:12:41.143+0800 [clientcursormon]  connections:6
+2014-09-16T07:17:41.278+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T07:17:41.278+0800 [clientcursormon]  mapped:640
+2014-09-16T07:17:41.278+0800 [clientcursormon]  connections:6
+2014-09-16T07:22:41.437+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T07:22:41.437+0800 [clientcursormon]  mapped:640
+2014-09-16T07:22:41.437+0800 [clientcursormon]  connections:6
+2014-09-16T07:27:41.587+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T07:27:41.587+0800 [clientcursormon]  mapped:640
+2014-09-16T07:27:41.587+0800 [clientcursormon]  connections:6
+2014-09-16T07:32:41.682+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T07:32:41.682+0800 [clientcursormon]  mapped:640
+2014-09-16T07:32:41.682+0800 [clientcursormon]  connections:6
+2014-09-16T07:37:41.951+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T07:37:41.951+0800 [clientcursormon]  mapped:640
+2014-09-16T07:37:41.951+0800 [clientcursormon]  connections:6
+2014-09-16T07:42:42.267+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T07:42:42.267+0800 [clientcursormon]  mapped:640
+2014-09-16T07:42:42.267+0800 [clientcursormon]  connections:6
+2014-09-16T07:47:42.536+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T07:47:42.537+0800 [clientcursormon]  mapped:640
+2014-09-16T07:47:42.537+0800 [clientcursormon]  connections:6
+2014-09-16T07:52:42.589+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T07:52:42.589+0800 [clientcursormon]  mapped:640
+2014-09-16T07:52:42.589+0800 [clientcursormon]  connections:6
+2014-09-16T07:57:42.900+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T07:57:42.900+0800 [clientcursormon]  mapped:640
+2014-09-16T07:57:42.914+0800 [clientcursormon]  connections:6
+2014-09-16T08:02:43.013+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T08:02:43.013+0800 [clientcursormon]  mapped:640
+2014-09-16T08:02:43.013+0800 [clientcursormon]  connections:6
+2014-09-16T08:07:43.330+0800 [clientcursormon] mem (MB) res:12 virt:749
+2014-09-16T08:07:43.331+0800 [clientcursormon]  mapped:640
+2014-09-16T08:07:43.331+0800 [clientcursormon]  connections:6
+2014-09-16T08:12:43.650+0800 [clientcursormon] mem (MB) res:12 virt:749
+2014-09-16T08:12:43.650+0800 [clientcursormon]  mapped:640
+2014-09-16T08:12:43.650+0800 [clientcursormon]  connections:6
+2014-09-16T08:17:44.036+0800 [clientcursormon] mem (MB) res:12 virt:749
+2014-09-16T08:17:44.037+0800 [clientcursormon]  mapped:640
+2014-09-16T08:17:44.037+0800 [clientcursormon]  connections:6
+2014-09-16T08:18:53.099+0800 [conn3] query voa.listening query: { $query: {}, $orderby: { time: -1 } } planSummary: COLLSCAN, COLLSCAN ntoskip:0 nscanned:3835 nscannedObjects:3835 keyUpdates:0 numYields:46 locks(micros) r:4142463 nreturned:1 reslen:3378 2132ms
+2014-09-16T08:19:44.141+0800 [clientcursormon] mem (MB) res:34 virt:749
+2014-09-16T08:19:44.141+0800 [clientcursormon]  mapped:640
+2014-09-16T08:19:44.166+0800 [clientcursormon]  connections:6
+2014-09-16T08:24:44.539+0800 [clientcursormon] mem (MB) res:3 virt:749
+2014-09-16T08:24:44.539+0800 [clientcursormon]  mapped:640
+2014-09-16T08:24:44.539+0800 [clientcursormon]  connections:6
+2014-09-16T08:28:44.781+0800 [clientcursormon] mem (MB) res:7 virt:749
+2014-09-16T08:28:44.781+0800 [clientcursormon]  mapped:640
+2014-09-16T08:28:44.781+0800 [clientcursormon]  connections:6
+2014-09-16T08:30:29.135+0800 [conn3] query Articles.articles query: { $query: {}, $orderby: { time: -1 } } planSummary: COLLSCAN, COLLSCAN ntoskip:0 nscanned:539 nscannedObjects:539 keyUpdates:0 numYields:0 locks(micros) r:198506 nreturned:1 reslen:1440 198ms
+2014-09-16T08:30:36.755+0800 [conn3] query Readings.readings query: { $query: {}, $orderby: { time: -1 } } planSummary: COLLSCAN, COLLSCAN ntoskip:0 nscanned:773 nscannedObjects:773 keyUpdates:0 numYields:0 locks(micros) r:388484 nreturned:1 reslen:6234 388ms
+2014-09-16T08:30:44.907+0800 [clientcursormon] mem (MB) res:11 virt:749
+2014-09-16T08:30:44.907+0800 [clientcursormon]  mapped:640
+2014-09-16T08:30:44.907+0800 [clientcursormon]  connections:6
+2014-09-16T08:35:45.255+0800 [clientcursormon] mem (MB) res:10 virt:749
+2014-09-16T08:35:45.255+0800 [clientcursormon]  mapped:640
+2014-09-16T08:35:45.255+0800 [clientcursormon]  connections:6
+2014-09-16T08:40:45.432+0800 [clientcursormon] mem (MB) res:10 virt:749
+2014-09-16T08:40:45.432+0800 [clientcursormon]  mapped:640
+2014-09-16T08:40:45.432+0800 [clientcursormon]  connections:6
+2014-09-16T08:45:45.716+0800 [clientcursormon] mem (MB) res:10 virt:749
+2014-09-16T08:45:45.716+0800 [clientcursormon]  mapped:640
+2014-09-16T08:45:45.716+0800 [clientcursormon]  connections:6
+2014-09-16T08:47:30.998+0800 [conn3] query voa.listening query: { $query: {}, $orderby: { time: -1 } } planSummary: COLLSCAN, COLLSCAN ntoskip:0 nscanned:3835 nscannedObjects:3835 keyUpdates:0 numYields:137 locks(micros) r:3259886 nreturned:1 reslen:3378 1656ms
+2014-09-16T08:47:45.838+0800 [clientcursormon] mem (MB) res:32 virt:749
+2014-09-16T08:47:45.838+0800 [clientcursormon]  mapped:640
+2014-09-16T08:47:45.838+0800 [clientcursormon]  connections:6
+2014-09-16T08:52:46.098+0800 [clientcursormon] mem (MB) res:32 virt:749
+2014-09-16T08:52:46.098+0800 [clientcursormon]  mapped:640
+2014-09-16T08:52:46.098+0800 [clientcursormon]  connections:6
+2014-09-16T08:57:46.293+0800 [clientcursormon] mem (MB) res:32 virt:749
+2014-09-16T08:57:46.293+0800 [clientcursormon]  mapped:640
+2014-09-16T08:57:46.293+0800 [clientcursormon]  connections:6
+2014-09-16T09:02:18.843+0800 [conn3] query voa.listening query: { $query: {}, $orderby: { time: -1 } } planSummary: COLLSCAN, COLLSCAN ntoskip:0 nscanned:3835 nscannedObjects:3835 keyUpdates:0 numYields:0 locks(micros) r:105377 nreturned:1 reslen:3378 105ms
+2014-09-16T09:02:25.721+0800 [conn3] query voa.listening query: { title: "Iran Looks to Maintain Influence in Baghdad With New Shia PM" } planSummary: COLLSCAN ntoskip:0 nscanned:4 nscannedObjects:4 keyUpdates:0 numYields:0 locks(micros) r:386332 nreturned:1 reslen:3677 386ms
+2014-09-16T09:02:46.625+0800 [clientcursormon] mem (MB) res:35 virt:749
+2014-09-16T09:02:46.625+0800 [clientcursormon]  mapped:640
+2014-09-16T09:02:46.625+0800 [clientcursormon]  connections:6
+2014-09-16T09:07:46.918+0800 [clientcursormon] mem (MB) res:36 virt:749
+2014-09-16T09:07:46.918+0800 [clientcursormon]  mapped:640
+2014-09-16T09:07:46.918+0800 [clientcursormon]  connections:6
+2014-09-16T09:12:47.198+0800 [clientcursormon] mem (MB) res:34 virt:749
+2014-09-16T09:12:47.209+0800 [clientcursormon]  mapped:640
+2014-09-16T09:12:47.209+0800 [clientcursormon]  connections:6
+2014-09-16T09:17:47.633+0800 [clientcursormon] mem (MB) res:6 virt:749
+2014-09-16T09:17:47.633+0800 [clientcursormon]  mapped:640
+2014-09-16T09:17:47.633+0800 [clientcursormon]  connections:6
+2014-09-16T09:21:06.782+0800 [initandlisten] connection accepted from 127.0.0.1:64404 #7 (7 connections now open)
+2014-09-16T09:21:48.239+0800 [clientcursormon] mem (MB) res:7 virt:750
+2014-09-16T09:21:48.239+0800 [clientcursormon]  mapped:640
+2014-09-16T09:21:48.250+0800 [clientcursormon]  connections:7
+2014-09-16T09:25:33.478+0800 [initandlisten] connection accepted from 127.0.0.1:65300 #8 (8 connections now open)
+2014-09-16T09:26:48.509+0800 [clientcursormon] mem (MB) res:7 virt:751
+2014-09-16T09:26:48.509+0800 [clientcursormon]  mapped:640
+2014-09-16T09:26:48.509+0800 [clientcursormon]  connections:8
+2014-09-16T09:27:48.651+0800 [clientcursormon] mem (MB) res:8 virt:751
+2014-09-16T09:27:48.651+0800 [clientcursormon]  mapped:640
+2014-09-16T09:27:48.651+0800 [clientcursormon]  connections:8
+2014-09-16T09:30:58.576+0800 [conn8] killcursors  keyUpdates:0 numYields:0 locks(micros) r:65980 66ms
+2014-09-16T09:32:49.173+0800 [clientcursormon] mem (MB) res:7 virt:751
+2014-09-16T09:32:49.173+0800 [clientcursormon]  mapped:640
+2014-09-16T09:32:49.173+0800 [clientcursormon]  connections:8
+2014-09-16T09:33:49.204+0800 [clientcursormon] mem (MB) res:8 virt:751
+2014-09-16T09:33:49.204+0800 [clientcursormon]  mapped:640
+2014-09-16T09:33:49.204+0800 [clientcursormon]  connections:8
+2014-09-16T09:35:52.082+0800 [conn8] query Readings.readings query: { $query: {}, $orderby: { time: -1 } } planSummary: COLLSCAN, COLLSCAN ntoskip:0 nscanned:773 nscannedObjects:773 keyUpdates:0 numYields:0 locks(micros) r:1692521 nreturned:1 reslen:6234 1692ms
+2014-09-16T09:35:52.209+0800 [conn8] query Readings.readings query: { $query: {}, $orderby: { time: -1 } } planSummary: COLLSCAN cursorid:138059898812 ntoreturn:0 ntoskip:0 nscanned:773 nscannedObjects:773 scanAndOrder:1 keyUpdates:0 numYields:0 locks(micros) r:124992 nreturned:101 reslen:426796 124ms
+2014-09-16T09:36:00.009+0800 [conn8] query voa.listening query: { $query: {}, $orderby: { time: -1 } } planSummary: COLLSCAN, COLLSCAN ntoskip:0 nscanned:3835 nscannedObjects:3835 keyUpdates:0 numYields:46 locks(micros) r:4893728 nreturned:1 reslen:3378 2492ms
+2014-09-16T09:36:49.298+0800 [clientcursormon] mem (MB) res:31 virt:751
+2014-09-16T09:36:49.298+0800 [clientcursormon]  mapped:640
+2014-09-16T09:36:49.298+0800 [clientcursormon]  connections:8
+2014-09-16T09:40:31.332+0800 [conn8] query voa.listening query: { $query: {}, $orderby: { time: -1 } } planSummary: COLLSCAN, COLLSCAN ntoskip:0 nscanned:3835 nscannedObjects:3835 keyUpdates:0 numYields:0 locks(micros) r:104460 nreturned:1 reslen:3378 104ms
+2014-09-16T09:40:35.528+0800 [conn8] query Readings.readings query: { $query: {}, $orderby: { time: -1 } } planSummary: COLLSCAN, COLLSCAN ntoskip:0 nscanned:773 nscannedObjects:773 keyUpdates:0 numYields:0 locks(micros) r:340603 nreturned:1 reslen:6234 340ms
+2014-09-16T09:41:49.778+0800 [clientcursormon] mem (MB) res:31 virt:751
+2014-09-16T09:41:49.778+0800 [clientcursormon]  mapped:640
+2014-09-16T09:41:49.778+0800 [clientcursormon]  connections:8
+2014-09-16T09:42:45.080+0800 [conn8] query Articles.articles query: { $query: {}, $orderby: { time: -1 } } planSummary: COLLSCAN, COLLSCAN ntoskip:0 nscanned:539 nscannedObjects:539 keyUpdates:0 numYields:0 locks(micros) r:108119 nreturned:1 reslen:1440 108ms
+2014-09-16T09:46:50.132+0800 [clientcursormon] mem (MB) res:33 virt:751
+2014-09-16T09:46:50.132+0800 [clientcursormon]  mapped:640
+2014-09-16T09:46:50.132+0800 [clientcursormon]  connections:8
+2014-09-16T09:51:50.677+0800 [clientcursormon] mem (MB) res:6 virt:751
+2014-09-16T09:51:50.678+0800 [clientcursormon]  mapped:640
+2014-09-16T09:51:50.678+0800 [clientcursormon]  connections:8
+2014-09-16T09:54:51.038+0800 [clientcursormon] mem (MB) res:10 virt:751
+2014-09-16T09:54:51.038+0800 [clientcursormon]  mapped:640
+2014-09-16T09:54:51.038+0800 [clientcursormon]  connections:8
+2014-09-16T09:59:51.226+0800 [clientcursormon] mem (MB) res:10 virt:751
+2014-09-16T09:59:51.226+0800 [clientcursormon]  mapped:640
+2014-09-16T09:59:51.226+0800 [clientcursormon]  connections:8
+2014-09-16T10:04:51.942+0800 [clientcursormon] mem (MB) res:10 virt:751
+2014-09-16T10:04:51.951+0800 [clientcursormon]  mapped:640
+2014-09-16T10:04:51.951+0800 [clientcursormon]  connections:8
+2014-09-16T10:09:52.367+0800 [clientcursormon] mem (MB) res:10 virt:751
+2014-09-16T10:09:52.367+0800 [clientcursormon]  mapped:640
+2014-09-16T10:09:52.367+0800 [clientcursormon]  connections:8
+2014-09-16T10:14:52.778+0800 [clientcursormon] mem (MB) res:10 virt:751
+2014-09-16T10:14:52.778+0800 [clientcursormon]  mapped:640
+2014-09-16T10:14:52.778+0800 [clientcursormon]  connections:8
+2014-09-16T10:19:53.123+0800 [clientcursormon] mem (MB) res:10 virt:751
+2014-09-16T10:19:53.123+0800 [clientcursormon]  mapped:640
+2014-09-16T10:19:53.123+0800 [clientcursormon]  connections:8
+2014-09-16T10:24:53.372+0800 [clientcursormon] mem (MB) res:10 virt:751
+2014-09-16T10:24:53.372+0800 [clientcursormon]  mapped:640
+2014-09-16T10:24:53.372+0800 [clientcursormon]  connections:8
+2014-09-16T10:29:53.705+0800 [clientcursormon] mem (MB) res:10 virt:751
+2014-09-16T10:29:53.705+0800 [clientcursormon]  mapped:640
+2014-09-16T10:29:53.705+0800 [clientcursormon]  connections:8
+2014-09-16T10:34:54.104+0800 [clientcursormon] mem (MB) res:10 virt:751
+2014-09-16T10:34:54.104+0800 [clientcursormon]  mapped:640
+2014-09-16T10:34:54.104+0800 [clientcursormon]  connections:8
+2014-09-16T10:39:54.388+0800 [clientcursormon] mem (MB) res:10 virt:751
+2014-09-16T10:39:54.388+0800 [clientcursormon]  mapped:640
+2014-09-16T10:39:54.388+0800 [clientcursormon]  connections:8
+2014-09-16T10:44:54.936+0800 [clientcursormon] mem (MB) res:10 virt:751
+2014-09-16T10:44:54.936+0800 [clientcursormon]  mapped:640
+2014-09-16T10:44:54.936+0800 [clientcursormon]  connections:8
+2014-09-16T10:49:55.546+0800 [clientcursormon] mem (MB) res:10 virt:751
+2014-09-16T10:49:55.546+0800 [clientcursormon]  mapped:640
+2014-09-16T10:49:55.546+0800 [clientcursormon]  connections:8
+2014-09-16T10:54:55.888+0800 [clientcursormon] mem (MB) res:10 virt:751
+2014-09-16T10:54:55.888+0800 [clientcursormon]  mapped:640
+2014-09-16T10:54:55.888+0800 [clientcursormon]  connections:8
+2014-09-16T10:59:56.185+0800 [clientcursormon] mem (MB) res:10 virt:751
+2014-09-16T10:59:56.185+0800 [clientcursormon]  mapped:640
+2014-09-16T10:59:56.185+0800 [clientcursormon]  connections:8
+2014-09-16T11:04:56.498+0800 [clientcursormon] mem (MB) res:10 virt:751
+2014-09-16T11:04:56.498+0800 [clientcursormon]  mapped:640
+2014-09-16T11:04:56.498+0800 [clientcursormon]  connections:8
+2014-09-16T11:09:56.837+0800 [clientcursormon] mem (MB) res:10 virt:751
+2014-09-16T11:09:56.837+0800 [clientcursormon]  mapped:640
+2014-09-16T11:09:56.837+0800 [clientcursormon]  connections:8
+2014-09-16T11:14:57.391+0800 [clientcursormon] mem (MB) res:10 virt:751
+2014-09-16T11:14:57.391+0800 [clientcursormon]  mapped:640
+2014-09-16T11:14:57.391+0800 [clientcursormon]  connections:8
+2014-09-16T11:19:57.829+0800 [clientcursormon] mem (MB) res:10 virt:751
+2014-09-16T11:19:57.829+0800 [clientcursormon]  mapped:640
+2014-09-16T11:19:57.829+0800 [clientcursormon]  connections:8
+2014-09-16T11:24:58.117+0800 [clientcursormon] mem (MB) res:10 virt:751
+2014-09-16T11:24:58.117+0800 [clientcursormon]  mapped:640
+2014-09-16T11:24:58.117+0800 [clientcursormon]  connections:8
+2014-09-16T11:29:58.659+0800 [clientcursormon] mem (MB) res:10 virt:751
+2014-09-16T11:29:58.659+0800 [clientcursormon]  mapped:640
+2014-09-16T11:29:58.659+0800 [clientcursormon]  connections:8
+2014-09-16T11:34:59.042+0800 [clientcursormon] mem (MB) res:10 virt:751
+2014-09-16T11:34:59.042+0800 [clientcursormon]  mapped:640
+2014-09-16T11:34:59.042+0800 [clientcursormon]  connections:8
+2014-09-16T11:39:59.543+0800 [clientcursormon] mem (MB) res:10 virt:751
+2014-09-16T11:39:59.543+0800 [clientcursormon]  mapped:640
+2014-09-16T11:39:59.543+0800 [clientcursormon]  connections:8
+2014-09-16T11:45:00.124+0800 [clientcursormon] mem (MB) res:10 virt:751
+2014-09-16T11:45:00.125+0800 [clientcursormon]  mapped:640
+2014-09-16T11:45:00.125+0800 [clientcursormon]  connections:8
+2014-09-16T11:50:00.922+0800 [clientcursormon] mem (MB) res:10 virt:751
+2014-09-16T11:50:00.922+0800 [clientcursormon]  mapped:640
+2014-09-16T11:50:00.938+0800 [clientcursormon]  connections:8
+2014-09-16T11:55:01.786+0800 [clientcursormon] mem (MB) res:10 virt:751
+2014-09-16T11:55:01.786+0800 [clientcursormon]  mapped:640
+2014-09-16T11:55:01.786+0800 [clientcursormon]  connections:8
+2014-09-16T11:55:10.952+0800 [conn8] query Articles.articles query: { $query: {}, $orderby: { time: -1 } } planSummary: COLLSCAN, COLLSCAN ntoskip:0 nscanned:539 nscannedObjects:539 keyUpdates:0 numYields:0 locks(micros) r:362384 nreturned:1 reslen:1440 362ms
+2014-09-16T11:55:26.071+0800 [conn8] query voa.listening query: { $query: {}, $orderby: { time: -1 } } planSummary: COLLSCAN, COLLSCAN ntoskip:0 nscanned:3835 nscannedObjects:3835 keyUpdates:0 numYields:2146 locks(micros) r:5609910 nreturned:1 reslen:3378 4085ms
+2014-09-16T11:55:42.892+0800 [conn8] query Readings.readings query: { $query: {}, $orderby: { time: -1 } } planSummary: COLLSCAN, COLLSCAN ntoskip:0 nscanned:773 nscannedObjects:773 keyUpdates:0 numYields:0 locks(micros) r:152488 nreturned:1 reslen:6234 152ms
+2014-09-16T11:56:02.176+0800 [clientcursormon] mem (MB) res:32 virt:751
+2014-09-16T11:56:02.176+0800 [clientcursormon]  mapped:640
+2014-09-16T11:56:02.177+0800 [clientcursormon]  connections:8
+2014-09-16T12:01:03.410+0800 [clientcursormon] mem (MB) res:3 virt:751
+2014-09-16T12:01:03.410+0800 [clientcursormon]  mapped:640
+2014-09-16T12:01:03.410+0800 [clientcursormon]  connections:8
+2014-09-16T12:02:44.385+0800 [conn8] killcursors  keyUpdates:0 numYields:0 locks(micros) r:209317 209ms
+2014-09-16T12:02:44.410+0800 [conn8] killcursors  keyUpdates:0 numYields:0 locks(micros) r:22679 22ms
+2014-09-16T12:03:03.597+0800 [clientcursormon] mem (MB) res:4 virt:751
+2014-09-16T12:03:03.608+0800 [clientcursormon]  mapped:640
+2014-09-16T12:03:03.608+0800 [clientcursormon]  connections:8
+2014-09-16T12:06:21.538+0800 [conn8] query Readings.readings query: { $query: {}, $orderby: { time: -1 } } planSummary: COLLSCAN, COLLSCAN ntoskip:0 nscanned:773 nscannedObjects:773 keyUpdates:0 numYields:0 locks(micros) r:7583614 nreturned:1 reslen:6234 7583ms
+2014-09-16T12:06:21.878+0800 [conn8] query Readings.readings query: { $query: {}, $orderby: { time: -1 } } planSummary: COLLSCAN cursorid:137707081057 ntoreturn:0 ntoskip:0 nscanned:773 nscannedObjects:773 scanAndOrder:1 keyUpdates:0 numYields:0 locks(micros) r:272229 nreturned:101 reslen:426796 272ms
+2014-09-16T12:07:04.076+0800 [clientcursormon] mem (MB) res:7 virt:751
+2014-09-16T12:07:04.076+0800 [clientcursormon]  mapped:640
+2014-09-16T12:07:04.076+0800 [clientcursormon]  connections:8
+2014-09-16T12:08:33.716+0800 [conn8] query Articles.articles query: { $query: {}, $orderby: { time: -1 } } planSummary: COLLSCAN, COLLSCAN ntoskip:0 nscanned:539 nscannedObjects:539 keyUpdates:0 numYields:57 locks(micros) r:1146529 nreturned:1 reslen:1440 653ms
+2014-09-16T12:09:04.530+0800 [clientcursormon] mem (MB) res:10 virt:751
+2014-09-16T12:09:04.530+0800 [clientcursormon]  mapped:640
+2014-09-16T12:09:04.530+0800 [clientcursormon]  connections:8
+2014-09-16T12:09:11.482+0800 [conn8] query voa.listening query: { $query: {}, $orderby: { time: -1 } } planSummary: COLLSCAN, COLLSCAN ntoskip:0 nscanned:3835 nscannedObjects:3835 keyUpdates:0 numYields:17 locks(micros) r:2994529 nreturned:1 reslen:3378 2957ms
+2014-09-16T12:10:04.717+0800 [clientcursormon] mem (MB) res:32 virt:751
+2014-09-16T12:10:04.717+0800 [clientcursormon]  mapped:640
+2014-09-16T12:10:04.717+0800 [clientcursormon]  connections:8
+2014-09-16T12:14:19.574+0800 [conn8] killcursors  keyUpdates:0 numYields:0 locks(micros) r:12801 12ms
+2014-09-16T12:15:05.249+0800 [clientcursormon] mem (MB) res:31 virt:751
+2014-09-16T12:15:05.249+0800 [clientcursormon]  mapped:640
+2014-09-16T12:15:05.249+0800 [clientcursormon]  connections:8
+2014-09-16T12:16:37.767+0800 [conn8] query voa.listening query: { title: "" } planSummary: COLLSCAN ntoskip:0 nscanned:3835 nscannedObjects:3835 keyUpdates:0 numYields:0 locks(micros) r:617134 nreturned:0 reslen:20 617ms
+2014-09-16T12:20:05.861+0800 [clientcursormon] mem (MB) res:32 virt:751
+2014-09-16T12:20:05.861+0800 [clientcursormon]  mapped:640
+2014-09-16T12:20:05.861+0800 [clientcursormon]  connections:8
+2014-09-16T12:25:06.653+0800 [clientcursormon] mem (MB) res:32 virt:751
+2014-09-16T12:25:06.653+0800 [clientcursormon]  mapped:640
+2014-09-16T12:25:06.653+0800 [clientcursormon]  connections:8
+2014-09-16T12:30:07.011+0800 [clientcursormon] mem (MB) res:33 virt:751
+2014-09-16T12:30:07.011+0800 [clientcursormon]  mapped:640
+2014-09-16T12:30:07.011+0800 [clientcursormon]  connections:8
+2014-09-16T12:35:07.785+0800 [clientcursormon] mem (MB) res:33 virt:751
+2014-09-16T12:35:07.785+0800 [clientcursormon]  mapped:640
+2014-09-16T12:35:07.785+0800 [clientcursormon]  connections:8
+2014-09-16T12:40:08.337+0800 [clientcursormon] mem (MB) res:33 virt:751
+2014-09-16T12:40:08.337+0800 [clientcursormon]  mapped:640
+2014-09-16T12:40:08.337+0800 [clientcursormon]  connections:8
+2014-09-16T12:45:08.772+0800 [clientcursormon] mem (MB) res:3 virt:751
+2014-09-16T12:45:08.772+0800 [clientcursormon]  mapped:640
+2014-09-16T12:45:08.772+0800 [clientcursormon]  connections:8
+2014-09-16T12:50:09.148+0800 [clientcursormon] mem (MB) res:3 virt:751
+2014-09-16T12:50:09.148+0800 [clientcursormon]  mapped:640
+2014-09-16T12:50:09.156+0800 [clientcursormon]  connections:8
+2014-09-16T12:55:09.502+0800 [clientcursormon] mem (MB) res:3 virt:751
+2014-09-16T12:55:09.502+0800 [clientcursormon]  mapped:640
+2014-09-16T12:55:09.502+0800 [clientcursormon]  connections:8
+2014-09-16T12:58:09.938+0800 [clientcursormon] mem (MB) res:4 virt:751
+2014-09-16T12:58:09.938+0800 [clientcursormon]  mapped:640
+2014-09-16T12:58:09.938+0800 [clientcursormon]  connections:8
+2014-09-16T13:03:10.782+0800 [clientcursormon] mem (MB) res:4 virt:751
+2014-09-16T13:03:10.782+0800 [clientcursormon]  mapped:640
+2014-09-16T13:03:10.782+0800 [clientcursormon]  connections:8
+2014-09-16T13:08:11.463+0800 [clientcursormon] mem (MB) res:4 virt:751
+2014-09-16T13:08:11.463+0800 [clientcursormon]  mapped:640
+2014-09-16T13:08:11.463+0800 [clientcursormon]  connections:8
+2014-09-16T13:13:12.017+0800 [clientcursormon] mem (MB) res:4 virt:751
+2014-09-16T13:13:12.017+0800 [clientcursormon]  mapped:640
+2014-09-16T13:13:12.017+0800 [clientcursormon]  connections:8
+2014-09-16T13:17:39.984+0800 [conn8] query Articles.articles query: { $query: {}, $orderby: { time: -1 } } planSummary: COLLSCAN, COLLSCAN ntoskip:0 nscanned:539 nscannedObjects:539 keyUpdates:0 numYields:44 locks(micros) r:2800928 nreturned:1 reslen:1440 1867ms
+2014-09-16T13:17:49.178+0800 [conn8] query Readings.readings query: { $query: {}, $orderby: { time: -1 } } planSummary: COLLSCAN, COLLSCAN ntoskip:0 nscanned:773 nscannedObjects:773 keyUpdates:0 numYields:0 locks(micros) r:665269 nreturned:1 reslen:6234 665ms
+2014-09-16T13:17:57.602+0800 [conn8] query voa.listening query: { $query: {}, $orderby: { time: -1 } } planSummary: COLLSCAN, COLLSCAN ntoskip:0 nscanned:3835 nscannedObjects:3835 keyUpdates:0 numYields:37 locks(micros) r:3357810 nreturned:1 reslen:3378 1709ms
+2014-09-16T13:18:12.724+0800 [clientcursormon] mem (MB) res:31 virt:751
+2014-09-16T13:18:12.724+0800 [clientcursormon]  mapped:640
+2014-09-16T13:18:12.724+0800 [clientcursormon]  connections:8
+2014-09-16T13:23:13.411+0800 [clientcursormon] mem (MB) res:31 virt:751
+2014-09-16T13:23:13.412+0800 [clientcursormon]  mapped:640
+2014-09-16T13:23:13.416+0800 [clientcursormon]  connections:8
+2014-09-16T13:24:35.403+0800 [conn8] query voa.listening query: { $query: {}, $orderby: { time: -1 } } planSummary: COLLSCAN, COLLSCAN ntoskip:0 nscanned:3835 nscannedObjects:3835 keyUpdates:0 numYields:0 locks(micros) r:167458 nreturned:1 reslen:3378 167ms
+2014-09-16T13:28:14.065+0800 [clientcursormon] mem (MB) res:32 virt:751
+2014-09-16T13:28:14.065+0800 [clientcursormon]  mapped:640
+2014-09-16T13:28:14.065+0800 [clientcursormon]  connections:8
+2014-09-16T13:33:14.986+0800 [clientcursormon] mem (MB) res:2 virt:751
+2014-09-16T13:33:14.986+0800 [clientcursormon]  mapped:640
+2014-09-16T13:33:14.986+0800 [clientcursormon]  connections:8
+2014-09-16T13:34:15.133+0800 [clientcursormon] mem (MB) res:4 virt:751
+2014-09-16T13:34:15.133+0800 [clientcursormon]  mapped:640
+2014-09-16T13:34:15.133+0800 [clientcursormon]  connections:8
+2014-09-16T13:39:15.859+0800 [clientcursormon] mem (MB) res:4 virt:751
+2014-09-16T13:39:15.859+0800 [clientcursormon]  mapped:640
+2014-09-16T13:39:15.859+0800 [clientcursormon]  connections:8
+2014-09-16T13:44:16.759+0800 [clientcursormon] mem (MB) res:4 virt:751
+2014-09-16T13:44:16.759+0800 [clientcursormon]  mapped:640
+2014-09-16T13:44:16.759+0800 [clientcursormon]  connections:8
+2014-09-16T13:49:17.596+0800 [clientcursormon] mem (MB) res:4 virt:751
+2014-09-16T13:49:17.596+0800 [clientcursormon]  mapped:640
+2014-09-16T13:49:17.596+0800 [clientcursormon]  connections:8
+2014-09-16T13:54:18.159+0800 [clientcursormon] mem (MB) res:4 virt:751
+2014-09-16T13:54:18.159+0800 [clientcursormon]  mapped:640
+2014-09-16T13:54:18.159+0800 [clientcursormon]  connections:8
+2014-09-16T13:54:33.014+0800 [conn8] query voa.listening query: { $query: {}, $orderby: { time: -1 } } planSummary: COLLSCAN, COLLSCAN ntoskip:0 nscanned:3835 nscannedObjects:3835 keyUpdates:0 numYields:65 locks(micros) r:1043395 nreturned:1 reslen:3378 522ms
+2014-09-16T13:55:18.311+0800 [clientcursormon] mem (MB) res:25 virt:751
+2014-09-16T13:55:18.311+0800 [clientcursormon]  mapped:640
+2014-09-16T13:55:18.311+0800 [clientcursormon]  connections:8
+2014-09-16T13:57:00.370+0800 [conn8] query voa.listening query: { $query: {}, $orderby: { time: -1 } } planSummary: COLLSCAN, COLLSCAN ntoskip:0 nscanned:3835 nscannedObjects:3835 keyUpdates:0 numYields:0 locks(micros) r:210946 nreturned:1 reslen:3378 210ms
+2014-09-16T14:00:18.898+0800 [clientcursormon] mem (MB) res:26 virt:751
+2014-09-16T14:00:18.898+0800 [clientcursormon]  mapped:640
+2014-09-16T14:00:18.898+0800 [clientcursormon]  connections:8
+2014-09-16T14:05:20.041+0800 [clientcursormon] mem (MB) res:26 virt:751
+2014-09-16T14:05:20.041+0800 [clientcursormon]  mapped:640
+2014-09-16T14:05:20.042+0800 [clientcursormon]  connections:8
+2014-09-16T14:10:20.777+0800 [clientcursormon] mem (MB) res:26 virt:751
+2014-09-16T14:10:20.777+0800 [clientcursormon]  mapped:640
+2014-09-16T14:10:20.777+0800 [clientcursormon]  connections:8
+2014-09-16T14:14:36.141+0800 [conn8] query voa.listening query: { title: "Iran Looks to Maintain Influence in Baghdad With New Shia PM" } planSummary: COLLSCAN ntoskip:0 nscanned:4 nscannedObjects:4 keyUpdates:0 numYields:0 locks(micros) r:102125 nreturned:1 reslen:3677 102ms
+2014-09-16T14:15:21.555+0800 [clientcursormon] mem (MB) res:26 virt:751
+2014-09-16T14:15:21.555+0800 [clientcursormon]  mapped:640
+2014-09-16T14:15:21.555+0800 [clientcursormon]  connections:8
+2014-09-16T14:17:51.100+0800 [conn8] query voa.listening query: { $query: {}, $orderby: { time: -1 } } planSummary: COLLSCAN, COLLSCAN ntoskip:0 nscanned:3835 nscannedObjects:3835 keyUpdates:0 numYields:0 locks(micros) r:114928 nreturned:1 reslen:3378 114ms
+2014-09-16T14:20:06.315+0800 [conn8] query voa.listening query: { $query: {}, $orderby: { time: -1 } } planSummary: COLLSCAN, COLLSCAN ntoskip:0 nscanned:3835 nscannedObjects:3835 keyUpdates:0 numYields:0 locks(micros) r:209999 nreturned:1 reslen:3378 209ms
+2014-09-16T14:20:22.860+0800 [clientcursormon] mem (MB) res:27 virt:751
+2014-09-16T14:20:22.860+0800 [clientcursormon]  mapped:640
+2014-09-16T14:20:22.860+0800 [clientcursormon]  connections:8
+2014-09-16T14:22:49.682+0800 [conn8] query voa.listening query: { $query: {}, $orderby: { time: -1 } } planSummary: COLLSCAN, COLLSCAN ntoskip:0 nscanned:3835 nscannedObjects:3835 keyUpdates:0 numYields:0 locks(micros) r:808895 nreturned:1 reslen:3378 808ms
+2014-09-16T14:25:23.882+0800 [clientcursormon] mem (MB) res:29 virt:751
+2014-09-16T14:25:23.893+0800 [clientcursormon]  mapped:640
+2014-09-16T14:25:23.893+0800 [clientcursormon]  connections:8
+2014-09-16T14:30:25.057+0800 [clientcursormon] mem (MB) res:29 virt:751
+2014-09-16T14:30:25.058+0800 [clientcursormon]  mapped:640
+2014-09-16T14:30:25.058+0800 [clientcursormon]  connections:8
+2014-09-16T14:35:25.630+0800 [clientcursormon] mem (MB) res:28 virt:751
+2014-09-16T14:35:25.631+0800 [clientcursormon]  mapped:640
+2014-09-16T14:35:25.631+0800 [clientcursormon]  connections:8
+2014-09-16T14:37:02.039+0800 [conn8] query Articles.articles query: { $query: {}, $orderby: { time: -1 } } planSummary: COLLSCAN, COLLSCAN ntoskip:0 nscanned:539 nscannedObjects:539 keyUpdates:0 numYields:165 locks(micros) r:690883 nreturned:1 reslen:1440 756ms
+2014-09-16T14:37:25.836+0800 [clientcursormon] mem (MB) res:32 virt:751
+2014-09-16T14:37:25.836+0800 [clientcursormon]  mapped:640
+2014-09-16T14:37:25.836+0800 [clientcursormon]  connections:8
+2014-09-16T14:40:48.063+0800 [conn8] query Readings.readings query: { $query: {}, $orderby: { time: -1 } } planSummary: COLLSCAN, COLLSCAN ntoskip:0 nscanned:773 nscannedObjects:773 keyUpdates:0 numYields:430 locks(micros) r:2283302 nreturned:1 reslen:6234 2084ms
+2014-09-16T14:42:26.456+0800 [clientcursormon] mem (MB) res:34 virt:751
+2014-09-16T14:42:26.456+0800 [clientcursormon]  mapped:640
+2014-09-16T14:42:26.456+0800 [clientcursormon]  connections:8
+2014-09-16T14:47:27.396+0800 [clientcursormon] mem (MB) res:34 virt:751
+2014-09-16T14:47:27.396+0800 [clientcursormon]  mapped:640
+2014-09-16T14:47:27.396+0800 [clientcursormon]  connections:8
+2014-09-16T14:52:28.472+0800 [clientcursormon] mem (MB) res:3 virt:751
+2014-09-16T14:52:28.472+0800 [clientcursormon]  mapped:640
+2014-09-16T14:52:28.472+0800 [clientcursormon]  connections:8
+2014-09-16T14:56:29.198+0800 [clientcursormon] mem (MB) res:4 virt:751
+2014-09-16T14:56:29.198+0800 [clientcursormon]  mapped:640
+2014-09-16T14:56:29.230+0800 [clientcursormon]  connections:8
+2014-09-16T14:57:40.198+0800 [conn8] killcursors: found 0 of 1
+2014-09-16T15:01:29.967+0800 [clientcursormon] mem (MB) res:4 virt:751
+2014-09-16T15:01:29.967+0800 [clientcursormon]  mapped:640
+2014-09-16T15:01:29.967+0800 [clientcursormon]  connections:8
+2014-09-16T15:06:30.985+0800 [clientcursormon] mem (MB) res:4 virt:751
+2014-09-16T15:06:30.986+0800 [clientcursormon]  mapped:640
+2014-09-16T15:06:30.986+0800 [clientcursormon]  connections:8
+2014-09-16T15:11:31.967+0800 [clientcursormon] mem (MB) res:4 virt:751
+2014-09-16T15:11:31.967+0800 [clientcursormon]  mapped:640
+2014-09-16T15:11:31.968+0800 [clientcursormon]  connections:8
+2014-09-16T15:16:32.963+0800 [clientcursormon] mem (MB) res:4 virt:751
+2014-09-16T15:16:32.963+0800 [clientcursormon]  mapped:640
+2014-09-16T15:16:32.963+0800 [clientcursormon]  connections:8
+2014-09-16T15:16:40.210+0800 [TTLMonitor] query test5.system.indexes query: { expireAfterSeconds: { $exists: true } } planSummary: COLLSCAN ntoreturn:0 ntoskip:0 nscanned:2 nscannedObjects:2 keyUpdates:0 numYields:0 locks(micros) r:293158 nreturned:0 reslen:20 293ms
+2014-09-16T15:21:34.096+0800 [clientcursormon] mem (MB) res:3 virt:751
+2014-09-16T15:21:34.112+0800 [clientcursormon]  mapped:640
+2014-09-16T15:21:34.112+0800 [clientcursormon]  connections:8
+2014-09-16T15:21:40.686+0800 [TTLMonitor] query mydb.system.indexes query: { expireAfterSeconds: { $exists: true } } planSummary: COLLSCAN ntoreturn:0 ntoskip:0 nscanned:2 nscannedObjects:2 keyUpdates:0 numYields:0 locks(micros) r:440746 nreturned:0 reslen:20 440ms
+2014-09-16T15:26:34.697+0800 [clientcursormon] mem (MB) res:3 virt:751
+2014-09-16T15:26:34.702+0800 [clientcursormon]  mapped:640
+2014-09-16T15:26:34.702+0800 [clientcursormon]  connections:8
+2014-09-16T15:31:35.875+0800 [clientcursormon] mem (MB) res:3 virt:751
+2014-09-16T15:31:35.875+0800 [clientcursormon]  mapped:640
+2014-09-16T15:31:35.901+0800 [clientcursormon]  connections:8
+2014-09-16T15:36:37.073+0800 [clientcursormon] mem (MB) res:3 virt:751
+2014-09-16T15:36:37.073+0800 [clientcursormon]  mapped:640
+2014-09-16T15:36:37.073+0800 [clientcursormon]  connections:8
+2014-09-16T15:39:54.850+0800 [conn8] query Articles.articles query: { $query: {}, $orderby: { time: -1 } } planSummary: COLLSCAN, COLLSCAN ntoskip:0 nscanned:539 nscannedObjects:539 keyUpdates:0 numYields:25 locks(micros) r:8473815 nreturned:1 reslen:1440 5965ms
+2014-09-16T15:39:55.904+0800 [conn8] query Articles.articles query: { $query: {}, $orderby: { time: -1 } } planSummary: COLLSCAN cursorid:94558854019 ntoreturn:0 ntoskip:0 nscanned:539 nscannedObjects:539 scanAndOrder:1 keyUpdates:0 numYields:0 locks(micros) r:840848 nreturned:101 reslen:311453 840ms
+2014-09-16T15:40:07.786+0800 [conn8] query voa.listening query: { title: "Ebola Hurts Economies in West Africa" } planSummary: COLLSCAN ntoskip:0 nscanned:10 nscannedObjects:10 keyUpdates:0 numYields:0 locks(micros) r:177258 nreturned:1 reslen:3567 177ms
+2014-09-16T15:40:31.776+0800 [conn8] query voa.listening query: { title: "å¨çåä¹æè§My View on Globalization" } planSummary: COLLSCAN ntoskip:0 nscanned:3835 nscannedObjects:3835 keyUpdates:0 numYields:93 locks(micros) r:5739670 nreturned:0 reslen:20 2906ms
+2014-09-16T15:40:37.862+0800 [clientcursormon] mem (MB) res:25 virt:751
+2014-09-16T15:40:37.862+0800 [clientcursormon]  mapped:640
+2014-09-16T15:40:37.862+0800 [clientcursormon]  connections:8
+2014-09-16T15:43:24.200+0800 [conn8] query voa.listening query: { $query: {}, $orderby: { time: -1 } } planSummary: COLLSCAN, COLLSCAN ntoskip:0 nscanned:3835 nscannedObjects:3835 keyUpdates:0 numYields:0 locks(micros) r:1201255 nreturned:1 reslen:3378 1201ms
+2014-09-16T15:43:38.795+0800 [clientcursormon] mem (MB) res:28 virt:751
+2014-09-16T15:43:38.795+0800 [clientcursormon]  mapped:640
+2014-09-16T15:43:38.795+0800 [clientcursormon]  connections:8
+2014-09-16T15:48:39.843+0800 [clientcursormon] mem (MB) res:29 virt:751
+2014-09-16T15:48:39.844+0800 [clientcursormon]  mapped:640
+2014-09-16T15:48:39.844+0800 [clientcursormon]  connections:8
+2014-09-16T15:53:40.481+0800 [clientcursormon] mem (MB) res:28 virt:751
+2014-09-16T15:53:40.481+0800 [clientcursormon]  mapped:640
+2014-09-16T15:53:40.481+0800 [clientcursormon]  connections:8
+2014-09-16T15:58:41.374+0800 [clientcursormon] mem (MB) res:28 virt:751
+2014-09-16T15:58:41.374+0800 [clientcursormon]  mapped:640
+2014-09-16T15:58:41.375+0800 [clientcursormon]  connections:8
+2014-09-16T16:03:42.263+0800 [clientcursormon] mem (MB) res:28 virt:751
+2014-09-16T16:03:42.263+0800 [clientcursormon]  mapped:640
+2014-09-16T16:03:42.263+0800 [clientcursormon]  connections:8
+2014-09-16T16:08:43.112+0800 [clientcursormon] mem (MB) res:28 virt:751
+2014-09-16T16:08:43.112+0800 [clientcursormon]  mapped:640
+2014-09-16T16:08:43.112+0800 [clientcursormon]  connections:8
+2014-09-16T16:13:44.230+0800 [clientcursormon] mem (MB) res:28 virt:751
+2014-09-16T16:13:44.230+0800 [clientcursormon]  mapped:640
+2014-09-16T16:13:44.230+0800 [clientcursormon]  connections:8
+2014-09-16T16:18:44.807+0800 [clientcursormon] mem (MB) res:28 virt:751
+2014-09-16T16:18:44.807+0800 [clientcursormon]  mapped:640
+2014-09-16T16:18:44.807+0800 [clientcursormon]  connections:8
+2014-09-16T16:23:45.285+0800 [clientcursormon] mem (MB) res:28 virt:751
+2014-09-16T16:23:45.286+0800 [clientcursormon]  mapped:640
+2014-09-16T16:23:45.286+0800 [clientcursormon]  connections:8
+2014-09-16T16:28:46.337+0800 [clientcursormon] mem (MB) res:29 virt:751
+2014-09-16T16:28:46.348+0800 [clientcursormon]  mapped:640
+2014-09-16T16:28:46.348+0800 [clientcursormon]  connections:8
+2014-09-16T16:33:47.329+0800 [clientcursormon] mem (MB) res:29 virt:751
+2014-09-16T16:33:47.329+0800 [clientcursormon]  mapped:640
+2014-09-16T16:33:47.329+0800 [clientcursormon]  connections:8
+2014-09-16T16:38:48.157+0800 [clientcursormon] mem (MB) res:29 virt:751
+2014-09-16T16:38:48.157+0800 [clientcursormon]  mapped:640
+2014-09-16T16:38:48.157+0800 [clientcursormon]  connections:8
+2014-09-16T16:43:48.916+0800 [clientcursormon] mem (MB) res:29 virt:751
+2014-09-16T16:43:48.916+0800 [clientcursormon]  mapped:640
+2014-09-16T16:43:48.916+0800 [clientcursormon]  connections:8
+2014-09-16T16:48:49.828+0800 [clientcursormon] mem (MB) res:29 virt:751
+2014-09-16T16:48:49.828+0800 [clientcursormon]  mapped:640
+2014-09-16T16:48:49.828+0800 [clientcursormon]  connections:8
+2014-09-16T16:53:50.933+0800 [clientcursormon] mem (MB) res:29 virt:751
+2014-09-16T16:53:50.933+0800 [clientcursormon]  mapped:640
+2014-09-16T16:53:50.933+0800 [clientcursormon]  connections:8
+2014-09-16T16:58:51.713+0800 [clientcursormon] mem (MB) res:29 virt:751
+2014-09-16T16:58:51.713+0800 [clientcursormon]  mapped:640
+2014-09-16T16:58:51.713+0800 [clientcursormon]  connections:8
+2014-09-16T17:03:52.828+0800 [clientcursormon] mem (MB) res:29 virt:751
+2014-09-16T17:03:52.828+0800 [clientcursormon]  mapped:640
+2014-09-16T17:03:52.828+0800 [clientcursormon]  connections:8
+2014-09-16T17:08:54.065+0800 [clientcursormon] mem (MB) res:29 virt:751
+2014-09-16T17:08:54.065+0800 [clientcursormon]  mapped:640
+2014-09-16T17:08:54.065+0800 [clientcursormon]  connections:8
+2014-09-16T17:13:55.058+0800 [clientcursormon] mem (MB) res:29 virt:751
+2014-09-16T17:13:55.058+0800 [clientcursormon]  mapped:640
+2014-09-16T17:13:55.058+0800 [clientcursormon]  connections:8
+2014-09-16T17:18:56.311+0800 [clientcursormon] mem (MB) res:29 virt:751
+2014-09-16T17:18:56.311+0800 [clientcursormon]  mapped:640
+2014-09-16T17:18:56.311+0800 [clientcursormon]  connections:8
+2014-09-16T17:23:41.709+0800 [PeriodicTaskRunner] task: DBConnectionPool-cleaner took: 21ms
+2014-09-16T17:23:58.051+0800 [clientcursormon] mem (MB) res:3 virt:751
+2014-09-16T17:23:58.051+0800 [clientcursormon]  mapped:640
+2014-09-16T17:23:58.051+0800 [clientcursormon]  connections:8
+2014-09-16T17:28:59.446+0800 [clientcursormon] mem (MB) res:3 virt:751
+2014-09-16T17:28:59.446+0800 [clientcursormon]  mapped:640
+2014-09-16T17:28:59.446+0800 [clientcursormon]  connections:8
+2014-09-16T17:34:00.476+0800 [clientcursormon] mem (MB) res:3 virt:751
+2014-09-16T17:34:00.480+0800 [clientcursormon]  mapped:640
+2014-09-16T17:34:00.480+0800 [clientcursormon]  connections:8
+2014-09-16T17:38:53.306+0800 [conn8] query voa.listening query: { title: "Concept of âFree Legal Helpâ Gains Ground in US" } planSummary: COLLSCAN ntoskip:0 nscanned:3835 nscannedObjects:3835 keyUpdates:0 numYields:101 locks(micros) r:419780 nreturned:0 reslen:20 359ms
+2014-09-16T17:39:01.415+0800 [clientcursormon] mem (MB) res:22 virt:751
+2014-09-16T17:39:01.415+0800 [clientcursormon]  mapped:640
+2014-09-16T17:39:01.415+0800 [clientcursormon]  connections:8
+2014-09-16T17:44:02.484+0800 [clientcursormon] mem (MB) res:22 virt:751
+2014-09-16T17:44:02.484+0800 [clientcursormon]  mapped:640
+2014-09-16T17:44:02.484+0800 [clientcursormon]  connections:8
+2014-09-16T17:49:03.316+0800 [clientcursormon] mem (MB) res:22 virt:751
+2014-09-16T17:49:03.316+0800 [clientcursormon]  mapped:640
+2014-09-16T17:49:03.316+0800 [clientcursormon]  connections:8
+2014-09-16T17:54:04.306+0800 [clientcursormon] mem (MB) res:22 virt:751
+2014-09-16T17:54:04.306+0800 [clientcursormon]  mapped:640
+2014-09-16T17:54:04.306+0800 [clientcursormon]  connections:8
+2014-09-16T17:59:05.538+0800 [clientcursormon] mem (MB) res:22 virt:751
+2014-09-16T17:59:05.538+0800 [clientcursormon]  mapped:640
+2014-09-16T17:59:05.538+0800 [clientcursormon]  connections:8
+2014-09-16T18:04:06.330+0800 [clientcursormon] mem (MB) res:13 virt:751
+2014-09-16T18:04:06.330+0800 [clientcursormon]  mapped:640
+2014-09-16T18:04:06.330+0800 [clientcursormon]  connections:8
+2014-09-16T18:05:06.829+0800 [conn8] query Articles.articles query: { name: "全球化之我见My View on Globalization" } planSummary: COLLSCAN ntoskip:0 nscanned:33 nscannedObjects:33 keyUpdates:0 numYields:4 locks(micros) r:249698 nreturned:1 reslen:2106 201ms
+2014-09-16T18:07:04.107+0800 [conn8] query Readings.readings query: { name: "你的恢复速率是多少？What is Your Recovery Rate?" } planSummary: COLLSCAN ntoskip:0 nscanned:23 nscannedObjects:23 keyUpdates:0 numYields:0 locks(micros) r:230976 nreturned:1 reslen:4723 230ms
+2014-09-16T18:09:07.475+0800 [clientcursormon] mem (MB) res:13 virt:751
+2014-09-16T18:09:07.481+0800 [clientcursormon]  mapped:640
+2014-09-16T18:09:07.481+0800 [clientcursormon]  connections:8
+2014-09-16T18:14:08.651+0800 [clientcursormon] mem (MB) res:13 virt:751
+2014-09-16T18:14:08.651+0800 [clientcursormon]  mapped:640
+2014-09-16T18:14:08.651+0800 [clientcursormon]  connections:8
+2014-09-16T18:19:09.382+0800 [clientcursormon] mem (MB) res:3 virt:751
+2014-09-16T18:19:09.382+0800 [clientcursormon]  mapped:640
+2014-09-16T18:19:09.382+0800 [clientcursormon]  connections:8
+2014-09-16T18:19:57.013+0800 [conn8] query voa.listening query: { title: "" } planSummary: COLLSCAN ntoskip:0 nscanned:3835 nscannedObjects:3835 keyUpdates:0 numYields:79 locks(micros) r:18989343 nreturned:0 reslen:20 9833ms
+2014-09-16T18:20:09.563+0800 [clientcursormon] mem (MB) res:21 virt:751
+2014-09-16T18:20:09.563+0800 [clientcursormon]  mapped:640
+2014-09-16T18:20:09.563+0800 [clientcursormon]  connections:8
+2014-09-16T18:22:11.955+0800 [conn8] query Articles.articles query: { $query: {}, $orderby: { time: -1 } } planSummary: COLLSCAN, COLLSCAN ntoskip:0 nscanned:539 nscannedObjects:539 keyUpdates:0 numYields:0 locks(micros) r:1057635 nreturned:1 reslen:1440 1057ms
+2014-09-16T18:22:12.148+0800 [conn8] query Articles.articles query: { $query: {}, $orderby: { time: -1 } } planSummary: COLLSCAN cursorid:95986551309 ntoreturn:0 ntoskip:0 nscanned:539 nscannedObjects:539 scanAndOrder:1 keyUpdates:0 numYields:0 locks(micros) r:164022 nreturned:101 reslen:311453 164ms
+2014-09-16T18:22:28.572+0800 [conn8] query Readings.readings query: { $query: {}, $orderby: { time: -1 } } planSummary: COLLSCAN, COLLSCAN ntoskip:0 nscanned:773 nscannedObjects:773 keyUpdates:0 numYields:0 locks(micros) r:559748 nreturned:1 reslen:6234 559ms
+2014-09-16T18:22:41.635+0800 [conn8] query voa.listening query: { $query: {}, $orderby: { time: -1 } } planSummary: COLLSCAN, COLLSCAN ntoskip:0 nscanned:3835 nscannedObjects:3835 keyUpdates:0 numYields:0 locks(micros) r:4360988 nreturned:1 reslen:3378 4360ms
+2014-09-16T18:22:41.807+0800 [conn8] query voa.listening query: { $query: {}, $orderby: { time: -1 } } planSummary: COLLSCAN cursorid:193565233334 ntoreturn:0 ntoskip:0 nscanned:3835 nscannedObjects:3835 scanAndOrder:1 keyUpdates:0 numYields:0 locks(micros) r:135457 nreturned:101 reslen:352614 135ms
+2014-09-16T18:22:46.409+0800 [conn8] killcursors  keyUpdates:0 numYields:0 locks(micros) r:53726 53ms
+2014-09-16T18:22:50.332+0800 [conn8] query voa.listening query: { $query: {}, $orderby: { time: -1 } } planSummary: COLLSCAN, COLLSCAN ntoskip:0 nscanned:3835 nscannedObjects:3835 keyUpdates:0 numYields:0 locks(micros) r:158630 nreturned:1 reslen:3378 158ms
+2014-09-16T18:23:10.278+0800 [clientcursormon] mem (MB) res:33 virt:751
+2014-09-16T18:23:10.278+0800 [clientcursormon]  mapped:640
+2014-09-16T18:23:10.278+0800 [clientcursormon]  connections:8
+2014-09-16T18:28:11.462+0800 [clientcursormon] mem (MB) res:33 virt:751
+2014-09-16T18:28:11.462+0800 [clientcursormon]  mapped:640
+2014-09-16T18:28:11.462+0800 [clientcursormon]  connections:8
+2014-09-16T18:33:12.455+0800 [clientcursormon] mem (MB) res:31 virt:751
+2014-09-16T18:33:12.455+0800 [clientcursormon]  mapped:640
+2014-09-16T18:33:12.455+0800 [clientcursormon]  connections:8
+2014-09-16T18:38:13.749+0800 [clientcursormon] mem (MB) res:31 virt:751
+2014-09-16T18:38:13.749+0800 [clientcursormon]  mapped:640
+2014-09-16T18:38:13.749+0800 [clientcursormon]  connections:8
+2014-09-16T18:43:14.587+0800 [clientcursormon] mem (MB) res:31 virt:751
+2014-09-16T18:43:14.587+0800 [clientcursormon]  mapped:640
+2014-09-16T18:43:14.587+0800 [clientcursormon]  connections:8
+2014-09-16T18:48:15.942+0800 [clientcursormon] mem (MB) res:31 virt:751
+2014-09-16T18:48:15.942+0800 [clientcursormon]  mapped:640
+2014-09-16T18:48:15.942+0800 [clientcursormon]  connections:8
+2014-09-16T18:53:17.296+0800 [clientcursormon] mem (MB) res:31 virt:751
+2014-09-16T18:53:17.296+0800 [clientcursormon]  mapped:640
+2014-09-16T18:53:17.296+0800 [clientcursormon]  connections:8
+2014-09-16T18:58:18.207+0800 [clientcursormon] mem (MB) res:31 virt:751
+2014-09-16T18:58:18.207+0800 [clientcursormon]  mapped:640
+2014-09-16T18:58:18.207+0800 [clientcursormon]  connections:8
+2014-09-16T19:03:19.268+0800 [clientcursormon] mem (MB) res:31 virt:751
+2014-09-16T19:03:19.268+0800 [clientcursormon]  mapped:640
+2014-09-16T19:03:19.268+0800 [clientcursormon]  connections:8
+2014-09-16T19:08:20.499+0800 [clientcursormon] mem (MB) res:31 virt:751
+2014-09-16T19:08:20.499+0800 [clientcursormon]  mapped:640
+2014-09-16T19:08:20.499+0800 [clientcursormon]  connections:8
+2014-09-16T19:13:21.354+0800 [clientcursormon] mem (MB) res:31 virt:751
+2014-09-16T19:13:21.354+0800 [clientcursormon]  mapped:640
+2014-09-16T19:13:21.354+0800 [clientcursormon]  connections:8
+2014-09-16T19:18:22.657+0800 [clientcursormon] mem (MB) res:31 virt:751
+2014-09-16T19:18:22.657+0800 [clientcursormon]  mapped:640
+2014-09-16T19:18:22.657+0800 [clientcursormon]  connections:8
+2014-09-16T19:23:23.793+0800 [clientcursormon] mem (MB) res:31 virt:751
+2014-09-16T19:23:23.802+0800 [clientcursormon]  mapped:640
+2014-09-16T19:23:23.802+0800 [clientcursormon]  connections:8
+2014-09-16T19:28:24.538+0800 [clientcursormon] mem (MB) res:31 virt:751
+2014-09-16T19:28:24.538+0800 [clientcursormon]  mapped:640
+2014-09-16T19:28:24.538+0800 [clientcursormon]  connections:8
+2014-09-16T19:33:26.104+0800 [clientcursormon] mem (MB) res:31 virt:751
+2014-09-16T19:33:26.104+0800 [clientcursormon]  mapped:640
+2014-09-16T19:33:26.104+0800 [clientcursormon]  connections:8
+2014-09-16T19:38:27.210+0800 [clientcursormon] mem (MB) res:31 virt:751
+2014-09-16T19:38:27.210+0800 [clientcursormon]  mapped:640
+2014-09-16T19:38:27.210+0800 [clientcursormon]  connections:8
+2014-09-16T19:43:28.762+0800 [clientcursormon] mem (MB) res:31 virt:751
+2014-09-16T19:43:28.762+0800 [clientcursormon]  mapped:640
+2014-09-16T19:43:28.763+0800 [clientcursormon]  connections:8
+2014-09-16T19:48:30.247+0800 [clientcursormon] mem (MB) res:31 virt:751
+2014-09-16T19:48:30.247+0800 [clientcursormon]  mapped:640
+2014-09-16T19:48:30.247+0800 [clientcursormon]  connections:8
+2014-09-16T19:53:32.095+0800 [clientcursormon] mem (MB) res:31 virt:751
+2014-09-16T19:53:32.095+0800 [clientcursormon]  mapped:640
+2014-09-16T19:53:32.095+0800 [clientcursormon]  connections:8
+2014-09-16T19:58:33.806+0800 [clientcursormon] mem (MB) res:31 virt:751
+2014-09-16T19:58:33.806+0800 [clientcursormon]  mapped:640
+2014-09-16T19:58:33.806+0800 [clientcursormon]  connections:8
+2014-09-16T20:03:34.922+0800 [clientcursormon] mem (MB) res:31 virt:751
+2014-09-16T20:03:34.924+0800 [clientcursormon]  mapped:640
+2014-09-16T20:03:34.924+0800 [clientcursormon]  connections:8
+2014-09-16T20:08:36.134+0800 [clientcursormon] mem (MB) res:31 virt:751
+2014-09-16T20:08:36.134+0800 [clientcursormon]  mapped:640
+2014-09-16T20:08:36.134+0800 [clientcursormon]  connections:8
+2014-09-16T20:13:37.284+0800 [clientcursormon] mem (MB) res:31 virt:751
+2014-09-16T20:13:37.284+0800 [clientcursormon]  mapped:640
+2014-09-16T20:13:37.284+0800 [clientcursormon]  connections:8
+2014-09-16T20:18:38.709+0800 [clientcursormon] mem (MB) res:31 virt:751
+2014-09-16T20:18:38.709+0800 [clientcursormon]  mapped:640
+2014-09-16T20:18:38.709+0800 [clientcursormon]  connections:8
+2014-09-16T20:23:39.986+0800 [clientcursormon] mem (MB) res:31 virt:751
+2014-09-16T20:23:39.986+0800 [clientcursormon]  mapped:640
+2014-09-16T20:23:39.986+0800 [clientcursormon]  connections:8
+2014-09-16T20:25:44.328+0800 [conn8] query voa.listening query: { title: "" } planSummary: COLLSCAN ntoskip:0 nscanned:3835 nscannedObjects:3835 keyUpdates:0 numYields:0 locks(micros) r:951089 nreturned:0 reslen:20 951ms
+2014-09-16T20:28:41.175+0800 [clientcursormon] mem (MB) res:32 virt:751
+2014-09-16T20:28:41.184+0800 [clientcursormon]  mapped:640
+2014-09-16T20:28:41.184+0800 [clientcursormon]  connections:8
+2014-09-16T20:32:47.930+0800 [conn8] query Articles.articles query: { name: "" } planSummary: COLLSCAN ntoskip:0 nscanned:539 nscannedObjects:539 keyUpdates:0 numYields:0 locks(micros) r:131448 nreturned:0 reslen:20 131ms
+2014-09-16T20:33:42.568+0800 [clientcursormon] mem (MB) res:33 virt:751
+2014-09-16T20:33:42.568+0800 [clientcursormon]  mapped:640
+2014-09-16T20:33:42.568+0800 [clientcursormon]  connections:8
+2014-09-16T20:35:03.729+0800 [conn8] query voa.listening query: { title: "" } planSummary: COLLSCAN ntoskip:0 nscanned:3835 nscannedObjects:3835 keyUpdates:0 numYields:0 locks(micros) r:305721 nreturned:0 reslen:20 305ms
+2014-09-16T20:38:44.143+0800 [clientcursormon] mem (MB) res:35 virt:751
+2014-09-16T20:38:44.166+0800 [clientcursormon]  mapped:640
+2014-09-16T20:38:44.166+0800 [clientcursormon]  connections:8
+2014-09-16T20:43:46.125+0800 [clientcursormon] mem (MB) res:34 virt:751
+2014-09-16T20:43:46.125+0800 [clientcursormon]  mapped:640
+2014-09-16T20:43:46.125+0800 [clientcursormon]  connections:8
+2014-09-16T20:48:47.574+0800 [clientcursormon] mem (MB) res:34 virt:751
+2014-09-16T20:48:47.574+0800 [clientcursormon]  mapped:640
+2014-09-16T20:48:47.574+0800 [clientcursormon]  connections:8
+2014-09-16T20:53:48.969+0800 [clientcursormon] mem (MB) res:34 virt:751
+2014-09-16T20:53:48.969+0800 [clientcursormon]  mapped:640
+2014-09-16T20:53:48.969+0800 [clientcursormon]  connections:8
+2014-09-16T20:54:56.734+0800 [conn8] end connection 127.0.0.1:65300 (7 connections now open)
+2014-09-16T20:54:56.735+0800 [conn4] end connection 127.0.0.1:61976 (7 connections now open)
+2014-09-16T20:54:56.736+0800 [conn7] end connection 127.0.0.1:64404 (7 connections now open)
+2014-09-16T20:54:56.737+0800 [conn6] end connection 127.0.0.1:60939 (7 connections now open)
+2014-09-16T20:54:56.737+0800 [conn3] end connection 127.0.0.1:61973 (7 connections now open)
+2014-09-16T20:54:56.738+0800 [conn1] end connection 127.0.0.1:61971 (7 connections now open)
+2014-09-16T20:54:56.738+0800 [conn5] end connection 127.0.0.1:61979 (7 connections now open)
+2014-09-16T20:54:56.740+0800 [conn2] end connection 127.0.0.1:61972 (7 connections now open)
+2014-09-16T20:58:49.960+0800 [clientcursormon] mem (MB) res:4 virt:743
+2014-09-16T20:58:49.960+0800 [clientcursormon]  mapped:640
+2014-09-16T20:58:49.960+0800 [clientcursormon]  connections:0
+2014-09-16T21:03:51.234+0800 [clientcursormon] mem (MB) res:2 virt:743
+2014-09-16T21:03:51.234+0800 [clientcursormon]  mapped:640
+2014-09-16T21:03:51.234+0800 [clientcursormon]  connections:0
+2014-09-16T21:04:51.501+0800 [clientcursormon] mem (MB) res:3 virt:743
+2014-09-16T21:04:51.501+0800 [clientcursormon]  mapped:640
+2014-09-16T21:04:51.501+0800 [clientcursormon]  connections:0
+2014-09-16T21:09:53.052+0800 [clientcursormon] mem (MB) res:3 virt:743
+2014-09-16T21:09:53.052+0800 [clientcursormon]  mapped:640
+2014-09-16T21:09:53.052+0800 [clientcursormon]  connections:0
+2014-09-16T21:14:54.672+0800 [clientcursormon] mem (MB) res:2 virt:743
+2014-09-16T21:14:54.672+0800 [clientcursormon]  mapped:640
+2014-09-16T21:14:54.676+0800 [clientcursormon]  connections:0
+2014-09-16T21:15:55.043+0800 [clientcursormon] mem (MB) res:3 virt:743
+2014-09-16T21:15:55.043+0800 [clientcursormon]  mapped:640
+2014-09-16T21:15:55.043+0800 [clientcursormon]  connections:0
+2014-09-16T21:20:56.004+0800 [clientcursormon] mem (MB) res:3 virt:743
+2014-09-16T21:20:56.004+0800 [clientcursormon]  mapped:640
+2014-09-16T21:20:56.004+0800 [clientcursormon]  connections:0
+2014-09-16T21:25:56.748+0800 [clientcursormon] mem (MB) res:3 virt:743
+2014-09-16T21:25:56.748+0800 [clientcursormon]  mapped:640
+2014-09-16T21:25:56.748+0800 [clientcursormon]  connections:0
+2014-09-16T21:30:57.287+0800 [clientcursormon] mem (MB) res:3 virt:743
+2014-09-16T21:30:57.287+0800 [clientcursormon]  mapped:640
+2014-09-16T21:30:57.287+0800 [clientcursormon]  connections:0
+2014-09-16T21:34:42.509+0800 [initandlisten] connection accepted from 127.0.0.1:65061 #9 (1 connection now open)
+2014-09-16T21:34:57.783+0800 [clientcursormon] mem (MB) res:4 virt:745
+2014-09-16T21:34:57.783+0800 [clientcursormon]  mapped:640
+2014-09-16T21:34:57.783+0800 [clientcursormon]  connections:1
+2014-09-16T21:39:58.206+0800 [clientcursormon] mem (MB) res:4 virt:745
+2014-09-16T21:39:58.206+0800 [clientcursormon]  mapped:640
+2014-09-16T21:39:58.206+0800 [clientcursormon]  connections:1
+2014-09-16T21:44:58.687+0800 [clientcursormon] mem (MB) res:4 virt:745
+2014-09-16T21:44:58.687+0800 [clientcursormon]  mapped:640
+2014-09-16T21:44:58.687+0800 [clientcursormon]  connections:1
+2014-09-16T21:49:59.323+0800 [clientcursormon] mem (MB) res:4 virt:745
+2014-09-16T21:49:59.323+0800 [clientcursormon]  mapped:640
+2014-09-16T21:49:59.323+0800 [clientcursormon]  connections:1
+2014-09-16T21:55:00.218+0800 [clientcursormon] mem (MB) res:4 virt:745
+2014-09-16T21:55:00.222+0800 [clientcursormon]  mapped:640
+2014-09-16T21:55:00.222+0800 [clientcursormon]  connections:1
+2014-09-16T22:00:00.834+0800 [clientcursormon] mem (MB) res:4 virt:745
+2014-09-16T22:00:00.834+0800 [clientcursormon]  mapped:640
+2014-09-16T22:00:00.834+0800 [clientcursormon]  connections:1
+2014-09-16T22:05:01.452+0800 [clientcursormon] mem (MB) res:4 virt:745
+2014-09-16T22:05:01.452+0800 [clientcursormon]  mapped:640
+2014-09-16T22:05:01.452+0800 [clientcursormon]  connections:1
+2014-09-16T22:10:01.990+0800 [clientcursormon] mem (MB) res:4 virt:745
+2014-09-16T22:10:01.990+0800 [clientcursormon]  mapped:640
+2014-09-16T22:10:01.990+0800 [clientcursormon]  connections:1
+2014-09-16T22:15:02.492+0800 [clientcursormon] mem (MB) res:4 virt:745
+2014-09-16T22:15:02.492+0800 [clientcursormon]  mapped:640
+2014-09-16T22:15:02.492+0800 [clientcursormon]  connections:1
+2014-09-16T22:20:02.640+0800 [clientcursormon] mem (MB) res:4 virt:745
+2014-09-16T22:20:02.640+0800 [clientcursormon]  mapped:640
+2014-09-16T22:20:02.640+0800 [clientcursormon]  connections:1
+2014-09-16T22:25:02.760+0800 [clientcursormon] mem (MB) res:4 virt:745
+2014-09-16T22:25:02.760+0800 [clientcursormon]  mapped:640
+2014-09-16T22:25:02.760+0800 [clientcursormon]  connections:1
+2014-09-16T22:30:02.861+0800 [clientcursormon] mem (MB) res:4 virt:745
+2014-09-16T22:30:02.861+0800 [clientcursormon]  mapped:640
+2014-09-16T22:30:02.861+0800 [clientcursormon]  connections:1
+2014-09-16T22:35:03.129+0800 [clientcursormon] mem (MB) res:4 virt:745
+2014-09-16T22:35:03.129+0800 [clientcursormon]  mapped:640
+2014-09-16T22:35:03.129+0800 [clientcursormon]  connections:1
+2014-09-16T22:38:15.102+0800 [initandlisten] connection accepted from 127.0.0.1:50609 #10 (2 connections now open)
+2014-09-16T22:38:15.191+0800 [initandlisten] connection accepted from 127.0.0.1:50610 #11 (3 connections now open)
+2014-09-16T22:38:15.394+0800 [FileAllocator] allocating new datafile G:\eclipseVOA\VOAMongo\data\MP3.ns, filling with zeroes...
+2014-09-16T22:38:15.394+0800 [FileAllocator] creating directory G:\eclipseVOA\VOAMongo\data\_tmp
+2014-09-16T22:38:15.668+0800 [FileAllocator] done allocating datafile G:\eclipseVOA\VOAMongo\data\MP3.ns, size: 16MB,  took 0.108 secs
+2014-09-16T22:38:15.923+0800 [FileAllocator] allocating new datafile G:\eclipseVOA\VOAMongo\data\MP3.0, filling with zeroes...
+2014-09-16T22:38:16.263+0800 [FileAllocator] done allocating datafile G:\eclipseVOA\VOAMongo\data\MP3.0, size: 64MB,  took 0.337 secs
+2014-09-16T22:38:16.335+0800 [conn11] build index on: MP3.pages properties: { v: 1, key: { _id: 1 }, name: "_id_", ns: "MP3.pages" }
+2014-09-16T22:38:16.343+0800 [conn11] 	 added index to empty collection
+2014-09-16T22:38:16.529+0800 [conn11] insert MP3.pages query: { _id: ObjectId('54184b576aa61a18f9a5d752'), title: "HRW: Ebola Outbreak Tests Human Rights", mp3: " G://eclipseVOA//MP3s//ebola-rights-15sept.mp3", content: "<div id="content"><SPAN class=byline>Joe DeCapua</SPAN><BR><SPAN class=datetime>September 15,2014</SPAN><BR><BR>
+<P>West African governments are bein..." } ninserted:1 keyUpdates:0 numYields:0 locks(micros) w:1182444 1182ms
+2014-09-16T22:38:16.530+0800 [conn11] command MP3.$cmd command: insert { $msg: "query not recording (too large)" } keyUpdates:0 numYields:0 locks(micros) w:173 reslen:40 1283ms
+2014-09-16T22:39:03.170+0800 [clientcursormon] mem (MB) res:11 virt:827
+2014-09-16T22:39:03.170+0800 [clientcursormon]  mapped:720
+2014-09-16T22:39:03.170+0800 [clientcursormon]  connections:3
+2014-09-16T22:40:03.174+0800 [clientcursormon] mem (MB) res:14 virt:827
+2014-09-16T22:40:03.174+0800 [clientcursormon]  mapped:720
+2014-09-16T22:40:03.174+0800 [clientcursormon]  connections:3
+2014-09-16T22:41:03.180+0800 [clientcursormon] mem (MB) res:17 virt:827
+2014-09-16T22:41:03.180+0800 [clientcursormon]  mapped:720
+2014-09-16T22:41:03.180+0800 [clientcursormon]  connections:3
+2014-09-16T22:42:03.223+0800 [clientcursormon] mem (MB) res:19 virt:827
+2014-09-16T22:42:03.223+0800 [clientcursormon]  mapped:720
+2014-09-16T22:42:03.223+0800 [clientcursormon]  connections:3
+2014-09-16T22:43:03.227+0800 [clientcursormon] mem (MB) res:22 virt:827
+2014-09-16T22:43:03.227+0800 [clientcursormon]  mapped:720
+2014-09-16T22:43:03.227+0800 [clientcursormon]  connections:3
+2014-09-16T22:45:03.239+0800 [clientcursormon] mem (MB) res:27 virt:827
+2014-09-16T22:45:03.239+0800 [clientcursormon]  mapped:720
+2014-09-16T22:45:03.239+0800 [clientcursormon]  connections:3
+2014-09-16T22:45:39.326+0800 [conn10] end connection 127.0.0.1:50609 (2 connections now open)
+2014-09-16T22:45:39.327+0800 [conn11] end connection 127.0.0.1:50610 (1 connection now open)
+2014-09-16T22:50:03.676+0800 [clientcursormon] mem (MB) res:29 virt:825
+2014-09-16T22:50:03.676+0800 [clientcursormon]  mapped:720
+2014-09-16T22:50:03.676+0800 [clientcursormon]  connections:1
+2014-09-16T22:54:52.340+0800 [initandlisten] connection accepted from 127.0.0.1:51067 #12 (2 connections now open)
+2014-09-16T22:54:52.358+0800 [initandlisten] connection accepted from 127.0.0.1:51069 #13 (3 connections now open)
+2014-09-16T22:54:53.444+0800 [conn13] end connection 127.0.0.1:51069 (2 connections now open)
+2014-09-16T22:54:53.444+0800 [conn12] end connection 127.0.0.1:51067 (2 connections now open)
+2014-09-16T22:55:04.404+0800 [clientcursormon] mem (MB) res:29 virt:825
+2014-09-16T22:55:04.404+0800 [clientcursormon]  mapped:720
+2014-09-16T22:55:04.404+0800 [clientcursormon]  connections:1
+2014-09-16T22:55:12.420+0800 [initandlisten] connection accepted from 127.0.0.1:51078 #14 (2 connections now open)
+2014-09-16T22:55:12.459+0800 [initandlisten] connection accepted from 127.0.0.1:51079 #15 (3 connections now open)
+2014-09-16T22:56:04.499+0800 [clientcursormon] mem (MB) res:32 virt:827
+2014-09-16T22:56:04.499+0800 [clientcursormon]  mapped:720
+2014-09-16T22:56:04.499+0800 [clientcursormon]  connections:3
+2014-09-16T22:56:17.408+0800 [conn14] end connection 127.0.0.1:51078 (2 connections now open)
+2014-09-16T22:56:17.408+0800 [conn15] end connection 127.0.0.1:51079 (1 connection now open)
+2014-09-16T23:01:05.092+0800 [clientcursormon] mem (MB) res:32 virt:825
+2014-09-16T23:01:05.092+0800 [clientcursormon]  mapped:720
+2014-09-16T23:01:05.101+0800 [clientcursormon]  connections:1
+2014-09-16T23:01:45.913+0800 [conn9] end connection 127.0.0.1:65061 (0 connections now open)
+2014-09-16T23:01:51.164+0800 CTRL_CLOSE_EVENT signal
+2014-09-16T23:01:51.164+0800 [consoleTerminate] got CTRL_CLOSE_EVENT, will terminate after current cmd ends
+2014-09-16T23:01:51.191+0800 [consoleTerminate] now exiting
+2014-09-16T23:01:51.191+0800 [consoleTerminate] dbexit: 
+2014-09-16T23:01:51.191+0800 [consoleTerminate] shutdown: going to close listening sockets...
+2014-09-16T23:01:51.191+0800 [consoleTerminate] closing listening socket: 656
+2014-09-16T23:01:51.191+0800 [consoleTerminate] shutdown: going to flush diaglog...
+2014-09-16T23:01:51.191+0800 [consoleTerminate] shutdown: going to close sockets...
+2014-09-16T23:01:51.191+0800 [consoleTerminate] shutdown: waiting for fs preallocator...
+2014-09-16T23:01:51.191+0800 [consoleTerminate] shutdown: closing all files...
+2014-09-16T23:01:51.224+0800 [consoleTerminate] closeAllFiles() finished
+2014-09-16T23:01:51.224+0800 [consoleTerminate] shutdown: removing fs lock...
+2014-09-16T23:01:51.246+0800 [consoleTerminate] dbexit: really exiting now

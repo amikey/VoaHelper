@@ -1,0 +1,22 @@
+2014-09-06T16:48:32.416+0800 [initandlisten] MongoDB starting : pid=5736 port=27017 dbpath=G:\eclipseVOA\VOAMongo\data 32-bit host=90XXI1OB0VROXRP
+2014-09-06T16:48:32.416+0800 [initandlisten] 
+2014-09-06T16:48:32.416+0800 [initandlisten] ** NOTE: This is a 32 bit MongoDB binary.
+2014-09-06T16:48:32.417+0800 [initandlisten] **       32 bit builds are limited to less than 2GB of data (or less with --journal).
+2014-09-06T16:48:32.417+0800 [initandlisten] **       Note that journaling defaults to off for 32 bit and is currently off.
+2014-09-06T16:48:32.417+0800 [initandlisten] **       See http://dochub.mongodb.org/core/32bit
+2014-09-06T16:48:32.417+0800 [initandlisten] 
+2014-09-06T16:48:32.417+0800 [initandlisten] targetMinOS: Windows XP SP3
+2014-09-06T16:48:32.417+0800 [initandlisten] db version v2.6.3
+2014-09-06T16:48:32.417+0800 [initandlisten] git version: 255f67a66f9603c59380b2a389e386910bbb52cb
+2014-09-06T16:48:32.417+0800 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+2014-09-06T16:48:32.417+0800 [initandlisten] allocator: system
+2014-09-06T16:48:32.417+0800 [initandlisten] options: { storage: { dbPath: "G:\eclipseVOA\VOAMongo\data" }, systemLog: { destination: "file", path: "G:\eclipseVOA\VOAMongo\log\log.txt" } }
+2014-09-06T16:48:32.469+0800 [initandlisten] exception in initAndListen: 13627 Unable to create/open lock file: G:\eclipseVOA\VOAMongo\data\mongod.lock 另一个程序正在使用此文件，进程无法访问。. Is a mongod instance already running?, terminating
+2014-09-06T16:48:32.469+0800 [initandlisten] dbexit: 
+2014-09-06T16:48:32.469+0800 [initandlisten] shutdown: going to close listening sockets...
+2014-09-06T16:48:32.469+0800 [initandlisten] shutdown: going to flush diaglog...
+2014-09-06T16:48:32.469+0800 [initandlisten] shutdown: going to close sockets...
+2014-09-06T16:48:32.470+0800 [initandlisten] shutdown: waiting for fs preallocator...
+2014-09-06T16:48:32.470+0800 [initandlisten] shutdown: closing all files...
+2014-09-06T16:48:32.470+0800 [initandlisten] closeAllFiles() finished
+2014-09-06T16:48:32.471+0800 [initandlisten] dbexit: really exiting now

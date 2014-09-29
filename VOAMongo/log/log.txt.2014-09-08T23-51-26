@@ -1,0 +1,330 @@
+2014-09-08T19:54:32.185+0800 [initandlisten] MongoDB starting : pid=39968 port=27017 dbpath=G:\eclipseVOA\VOAMongo\data 32-bit host=90XXI1OB0VROXRP
+2014-09-08T19:54:32.186+0800 [initandlisten] 
+2014-09-08T19:54:32.186+0800 [initandlisten] ** NOTE: This is a 32 bit MongoDB binary.
+2014-09-08T19:54:32.186+0800 [initandlisten] **       32 bit builds are limited to less than 2GB of data (or less with --journal).
+2014-09-08T19:54:32.186+0800 [initandlisten] **       Note that journaling defaults to off for 32 bit and is currently off.
+2014-09-08T19:54:32.186+0800 [initandlisten] **       See http://dochub.mongodb.org/core/32bit
+2014-09-08T19:54:32.186+0800 [initandlisten] 
+2014-09-08T19:54:32.186+0800 [initandlisten] targetMinOS: Windows XP SP3
+2014-09-08T19:54:32.186+0800 [initandlisten] db version v2.6.3
+2014-09-08T19:54:32.186+0800 [initandlisten] git version: 255f67a66f9603c59380b2a389e386910bbb52cb
+2014-09-08T19:54:32.186+0800 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+2014-09-08T19:54:32.187+0800 [initandlisten] allocator: system
+2014-09-08T19:54:32.187+0800 [initandlisten] options: { storage: { dbPath: "G:\eclipseVOA\VOAMongo\data" }, systemLog: { destination: "file", path: "G:\eclipseVOA\VOAMongo\log\log.txt" } }
+2014-09-08T19:54:32.859+0800 [initandlisten] waiting for connections on port 27017
+2014-09-08T19:54:32.860+0800 [initandlisten] connection accepted from 127.0.0.1:49464 #1 (1 connection now open)
+2014-09-08T19:54:33.633+0800 [initandlisten] connection accepted from 127.0.0.1:49471 #2 (2 connections now open)
+2014-09-08T19:54:40.024+0800 [initandlisten] connection accepted from 127.0.0.1:49477 #3 (3 connections now open)
+2014-09-08T19:54:50.179+0800 [conn3] warning database G:\eclipseVOA\VOAMongo\data Admin could not be opened
+2014-09-08T19:54:50.179+0800 [conn3] DBException 13297: db already exists with different case already have: [admin] trying to create [Admin]
+2014-09-08T19:54:50.208+0800 [conn3] assertion 13297 db already exists with different case already have: [admin] trying to create [Admin] ns:Admin.admin query:{}
+2014-09-08T19:54:50.208+0800 [conn3]  ntoskip:0 ntoreturn:-1
+2014-09-08T19:55:25.129+0800 [initandlisten] connection accepted from 127.0.0.1:49531 #4 (4 connections now open)
+2014-09-08T19:55:25.165+0800 [initandlisten] connection accepted from 127.0.0.1:49532 #5 (5 connections now open)
+2014-09-08T19:55:25.230+0800 [FileAllocator] allocating new datafile G:\eclipseVOA\VOAMongo\data\Articles.ns, filling with zeroes...
+2014-09-08T19:55:25.230+0800 [FileAllocator] creating directory G:\eclipseVOA\VOAMongo\data\_tmp
+2014-09-08T19:55:25.345+0800 [FileAllocator] done allocating datafile G:\eclipseVOA\VOAMongo\data\Articles.ns, size: 16MB,  took 0.113 secs
+2014-09-08T19:55:25.346+0800 [FileAllocator] allocating new datafile G:\eclipseVOA\VOAMongo\data\Articles.0, filling with zeroes...
+2014-09-08T19:55:25.795+0800 [FileAllocator] done allocating datafile G:\eclipseVOA\VOAMongo\data\Articles.0, size: 64MB,  took 0.448 secs
+2014-09-08T19:55:25.797+0800 [conn5] build index on: Articles.articles properties: { v: 1, key: { _id: 1 }, name: "_id_", ns: "Articles.articles" }
+2014-09-08T19:55:25.797+0800 [conn5] 	 added index to empty collection
+2014-09-08T19:55:25.797+0800 [conn5] insert Articles.articles query: { _id: ObjectId('540d992d6a0d0041bf79e0bc'), name: null, time: "2014-7-7", content: " ", intro: "intro aaaa" } ninserted:1 keyUpdates:0 numYields:0 locks(micros) w:567253 567ms
+2014-09-08T19:55:25.797+0800 [conn5] command Articles.$cmd command: insert { insert: "articles", ordered: true, documents: [ { _id: ObjectId('540d992d6a0d0041bf79e0bc'), name: null, time: "2014-7-7", content: " ", intro: "intro aaaa" } ] } keyUpdates:0 numYields:0 locks(micros) w:61 reslen:40 609ms
+2014-09-08T19:55:26.033+0800 [conn4] end connection 127.0.0.1:49531 (4 connections now open)
+2014-09-08T19:55:26.033+0800 [conn5] end connection 127.0.0.1:49532 (4 connections now open)
+2014-09-08T19:55:32.499+0800 [clientcursormon] mem (MB) res:133 virt:661
+2014-09-08T19:55:32.499+0800 [clientcursormon]  mapped:560
+2014-09-08T19:55:32.499+0800 [clientcursormon]  connections:3
+2014-09-08T20:00:32.518+0800 [clientcursormon] mem (MB) res:133 virt:658
+2014-09-08T20:00:32.518+0800 [clientcursormon]  mapped:560
+2014-09-08T20:00:32.518+0800 [clientcursormon]  connections:3
+2014-09-08T20:05:32.540+0800 [clientcursormon] mem (MB) res:133 virt:658
+2014-09-08T20:05:32.540+0800 [clientcursormon]  mapped:560
+2014-09-08T20:05:32.540+0800 [clientcursormon]  connections:3
+2014-09-08T20:10:32.563+0800 [clientcursormon] mem (MB) res:133 virt:658
+2014-09-08T20:10:32.563+0800 [clientcursormon]  mapped:560
+2014-09-08T20:10:32.563+0800 [clientcursormon]  connections:3
+2014-09-08T20:15:32.587+0800 [clientcursormon] mem (MB) res:133 virt:658
+2014-09-08T20:15:32.587+0800 [clientcursormon]  mapped:560
+2014-09-08T20:15:32.587+0800 [clientcursormon]  connections:3
+2014-09-08T20:20:32.641+0800 [clientcursormon] mem (MB) res:133 virt:658
+2014-09-08T20:20:32.657+0800 [clientcursormon]  mapped:560
+2014-09-08T20:20:32.657+0800 [clientcursormon]  connections:3
+2014-09-08T20:24:33.784+0800 [initandlisten] connection accepted from 127.0.0.1:51278 #6 (4 connections now open)
+2014-09-08T20:24:51.678+0800 [initandlisten] connection accepted from 127.0.0.1:51294 #7 (5 connections now open)
+2014-09-08T20:24:51.721+0800 [initandlisten] connection accepted from 127.0.0.1:51295 #8 (6 connections now open)
+2014-09-08T20:24:51.997+0800 [conn7] end connection 127.0.0.1:51294 (5 connections now open)
+2014-09-08T20:24:51.997+0800 [conn8] end connection 127.0.0.1:51295 (5 connections now open)
+2014-09-08T20:25:32.767+0800 [clientcursormon] mem (MB) res:134 virt:659
+2014-09-08T20:25:32.767+0800 [clientcursormon]  mapped:560
+2014-09-08T20:25:32.767+0800 [clientcursormon]  connections:4
+2014-09-08T20:27:56.330+0800 [initandlisten] connection accepted from 127.0.0.1:51471 #9 (5 connections now open)
+2014-09-08T20:28:08.002+0800 [conn3] CMD: drop Articles.articles
+2014-09-08T20:28:32.599+0800 [conn9] end connection 127.0.0.1:51471 (4 connections now open)
+2014-09-08T20:28:34.453+0800 [conn6] end connection 127.0.0.1:51278 (3 connections now open)
+2014-09-08T20:28:35.997+0800 [conn2] end connection 127.0.0.1:49471 (2 connections now open)
+2014-09-08T20:28:37.029+0800 [conn1] end connection 127.0.0.1:49464 (1 connection now open)
+2014-09-08T20:28:43.712+0800 [initandlisten] connection accepted from 127.0.0.1:51511 #10 (2 connections now open)
+2014-09-08T20:28:43.745+0800 [initandlisten] connection accepted from 127.0.0.1:51512 #11 (3 connections now open)
+2014-09-08T20:28:43.790+0800 [conn11] build index on: Articles.articles properties: { v: 1, key: { _id: 1 }, name: "_id_", ns: "Articles.articles" }
+2014-09-08T20:28:43.790+0800 [conn11] 	 added index to empty collection
+2014-09-08T20:28:44.045+0800 [conn10] end connection 127.0.0.1:51511 (2 connections now open)
+2014-09-08T20:28:44.045+0800 [conn11] end connection 127.0.0.1:51512 (2 connections now open)
+2014-09-08T20:29:45.206+0800 [conn3] CMD: drop Articles.articles
+2014-09-08T20:30:07.939+0800 [initandlisten] connection accepted from 127.0.0.1:51606 #12 (2 connections now open)
+2014-09-08T20:30:07.972+0800 [initandlisten] connection accepted from 127.0.0.1:51607 #13 (3 connections now open)
+2014-09-08T20:30:07.996+0800 [conn13] build index on: Articles.articles properties: { v: 1, key: { _id: 1 }, name: "_id_", ns: "Articles.articles" }
+2014-09-08T20:30:07.996+0800 [conn13] 	 added index to empty collection
+2014-09-08T20:30:08.239+0800 [conn12] end connection 127.0.0.1:51606 (2 connections now open)
+2014-09-08T20:30:08.239+0800 [conn13] end connection 127.0.0.1:51607 (1 connection now open)
+2014-09-08T20:30:32.797+0800 [clientcursormon] mem (MB) res:135 virt:656
+2014-09-08T20:30:32.797+0800 [clientcursormon]  mapped:560
+2014-09-08T20:30:32.797+0800 [clientcursormon]  connections:1
+2014-09-08T20:31:07.305+0800 [initandlisten] connection accepted from 127.0.0.1:51662 #14 (2 connections now open)
+2014-09-08T20:31:07.342+0800 [initandlisten] connection accepted from 127.0.0.1:51663 #15 (3 connections now open)
+2014-09-08T20:31:07.630+0800 [conn14] end connection 127.0.0.1:51662 (2 connections now open)
+2014-09-08T20:31:07.630+0800 [conn15] end connection 127.0.0.1:51663 (1 connection now open)
+2014-09-08T20:35:32.817+0800 [clientcursormon] mem (MB) res:135 virt:656
+2014-09-08T20:35:32.817+0800 [clientcursormon]  mapped:560
+2014-09-08T20:35:32.817+0800 [clientcursormon]  connections:1
+2014-09-08T20:40:32.836+0800 [clientcursormon] mem (MB) res:135 virt:656
+2014-09-08T20:40:32.836+0800 [clientcursormon]  mapped:560
+2014-09-08T20:40:32.836+0800 [clientcursormon]  connections:1
+2014-09-08T20:43:54.856+0800 [conn3] CMD: drop Articles.articles
+2014-09-08T20:45:32.855+0800 [clientcursormon] mem (MB) res:135 virt:656
+2014-09-08T20:45:32.855+0800 [clientcursormon]  mapped:560
+2014-09-08T20:45:32.855+0800 [clientcursormon]  connections:1
+2014-09-08T20:50:32.876+0800 [clientcursormon] mem (MB) res:135 virt:656
+2014-09-08T20:50:32.876+0800 [clientcursormon]  mapped:560
+2014-09-08T20:50:32.876+0800 [clientcursormon]  connections:1
+2014-09-08T20:54:36.984+0800 [conn3] CMD: drop Articles.articles
+2014-09-08T20:55:32.896+0800 [clientcursormon] mem (MB) res:135 virt:656
+2014-09-08T20:55:32.896+0800 [clientcursormon]  mapped:560
+2014-09-08T20:55:32.896+0800 [clientcursormon]  connections:1
+2014-09-08T20:55:44.196+0800 [initandlisten] connection accepted from 127.0.0.1:53083 #16 (2 connections now open)
+2014-09-08T20:55:44.350+0800 [initandlisten] connection accepted from 127.0.0.1:53084 #17 (3 connections now open)
+2014-09-08T20:55:44.382+0800 [conn17] build index on: Articles.articles properties: { v: 1, key: { _id: 1 }, name: "_id_", ns: "Articles.articles" }
+2014-09-08T20:55:44.382+0800 [conn17] 	 added index to empty collection
+2014-09-08T20:55:44.647+0800 [conn17] end connection 127.0.0.1:53084 (2 connections now open)
+2014-09-08T20:55:44.648+0800 [conn16] end connection 127.0.0.1:53083 (1 connection now open)
+2014-09-08T20:58:18.531+0800 [initandlisten] connection accepted from 127.0.0.1:53240 #18 (2 connections now open)
+2014-09-08T20:58:18.572+0800 [initandlisten] connection accepted from 127.0.0.1:53241 #19 (3 connections now open)
+2014-09-08T20:58:18.810+0800 [conn18] end connection 127.0.0.1:53240 (2 connections now open)
+2014-09-08T20:58:18.810+0800 [conn19] end connection 127.0.0.1:53241 (1 connection now open)
+2014-09-08T21:00:32.916+0800 [clientcursormon] mem (MB) res:135 virt:656
+2014-09-08T21:00:32.916+0800 [clientcursormon]  mapped:560
+2014-09-08T21:00:32.916+0800 [clientcursormon]  connections:1
+2014-09-08T21:00:42.851+0800 [conn3] CMD: drop Articles.articles
+2014-09-08T21:00:55.116+0800 [initandlisten] connection accepted from 127.0.0.1:53392 #20 (2 connections now open)
+2014-09-08T21:00:55.152+0800 [initandlisten] connection accepted from 127.0.0.1:53393 #21 (3 connections now open)
+2014-09-08T21:00:55.177+0800 [conn21] build index on: Articles.articles properties: { v: 1, key: { _id: 1 }, name: "_id_", ns: "Articles.articles" }
+2014-09-08T21:00:55.177+0800 [conn21] 	 added index to empty collection
+2014-09-08T21:00:55.447+0800 [conn20] end connection 127.0.0.1:53392 (2 connections now open)
+2014-09-08T21:00:55.447+0800 [conn21] end connection 127.0.0.1:53393 (1 connection now open)
+2014-09-08T21:05:32.938+0800 [clientcursormon] mem (MB) res:135 virt:656
+2014-09-08T21:05:32.938+0800 [clientcursormon]  mapped:560
+2014-09-08T21:05:32.938+0800 [clientcursormon]  connections:1
+2014-09-08T21:10:32.960+0800 [clientcursormon] mem (MB) res:135 virt:656
+2014-09-08T21:10:32.960+0800 [clientcursormon]  mapped:560
+2014-09-08T21:10:32.960+0800 [clientcursormon]  connections:1
+2014-09-08T21:12:31.478+0800 [initandlisten] connection accepted from 127.0.0.1:54119 #22 (2 connections now open)
+2014-09-08T21:12:31.518+0800 [initandlisten] connection accepted from 127.0.0.1:54120 #23 (3 connections now open)
+2014-09-08T21:12:43.795+0800 [conn22] end connection 127.0.0.1:54119 (2 connections now open)
+2014-09-08T21:12:43.796+0800 [conn23] end connection 127.0.0.1:54120 (1 connection now open)
+2014-09-08T21:12:54.439+0800 [conn3] CMD: drop Articles.articles
+2014-09-08T21:13:02.448+0800 [initandlisten] connection accepted from 127.0.0.1:54192 #24 (2 connections now open)
+2014-09-08T21:13:02.484+0800 [initandlisten] connection accepted from 127.0.0.1:54193 #25 (3 connections now open)
+2014-09-08T21:13:02.506+0800 [conn25] build index on: Articles.articles properties: { v: 1, key: { _id: 1 }, name: "_id_", ns: "Articles.articles" }
+2014-09-08T21:13:02.506+0800 [conn25] 	 added index to empty collection
+2014-09-08T21:13:15.835+0800 [conn24] end connection 127.0.0.1:54192 (2 connections now open)
+2014-09-08T21:13:15.835+0800 [conn25] end connection 127.0.0.1:54193 (2 connections now open)
+2014-09-08T21:15:32.979+0800 [clientcursormon] mem (MB) res:136 virt:656
+2014-09-08T21:15:32.979+0800 [clientcursormon]  mapped:560
+2014-09-08T21:15:32.979+0800 [clientcursormon]  connections:1
+2014-09-08T21:20:32.998+0800 [clientcursormon] mem (MB) res:136 virt:656
+2014-09-08T21:20:32.998+0800 [clientcursormon]  mapped:560
+2014-09-08T21:20:32.998+0800 [clientcursormon]  connections:1
+2014-09-08T21:20:57.511+0800 [conn3] CMD: drop Articles.articles
+2014-09-08T21:21:08.183+0800 [initandlisten] connection accepted from 127.0.0.1:54710 #26 (2 connections now open)
+2014-09-08T21:21:08.219+0800 [initandlisten] connection accepted from 127.0.0.1:54711 #27 (3 connections now open)
+2014-09-08T21:21:08.241+0800 [conn27] build index on: Articles.articles properties: { v: 1, key: { _id: 1 }, name: "_id_", ns: "Articles.articles" }
+2014-09-08T21:21:08.241+0800 [conn27] 	 added index to empty collection
+2014-09-08T21:21:09.579+0800 [conn26] end connection 127.0.0.1:54710 (2 connections now open)
+2014-09-08T21:21:09.579+0800 [conn27] end connection 127.0.0.1:54711 (2 connections now open)
+2014-09-08T21:25:33.023+0800 [clientcursormon] mem (MB) res:136 virt:656
+2014-09-08T21:25:33.023+0800 [clientcursormon]  mapped:560
+2014-09-08T21:25:33.023+0800 [clientcursormon]  connections:1
+2014-09-08T21:26:12.028+0800 [conn3] CMD: drop Articles.articles
+2014-09-08T21:26:22.112+0800 [initandlisten] connection accepted from 127.0.0.1:55176 #28 (2 connections now open)
+2014-09-08T21:26:22.144+0800 [initandlisten] connection accepted from 127.0.0.1:55177 #29 (3 connections now open)
+2014-09-08T21:26:22.167+0800 [conn29] build index on: Articles.articles properties: { v: 1, key: { _id: 1 }, name: "_id_", ns: "Articles.articles" }
+2014-09-08T21:26:22.167+0800 [conn29] 	 added index to empty collection
+2014-09-08T21:26:34.121+0800 [conn28] end connection 127.0.0.1:55176 (2 connections now open)
+2014-09-08T21:26:34.121+0800 [conn29] end connection 127.0.0.1:55177 (2 connections now open)
+2014-09-08T21:30:33.042+0800 [clientcursormon] mem (MB) res:136 virt:656
+2014-09-08T21:30:33.042+0800 [clientcursormon]  mapped:560
+2014-09-08T21:30:33.042+0800 [clientcursormon]  connections:1
+2014-09-08T21:35:33.061+0800 [clientcursormon] mem (MB) res:136 virt:656
+2014-09-08T21:35:33.061+0800 [clientcursormon]  mapped:560
+2014-09-08T21:35:33.061+0800 [clientcursormon]  connections:1
+2014-09-08T21:40:33.090+0800 [clientcursormon] mem (MB) res:136 virt:656
+2014-09-08T21:40:33.090+0800 [clientcursormon]  mapped:560
+2014-09-08T21:40:33.090+0800 [clientcursormon]  connections:1
+2014-09-08T21:45:33.113+0800 [clientcursormon] mem (MB) res:136 virt:656
+2014-09-08T21:45:33.113+0800 [clientcursormon]  mapped:560
+2014-09-08T21:45:33.113+0800 [clientcursormon]  connections:1
+2014-09-08T21:50:33.131+0800 [clientcursormon] mem (MB) res:136 virt:656
+2014-09-08T21:50:33.131+0800 [clientcursormon]  mapped:560
+2014-09-08T21:50:33.131+0800 [clientcursormon]  connections:1
+2014-09-08T21:55:33.150+0800 [clientcursormon] mem (MB) res:136 virt:656
+2014-09-08T21:55:33.150+0800 [clientcursormon]  mapped:560
+2014-09-08T21:55:33.150+0800 [clientcursormon]  connections:1
+2014-09-08T22:00:33.174+0800 [clientcursormon] mem (MB) res:136 virt:656
+2014-09-08T22:00:33.174+0800 [clientcursormon]  mapped:560
+2014-09-08T22:00:33.174+0800 [clientcursormon]  connections:1
+2014-09-08T22:05:33.195+0800 [clientcursormon] mem (MB) res:136 virt:656
+2014-09-08T22:05:33.195+0800 [clientcursormon]  mapped:560
+2014-09-08T22:05:33.195+0800 [clientcursormon]  connections:1
+2014-09-08T22:10:33.219+0800 [clientcursormon] mem (MB) res:136 virt:656
+2014-09-08T22:10:33.219+0800 [clientcursormon]  mapped:560
+2014-09-08T22:10:33.219+0800 [clientcursormon]  connections:1
+2014-09-08T22:15:33.241+0800 [clientcursormon] mem (MB) res:136 virt:656
+2014-09-08T22:15:33.241+0800 [clientcursormon]  mapped:560
+2014-09-08T22:15:33.241+0800 [clientcursormon]  connections:1
+2014-09-08T22:20:33.265+0800 [clientcursormon] mem (MB) res:136 virt:656
+2014-09-08T22:20:33.265+0800 [clientcursormon]  mapped:560
+2014-09-08T22:20:33.265+0800 [clientcursormon]  connections:1
+2014-09-08T22:25:33.294+0800 [clientcursormon] mem (MB) res:136 virt:656
+2014-09-08T22:25:33.294+0800 [clientcursormon]  mapped:560
+2014-09-08T22:25:33.294+0800 [clientcursormon]  connections:1
+2014-09-08T22:30:33.347+0800 [clientcursormon] mem (MB) res:136 virt:656
+2014-09-08T22:30:33.347+0800 [clientcursormon]  mapped:560
+2014-09-08T22:30:33.347+0800 [clientcursormon]  connections:1
+2014-09-08T22:33:55.083+0800 [conn3] CMD: drop Articles.articles
+2014-09-08T22:34:20.481+0800 [initandlisten] connection accepted from 127.0.0.1:59420 #30 (2 connections now open)
+2014-09-08T22:34:20.514+0800 [initandlisten] connection accepted from 127.0.0.1:59421 #31 (3 connections now open)
+2014-09-08T22:34:20.537+0800 [conn31] build index on: Articles.articles properties: { v: 1, key: { _id: 1 }, name: "_id_", ns: "Articles.articles" }
+2014-09-08T22:34:20.537+0800 [conn31] 	 added index to empty collection
+2014-09-08T22:34:33.467+0800 [conn31] end connection 127.0.0.1:59421 (2 connections now open)
+2014-09-08T22:34:33.468+0800 [conn30] end connection 127.0.0.1:59420 (2 connections now open)
+2014-09-08T22:35:24.286+0800 [conn3] CMD: drop Articles.articles
+2014-09-08T22:35:33.367+0800 [clientcursormon] mem (MB) res:136 virt:656
+2014-09-08T22:35:33.367+0800 [clientcursormon]  mapped:560
+2014-09-08T22:35:33.367+0800 [clientcursormon]  connections:1
+2014-09-08T22:35:46.563+0800 [initandlisten] connection accepted from 127.0.0.1:59543 #32 (2 connections now open)
+2014-09-08T22:35:46.593+0800 [initandlisten] connection accepted from 127.0.0.1:59544 #33 (3 connections now open)
+2014-09-08T22:35:46.616+0800 [conn33] build index on: Articles.articles properties: { v: 1, key: { _id: 1 }, name: "_id_", ns: "Articles.articles" }
+2014-09-08T22:35:46.616+0800 [conn33] 	 added index to empty collection
+2014-09-08T22:36:00.857+0800 [conn32] end connection 127.0.0.1:59543 (2 connections now open)
+2014-09-08T22:36:00.857+0800 [conn33] end connection 127.0.0.1:59544 (1 connection now open)
+2014-09-08T22:40:33.397+0800 [clientcursormon] mem (MB) res:0 virt:656
+2014-09-08T22:40:33.397+0800 [clientcursormon]  mapped:560
+2014-09-08T22:40:33.397+0800 [clientcursormon]  connections:1
+2014-09-08T22:45:33.417+0800 [clientcursormon] mem (MB) res:2 virt:656
+2014-09-08T22:45:33.417+0800 [clientcursormon]  mapped:560
+2014-09-08T22:45:33.417+0800 [clientcursormon]  connections:1
+2014-09-08T22:48:33.430+0800 [clientcursormon] mem (MB) res:3 virt:656
+2014-09-08T22:48:33.430+0800 [clientcursormon]  mapped:560
+2014-09-08T22:48:33.430+0800 [clientcursormon]  connections:1
+2014-09-08T22:48:43.885+0800 [initandlisten] connection accepted from 127.0.0.1:60467 #34 (2 connections now open)
+2014-09-08T22:48:43.922+0800 [initandlisten] connection accepted from 127.0.0.1:60468 #35 (3 connections now open)
+2014-09-08T22:48:43.984+0800 [conn35] build index on: Articles.testart properties: { v: 1, key: { _id: 1 }, name: "_id_", ns: "Articles.testart" }
+2014-09-08T22:48:43.984+0800 [conn35] 	 added index to empty collection
+2014-09-08T22:48:44.238+0800 [conn34] end connection 127.0.0.1:60467 (2 connections now open)
+2014-09-08T22:48:44.238+0800 [conn35] end connection 127.0.0.1:60468 (2 connections now open)
+2014-09-08T22:49:05.730+0800 [initandlisten] connection accepted from 127.0.0.1:60490 #36 (2 connections now open)
+2014-09-08T22:49:05.805+0800 [initandlisten] connection accepted from 127.0.0.1:60491 #37 (3 connections now open)
+2014-09-08T22:49:06.115+0800 [conn36] end connection 127.0.0.1:60490 (2 connections now open)
+2014-09-08T22:49:06.115+0800 [conn37] end connection 127.0.0.1:60491 (1 connection now open)
+2014-09-08T22:49:33.435+0800 [clientcursormon] mem (MB) res:6 virt:656
+2014-09-08T22:49:33.435+0800 [clientcursormon]  mapped:560
+2014-09-08T22:49:33.435+0800 [clientcursormon]  connections:1
+2014-09-08T22:54:33.459+0800 [clientcursormon] mem (MB) res:6 virt:656
+2014-09-08T22:54:33.459+0800 [clientcursormon]  mapped:560
+2014-09-08T22:54:33.459+0800 [clientcursormon]  connections:1
+2014-09-08T22:59:33.482+0800 [clientcursormon] mem (MB) res:6 virt:656
+2014-09-08T22:59:33.482+0800 [clientcursormon]  mapped:560
+2014-09-08T22:59:33.482+0800 [clientcursormon]  connections:1
+2014-09-08T23:00:47.870+0800 [conn3] CMD: drop Articles.articles
+2014-09-08T23:01:33.490+0800 [clientcursormon] mem (MB) res:9 virt:656
+2014-09-08T23:01:33.490+0800 [clientcursormon]  mapped:560
+2014-09-08T23:01:33.490+0800 [clientcursormon]  connections:1
+2014-09-08T23:02:53.956+0800 [initandlisten] connection accepted from 127.0.0.1:62085 #38 (2 connections now open)
+2014-09-08T23:02:53.988+0800 [initandlisten] connection accepted from 127.0.0.1:62086 #39 (3 connections now open)
+2014-09-08T23:02:54.011+0800 [conn39] build index on: Articles.articles properties: { v: 1, key: { _id: 1 }, name: "_id_", ns: "Articles.articles" }
+2014-09-08T23:02:54.011+0800 [conn39] 	 added index to empty collection
+2014-09-08T23:03:05.252+0800 [conn39] end connection 127.0.0.1:62086 (2 connections now open)
+2014-09-08T23:03:05.252+0800 [conn38] end connection 127.0.0.1:62085 (2 connections now open)
+2014-09-08T23:03:33.499+0800 [clientcursormon] mem (MB) res:10 virt:656
+2014-09-08T23:03:33.499+0800 [clientcursormon]  mapped:560
+2014-09-08T23:03:33.499+0800 [clientcursormon]  connections:1
+2014-09-08T23:03:57.785+0800 [initandlisten] connection accepted from 127.0.0.1:62201 #40 (2 connections now open)
+2014-09-08T23:03:57.825+0800 [initandlisten] connection accepted from 127.0.0.1:62202 #41 (3 connections now open)
+2014-09-08T23:03:58.112+0800 [conn40] end connection 127.0.0.1:62201 (2 connections now open)
+2014-09-08T23:03:58.114+0800 [conn41] end connection 127.0.0.1:62202 (1 connection now open)
+2014-09-08T23:04:54.228+0800 [conn3] CMD: drop Articles.testart
+2014-09-08T23:05:09.285+0800 [initandlisten] connection accepted from 127.0.0.1:62283 #42 (2 connections now open)
+2014-09-08T23:05:09.328+0800 [initandlisten] connection accepted from 127.0.0.1:62284 #43 (3 connections now open)
+2014-09-08T23:05:09.354+0800 [conn43] build index on: Articles.testart properties: { v: 1, key: { _id: 1 }, name: "_id_", ns: "Articles.testart" }
+2014-09-08T23:05:09.354+0800 [conn43] 	 added index to empty collection
+2014-09-08T23:05:09.613+0800 [conn42] end connection 127.0.0.1:62283 (2 connections now open)
+2014-09-08T23:05:09.613+0800 [conn43] end connection 127.0.0.1:62284 (1 connection now open)
+2014-09-08T23:07:04.941+0800 [initandlisten] connection accepted from 127.0.0.1:62393 #44 (2 connections now open)
+2014-09-08T23:07:04.978+0800 [initandlisten] connection accepted from 127.0.0.1:62394 #45 (3 connections now open)
+2014-09-08T23:07:05.237+0800 [conn44] end connection 127.0.0.1:62393 (2 connections now open)
+2014-09-08T23:07:05.237+0800 [conn45] end connection 127.0.0.1:62394 (1 connection now open)
+2014-09-08T23:08:33.517+0800 [clientcursormon] mem (MB) res:11 virt:656
+2014-09-08T23:08:33.517+0800 [clientcursormon]  mapped:560
+2014-09-08T23:08:33.517+0800 [clientcursormon]  connections:1
+2014-09-08T23:10:08.491+0800 [initandlisten] connection accepted from 127.0.0.1:62583 #46 (2 connections now open)
+2014-09-08T23:10:08.538+0800 [initandlisten] connection accepted from 127.0.0.1:62584 #47 (3 connections now open)
+2014-09-08T23:10:08.790+0800 [conn46] end connection 127.0.0.1:62583 (2 connections now open)
+2014-09-08T23:10:08.790+0800 [conn47] end connection 127.0.0.1:62584 (1 connection now open)
+2014-09-08T23:11:12.902+0800 [initandlisten] connection accepted from 127.0.0.1:62646 #48 (2 connections now open)
+2014-09-08T23:11:12.948+0800 [initandlisten] connection accepted from 127.0.0.1:62647 #49 (3 connections now open)
+2014-09-08T23:11:13.196+0800 [conn48] end connection 127.0.0.1:62646 (2 connections now open)
+2014-09-08T23:11:13.196+0800 [conn49] end connection 127.0.0.1:62647 (2 connections now open)
+2014-09-08T23:13:33.539+0800 [clientcursormon] mem (MB) res:11 virt:656
+2014-09-08T23:13:33.539+0800 [clientcursormon]  mapped:560
+2014-09-08T23:13:33.539+0800 [clientcursormon]  connections:1
+2014-09-08T23:18:33.558+0800 [clientcursormon] mem (MB) res:11 virt:656
+2014-09-08T23:18:33.558+0800 [clientcursormon]  mapped:560
+2014-09-08T23:18:33.558+0800 [clientcursormon]  connections:1
+2014-09-08T23:19:03.947+0800 [initandlisten] connection accepted from 127.0.0.1:63202 #50 (2 connections now open)
+2014-09-08T23:19:03.988+0800 [initandlisten] connection accepted from 127.0.0.1:63203 #51 (3 connections now open)
+2014-09-08T23:19:03.989+0800 [initandlisten] connection accepted from 127.0.0.1:63204 #52 (4 connections now open)
+2014-09-08T23:19:03.989+0800 [initandlisten] connection accepted from 127.0.0.1:63205 #53 (5 connections now open)
+2014-09-08T23:19:08.960+0800 [conn50] end connection 127.0.0.1:63202 (4 connections now open)
+2014-09-08T23:19:08.960+0800 [conn52] end connection 127.0.0.1:63204 (4 connections now open)
+2014-09-08T23:19:08.960+0800 [conn51] end connection 127.0.0.1:63203 (2 connections now open)
+2014-09-08T23:19:08.960+0800 [conn53] end connection 127.0.0.1:63205 (2 connections now open)
+2014-09-08T23:19:52.735+0800 [initandlisten] connection accepted from 127.0.0.1:63262 #54 (2 connections now open)
+2014-09-08T23:19:52.781+0800 [initandlisten] connection accepted from 127.0.0.1:63263 #55 (3 connections now open)
+2014-09-08T23:19:52.782+0800 [initandlisten] connection accepted from 127.0.0.1:63264 #56 (4 connections now open)
+2014-09-08T23:19:52.783+0800 [initandlisten] connection accepted from 127.0.0.1:63265 #57 (5 connections now open)
+2014-09-08T23:19:52.784+0800 [initandlisten] connection accepted from 127.0.0.1:63266 #58 (6 connections now open)
+2014-09-08T23:19:52.785+0800 [initandlisten] connection accepted from 127.0.0.1:63267 #59 (7 connections now open)
+2014-09-08T23:20:04.489+0800 [conn58] command Articles.$cmd command: findAndModify { $msg: "query not recording (too large)" } update: { $set: { content: "<span lang="EN-US"><font face="Times New Roman">SARS</font></span><span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hans..." } } nscanned:1 nscannedObjects:1 nmoved:1 nMatched:1 nModified:1 keyUpdates:0 numYields:0 locks(micros) w:133564 reslen:579 133ms
+2014-09-08T23:21:10.067+0800 [conn54] end connection 127.0.0.1:63262 (6 connections now open)
+2014-09-08T23:21:10.068+0800 [conn56] end connection 127.0.0.1:63264 (5 connections now open)
+2014-09-08T23:21:10.068+0800 [conn57] end connection 127.0.0.1:63265 (5 connections now open)
+2014-09-08T23:21:10.068+0800 [conn55] end connection 127.0.0.1:63263 (5 connections now open)
+2014-09-08T23:21:10.068+0800 [conn58] end connection 127.0.0.1:63266 (2 connections now open)
+2014-09-08T23:21:10.070+0800 [conn59] end connection 127.0.0.1:63267 (1 connection now open)
+2014-09-08T23:23:33.581+0800 [clientcursormon] mem (MB) res:12 virt:656
+2014-09-08T23:23:33.581+0800 [clientcursormon]  mapped:560
+2014-09-08T23:23:33.581+0800 [clientcursormon]  connections:1
+2014-09-08T23:26:48.451+0800 [conn3] end connection 127.0.0.1:49477 (0 connections now open)
+2014-09-08T23:26:56.963+0800 CTRL_CLOSE_EVENT signal
+2014-09-08T23:26:56.963+0800 [consoleTerminate] got CTRL_CLOSE_EVENT, will terminate after current cmd ends
+2014-09-08T23:26:56.963+0800 [consoleTerminate] now exiting
+2014-09-08T23:26:56.963+0800 [consoleTerminate] dbexit: 
+2014-09-08T23:26:56.963+0800 [consoleTerminate] shutdown: going to close listening sockets...
+2014-09-08T23:26:56.963+0800 [consoleTerminate] closing listening socket: 656
+2014-09-08T23:26:56.964+0800 [consoleTerminate] shutdown: going to flush diaglog...
+2014-09-08T23:26:56.964+0800 [consoleTerminate] shutdown: going to close sockets...
+2014-09-08T23:26:56.965+0800 [consoleTerminate] shutdown: waiting for fs preallocator...
+2014-09-08T23:26:56.965+0800 [consoleTerminate] shutdown: closing all files...
+2014-09-08T23:26:57.096+0800 [consoleTerminate] closeAllFiles() finished
+2014-09-08T23:26:57.097+0800 [consoleTerminate] shutdown: removing fs lock...
+2014-09-08T23:26:57.098+0800 [consoleTerminate] dbexit: really exiting now

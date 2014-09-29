@@ -1,0 +1,307 @@
+2014-09-18T16:48:35.359+0800 [initandlisten] MongoDB starting : pid=171588 port=27017 dbpath=G:\eclipseVOA\VOAMongo\data 32-bit host=90XXI1OB0VROXRP
+2014-09-18T16:48:35.359+0800 [initandlisten] 
+2014-09-18T16:48:35.359+0800 [initandlisten] ** NOTE: This is a 32 bit MongoDB binary.
+2014-09-18T16:48:35.359+0800 [initandlisten] **       32 bit builds are limited to less than 2GB of data (or less with --journal).
+2014-09-18T16:48:35.359+0800 [initandlisten] **       Note that journaling defaults to off for 32 bit and is currently off.
+2014-09-18T16:48:35.359+0800 [initandlisten] **       See http://dochub.mongodb.org/core/32bit
+2014-09-18T16:48:35.359+0800 [initandlisten] 
+2014-09-18T16:48:35.360+0800 [initandlisten] targetMinOS: Windows XP SP3
+2014-09-18T16:48:35.360+0800 [initandlisten] db version v2.6.3
+2014-09-18T16:48:35.360+0800 [initandlisten] git version: 255f67a66f9603c59380b2a389e386910bbb52cb
+2014-09-18T16:48:35.360+0800 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+2014-09-18T16:48:35.360+0800 [initandlisten] allocator: system
+2014-09-18T16:48:35.360+0800 [initandlisten] options: { storage: { dbPath: "G:\eclipseVOA\VOAMongo\data" }, systemLog: { destination: "file", path: "G:\eclipseVOA\VOAMongo\log\log.txt" } }
+2014-09-18T16:48:36.438+0800 [initandlisten] waiting for connections on port 27017
+2014-09-18T16:48:51.568+0800 [initandlisten] connection accepted from 127.0.0.1:54977 #1 (1 connection now open)
+2014-09-18T16:48:51.702+0800 [initandlisten] connection accepted from 127.0.0.1:54978 #2 (2 connections now open)
+2014-09-18T16:48:51.800+0800 [FileAllocator] allocating new datafile G:\eclipseVOA\VOAMongo\data\Users.ns, filling with zeroes...
+2014-09-18T16:48:51.801+0800 [FileAllocator] creating directory G:\eclipseVOA\VOAMongo\data\_tmp
+2014-09-18T16:48:51.874+0800 [FileAllocator] done allocating datafile G:\eclipseVOA\VOAMongo\data\Users.ns, size: 16MB,  took 0.071 secs
+2014-09-18T16:48:51.918+0800 [FileAllocator] allocating new datafile G:\eclipseVOA\VOAMongo\data\Users.0, filling with zeroes...
+2014-09-18T16:48:52.203+0800 [FileAllocator] done allocating datafile G:\eclipseVOA\VOAMongo\data\Users.0, size: 64MB,  took 0.283 secs
+2014-09-18T16:48:52.228+0800 [conn2] build index on: Users.users properties: { v: 1, key: { _id: 1 }, name: "_id_", ns: "Users.users" }
+2014-09-18T16:48:52.228+0800 [conn2] 	 added index to empty collection
+2014-09-18T16:48:52.229+0800 [conn2] insert Users.users query: { _id: ObjectId('541a9c737694d197f989f731'), name: "xujianhai", pass: "xujianhai" } ninserted:1 keyUpdates:0 numYields:0 locks(micros) w:432206 432ms
+2014-09-18T16:48:52.230+0800 [conn2] command Users.$cmd command: insert { insert: "users", ordered: true, documents: [ { _id: ObjectId('541a9c737694d197f989f731'), name: "xujianhai", pass: "xujianhai" } ] } keyUpdates:0 numYields:0 locks(micros) w:461 reslen:40 494ms
+2014-09-18T16:48:52.729+0800 [conn2] end connection 127.0.0.1:54978 (1 connection now open)
+2014-09-18T16:48:52.729+0800 [conn1] end connection 127.0.0.1:54977 (1 connection now open)
+2014-09-18T16:49:35.826+0800 [clientcursormon] mem (MB) res:197 virt:982
+2014-09-18T16:49:35.826+0800 [clientcursormon]  mapped:880
+2014-09-18T16:49:35.826+0800 [clientcursormon]  connections:0
+2014-09-18T16:49:35.856+0800 [PeriodicTaskRunner] task: DBConnectionPool-cleaner took: 36ms
+2014-09-18T16:49:35.867+0800 [PeriodicTaskRunner] task: WriteBackManager::cleaner took: 9ms
+2014-09-18T16:50:02.620+0800 [initandlisten] connection accepted from 127.0.0.1:55212 #3 (1 connection now open)
+2014-09-18T16:51:16.868+0800 [initandlisten] connection accepted from 127.0.0.1:55452 #4 (2 connections now open)
+2014-09-18T16:51:16.912+0800 [initandlisten] connection accepted from 127.0.0.1:55453 #5 (3 connections now open)
+2014-09-18T16:51:17.689+0800 [conn5] query voas.listening query: { $query: {}, $orderby: { time: -1 } } planSummary: COLLSCAN cursorid:237929476598 ntoreturn:0 ntoskip:0 nscanned:3940 nscannedObjects:3940 scanAndOrder:1 keyUpdates:0 numYields:559 locks(micros) r:1034628 nreturned:101 reslen:375756 776ms
+2014-09-18T16:51:20.047+0800 [conn4] end connection 127.0.0.1:55452 (2 connections now open)
+2014-09-18T16:51:20.051+0800 [conn5] end connection 127.0.0.1:55453 (1 connection now open)
+2014-09-18T16:51:31.657+0800 [initandlisten] connection accepted from 127.0.0.1:55500 #6 (2 connections now open)
+2014-09-18T16:51:31.699+0800 [initandlisten] connection accepted from 127.0.0.1:55501 #7 (3 connections now open)
+2014-09-18T16:51:32.011+0800 [conn6] end connection 127.0.0.1:55500 (2 connections now open)
+2014-09-18T16:51:32.011+0800 [conn7] end connection 127.0.0.1:55501 (1 connection now open)
+2014-09-18T16:54:35.901+0800 [clientcursormon] mem (MB) res:215 virt:980
+2014-09-18T16:54:35.901+0800 [clientcursormon]  mapped:880
+2014-09-18T16:54:35.901+0800 [clientcursormon]  connections:1
+2014-09-18T16:58:09.694+0800 [conn3] end connection 127.0.0.1:55212 (0 connections now open)
+2014-09-18T16:59:35.985+0800 [clientcursormon] mem (MB) res:215 virt:979
+2014-09-18T16:59:35.985+0800 [clientcursormon]  mapped:880
+2014-09-18T16:59:35.985+0800 [clientcursormon]  connections:0
+2014-09-18T17:04:36.054+0800 [clientcursormon] mem (MB) res:3 virt:979
+2014-09-18T17:04:36.054+0800 [clientcursormon]  mapped:880
+2014-09-18T17:04:36.054+0800 [clientcursormon]  connections:0
+2014-09-18T17:09:36.107+0800 [clientcursormon] mem (MB) res:3 virt:979
+2014-09-18T17:09:36.107+0800 [clientcursormon]  mapped:880
+2014-09-18T17:09:36.107+0800 [clientcursormon]  connections:0
+2014-09-18T17:14:36.156+0800 [clientcursormon] mem (MB) res:3 virt:979
+2014-09-18T17:14:36.156+0800 [clientcursormon]  mapped:880
+2014-09-18T17:14:36.156+0800 [clientcursormon]  connections:0
+2014-09-18T17:19:36.197+0800 [clientcursormon] mem (MB) res:3 virt:979
+2014-09-18T17:19:36.197+0800 [clientcursormon]  mapped:880
+2014-09-18T17:19:36.197+0800 [clientcursormon]  connections:0
+2014-09-18T17:24:36.231+0800 [clientcursormon] mem (MB) res:3 virt:979
+2014-09-18T17:24:36.231+0800 [clientcursormon]  mapped:880
+2014-09-18T17:24:36.231+0800 [clientcursormon]  connections:0
+2014-09-18T17:29:36.279+0800 [clientcursormon] mem (MB) res:3 virt:979
+2014-09-18T17:29:36.286+0800 [clientcursormon]  mapped:880
+2014-09-18T17:29:36.286+0800 [clientcursormon]  connections:0
+2014-09-18T17:34:36.378+0800 [clientcursormon] mem (MB) res:3 virt:979
+2014-09-18T17:34:36.378+0800 [clientcursormon]  mapped:880
+2014-09-18T17:34:36.378+0800 [clientcursormon]  connections:0
+2014-09-18T17:39:36.509+0800 [clientcursormon] mem (MB) res:3 virt:979
+2014-09-18T17:39:36.509+0800 [clientcursormon]  mapped:880
+2014-09-18T17:39:36.509+0800 [clientcursormon]  connections:0
+2014-09-18T17:44:36.619+0800 [clientcursormon] mem (MB) res:3 virt:979
+2014-09-18T17:44:36.619+0800 [clientcursormon]  mapped:880
+2014-09-18T17:44:36.619+0800 [clientcursormon]  connections:0
+2014-09-18T17:49:36.874+0800 [clientcursormon] mem (MB) res:3 virt:979
+2014-09-18T17:49:36.874+0800 [clientcursormon]  mapped:880
+2014-09-18T17:49:36.874+0800 [clientcursormon]  connections:0
+2014-09-18T17:54:36.994+0800 [clientcursormon] mem (MB) res:3 virt:979
+2014-09-18T17:54:36.994+0800 [clientcursormon]  mapped:880
+2014-09-18T17:54:37.006+0800 [clientcursormon]  connections:0
+2014-09-18T17:59:37.097+0800 [clientcursormon] mem (MB) res:3 virt:979
+2014-09-18T17:59:37.097+0800 [clientcursormon]  mapped:880
+2014-09-18T17:59:37.097+0800 [clientcursormon]  connections:0
+2014-09-18T18:04:37.259+0800 [clientcursormon] mem (MB) res:3 virt:979
+2014-09-18T18:04:37.259+0800 [clientcursormon]  mapped:880
+2014-09-18T18:04:37.259+0800 [clientcursormon]  connections:0
+2014-09-18T18:09:37.374+0800 [clientcursormon] mem (MB) res:3 virt:979
+2014-09-18T18:09:37.374+0800 [clientcursormon]  mapped:880
+2014-09-18T18:09:37.374+0800 [clientcursormon]  connections:0
+2014-09-18T18:14:37.513+0800 [clientcursormon] mem (MB) res:3 virt:979
+2014-09-18T18:14:37.513+0800 [clientcursormon]  mapped:880
+2014-09-18T18:14:37.513+0800 [clientcursormon]  connections:0
+2014-09-18T18:19:37.611+0800 [clientcursormon] mem (MB) res:3 virt:979
+2014-09-18T18:19:37.611+0800 [clientcursormon]  mapped:880
+2014-09-18T18:19:37.611+0800 [clientcursormon]  connections:0
+2014-09-18T18:24:37.710+0800 [clientcursormon] mem (MB) res:3 virt:979
+2014-09-18T18:24:37.710+0800 [clientcursormon]  mapped:880
+2014-09-18T18:24:37.710+0800 [clientcursormon]  connections:0
+2014-09-18T18:28:50.170+0800 [initandlisten] connection accepted from 127.0.0.1:59384 #8 (1 connection now open)
+2014-09-18T18:29:37.815+0800 [clientcursormon] mem (MB) res:4 virt:980
+2014-09-18T18:29:37.815+0800 [clientcursormon]  mapped:880
+2014-09-18T18:29:37.815+0800 [clientcursormon]  connections:1
+2014-09-18T18:34:37.876+0800 [clientcursormon] mem (MB) res:4 virt:980
+2014-09-18T18:34:37.876+0800 [clientcursormon]  mapped:880
+2014-09-18T18:34:37.876+0800 [clientcursormon]  connections:1
+2014-09-18T18:39:37.949+0800 [clientcursormon] mem (MB) res:4 virt:980
+2014-09-18T18:39:37.949+0800 [clientcursormon]  mapped:880
+2014-09-18T18:39:37.949+0800 [clientcursormon]  connections:1
+2014-09-18T18:44:38.002+0800 [clientcursormon] mem (MB) res:4 virt:980
+2014-09-18T18:44:38.002+0800 [clientcursormon]  mapped:880
+2014-09-18T18:44:38.002+0800 [clientcursormon]  connections:1
+2014-09-18T18:49:38.141+0800 [clientcursormon] mem (MB) res:4 virt:980
+2014-09-18T18:49:38.141+0800 [clientcursormon]  mapped:880
+2014-09-18T18:49:38.141+0800 [clientcursormon]  connections:1
+2014-09-18T18:54:38.337+0800 [clientcursormon] mem (MB) res:4 virt:980
+2014-09-18T18:54:38.337+0800 [clientcursormon]  mapped:880
+2014-09-18T18:54:38.337+0800 [clientcursormon]  connections:1
+2014-09-18T18:59:38.427+0800 [clientcursormon] mem (MB) res:3 virt:980
+2014-09-18T18:59:38.427+0800 [clientcursormon]  mapped:880
+2014-09-18T18:59:38.427+0800 [clientcursormon]  connections:1
+2014-09-18T19:04:38.579+0800 [clientcursormon] mem (MB) res:3 virt:980
+2014-09-18T19:04:38.579+0800 [clientcursormon]  mapped:880
+2014-09-18T19:04:38.579+0800 [clientcursormon]  connections:1
+2014-09-18T19:09:38.672+0800 [clientcursormon] mem (MB) res:3 virt:980
+2014-09-18T19:09:38.672+0800 [clientcursormon]  mapped:880
+2014-09-18T19:09:38.672+0800 [clientcursormon]  connections:1
+2014-09-18T19:14:38.801+0800 [clientcursormon] mem (MB) res:3 virt:980
+2014-09-18T19:14:38.859+0800 [clientcursormon]  mapped:880
+2014-09-18T19:14:38.859+0800 [clientcursormon]  connections:1
+2014-09-18T19:19:38.966+0800 [clientcursormon] mem (MB) res:3 virt:980
+2014-09-18T19:19:38.966+0800 [clientcursormon]  mapped:880
+2014-09-18T19:19:38.966+0800 [clientcursormon]  connections:1
+2014-09-18T19:24:39.056+0800 [clientcursormon] mem (MB) res:3 virt:980
+2014-09-18T19:24:39.056+0800 [clientcursormon]  mapped:880
+2014-09-18T19:24:39.056+0800 [clientcursormon]  connections:1
+2014-09-18T19:29:39.098+0800 [clientcursormon] mem (MB) res:3 virt:980
+2014-09-18T19:29:39.098+0800 [clientcursormon]  mapped:880
+2014-09-18T19:29:39.098+0800 [clientcursormon]  connections:1
+2014-09-18T19:34:39.161+0800 [clientcursormon] mem (MB) res:3 virt:980
+2014-09-18T19:34:39.161+0800 [clientcursormon]  mapped:880
+2014-09-18T19:34:39.161+0800 [clientcursormon]  connections:1
+2014-09-18T19:39:39.284+0800 [clientcursormon] mem (MB) res:3 virt:980
+2014-09-18T19:39:39.284+0800 [clientcursormon]  mapped:880
+2014-09-18T19:39:39.284+0800 [clientcursormon]  connections:1
+2014-09-18T19:44:39.351+0800 [clientcursormon] mem (MB) res:3 virt:980
+2014-09-18T19:44:39.351+0800 [clientcursormon]  mapped:880
+2014-09-18T19:44:39.351+0800 [clientcursormon]  connections:1
+2014-09-18T19:49:39.446+0800 [clientcursormon] mem (MB) res:3 virt:980
+2014-09-18T19:49:39.446+0800 [clientcursormon]  mapped:880
+2014-09-18T19:49:39.446+0800 [clientcursormon]  connections:1
+2014-09-18T19:54:39.500+0800 [clientcursormon] mem (MB) res:3 virt:980
+2014-09-18T19:54:39.500+0800 [clientcursormon]  mapped:880
+2014-09-18T19:54:39.500+0800 [clientcursormon]  connections:1
+2014-09-18T19:59:39.621+0800 [clientcursormon] mem (MB) res:3 virt:980
+2014-09-18T19:59:39.621+0800 [clientcursormon]  mapped:880
+2014-09-18T19:59:39.621+0800 [clientcursormon]  connections:1
+2014-09-18T20:04:39.736+0800 [clientcursormon] mem (MB) res:3 virt:980
+2014-09-18T20:04:39.736+0800 [clientcursormon]  mapped:880
+2014-09-18T20:04:39.736+0800 [clientcursormon]  connections:1
+2014-09-18T20:09:39.817+0800 [clientcursormon] mem (MB) res:3 virt:980
+2014-09-18T20:09:39.817+0800 [clientcursormon]  mapped:880
+2014-09-18T20:09:39.817+0800 [clientcursormon]  connections:1
+2014-09-18T20:14:40.072+0800 [clientcursormon] mem (MB) res:3 virt:980
+2014-09-18T20:14:40.072+0800 [clientcursormon]  mapped:880
+2014-09-18T20:14:40.072+0800 [clientcursormon]  connections:1
+2014-09-18T20:19:40.205+0800 [clientcursormon] mem (MB) res:3 virt:980
+2014-09-18T20:19:40.205+0800 [clientcursormon]  mapped:880
+2014-09-18T20:19:40.205+0800 [clientcursormon]  connections:1
+2014-09-18T20:24:40.326+0800 [clientcursormon] mem (MB) res:3 virt:980
+2014-09-18T20:24:40.326+0800 [clientcursormon]  mapped:880
+2014-09-18T20:24:40.326+0800 [clientcursormon]  connections:1
+2014-09-18T20:29:40.503+0800 [clientcursormon] mem (MB) res:3 virt:980
+2014-09-18T20:29:40.503+0800 [clientcursormon]  mapped:880
+2014-09-18T20:29:40.503+0800 [clientcursormon]  connections:1
+2014-09-18T20:34:40.842+0800 [clientcursormon] mem (MB) res:3 virt:980
+2014-09-18T20:34:40.842+0800 [clientcursormon]  mapped:880
+2014-09-18T20:34:40.842+0800 [clientcursormon]  connections:1
+2014-09-18T20:35:40.908+0800 [clientcursormon] mem (MB) res:4 virt:980
+2014-09-18T20:35:40.908+0800 [clientcursormon]  mapped:880
+2014-09-18T20:35:40.908+0800 [clientcursormon]  connections:1
+2014-09-18T20:40:41.005+0800 [clientcursormon] mem (MB) res:4 virt:980
+2014-09-18T20:40:41.005+0800 [clientcursormon]  mapped:880
+2014-09-18T20:40:41.005+0800 [clientcursormon]  connections:1
+2014-09-18T20:45:41.241+0800 [clientcursormon] mem (MB) res:4 virt:980
+2014-09-18T20:45:41.241+0800 [clientcursormon]  mapped:880
+2014-09-18T20:45:41.241+0800 [clientcursormon]  connections:1
+2014-09-18T20:50:41.378+0800 [clientcursormon] mem (MB) res:4 virt:980
+2014-09-18T20:50:41.378+0800 [clientcursormon]  mapped:880
+2014-09-18T20:50:41.378+0800 [clientcursormon]  connections:1
+2014-09-18T20:55:41.518+0800 [clientcursormon] mem (MB) res:4 virt:980
+2014-09-18T20:55:41.518+0800 [clientcursormon]  mapped:880
+2014-09-18T20:55:41.518+0800 [clientcursormon]  connections:1
+2014-09-18T21:00:41.726+0800 [clientcursormon] mem (MB) res:4 virt:980
+2014-09-18T21:00:41.727+0800 [clientcursormon]  mapped:880
+2014-09-18T21:00:41.727+0800 [clientcursormon]  connections:1
+2014-09-18T21:05:41.862+0800 [clientcursormon] mem (MB) res:4 virt:980
+2014-09-18T21:05:41.862+0800 [clientcursormon]  mapped:880
+2014-09-18T21:05:41.862+0800 [clientcursormon]  connections:1
+2014-09-18T21:10:41.930+0800 [clientcursormon] mem (MB) res:3 virt:980
+2014-09-18T21:10:41.935+0800 [clientcursormon]  mapped:880
+2014-09-18T21:10:41.935+0800 [clientcursormon]  connections:1
+2014-09-18T21:15:42.172+0800 [clientcursormon] mem (MB) res:3 virt:980
+2014-09-18T21:15:42.172+0800 [clientcursormon]  mapped:880
+2014-09-18T21:15:42.172+0800 [clientcursormon]  connections:1
+2014-09-18T21:19:42.379+0800 [clientcursormon] mem (MB) res:4 virt:980
+2014-09-18T21:19:42.379+0800 [clientcursormon]  mapped:880
+2014-09-18T21:19:42.379+0800 [clientcursormon]  connections:1
+2014-09-18T21:23:13.321+0800 [initandlisten] connection accepted from 127.0.0.1:60047 #9 (2 connections now open)
+2014-09-18T21:24:42.566+0800 [clientcursormon] mem (MB) res:4 virt:981
+2014-09-18T21:24:42.566+0800 [clientcursormon]  mapped:880
+2014-09-18T21:24:42.566+0800 [clientcursormon]  connections:2
+2014-09-18T21:28:28.278+0800 [initandlisten] connection accepted from 127.0.0.1:61121 #10 (3 connections now open)
+2014-09-18T21:28:28.333+0800 [initandlisten] connection accepted from 127.0.0.1:61122 #11 (4 connections now open)
+2014-09-18T21:28:28.903+0800 [conn11] insert Users.users query: { _id: ObjectId('541addfc769489530a26fa28'), name: "1723262513@qq.com", pass: "xujianhai" } ninserted:1 keyUpdates:0 numYields:0 locks(micros) w:218637 218ms
+2014-09-18T21:28:28.928+0800 [conn11] command Users.$cmd command: insert { insert: "users", ordered: true, documents: [ { _id: ObjectId('541addfc769489530a26fa28'), name: "1723262513@qq.com", pass: "xujianhai" } ] } keyUpdates:0 numYields:0 locks(micros) w:182 reslen:40 515ms
+2014-09-18T21:28:29.549+0800 [conn11] end connection 127.0.0.1:61122 (3 connections now open)
+2014-09-18T21:28:29.550+0800 [conn10] end connection 127.0.0.1:61121 (3 connections now open)
+2014-09-18T21:28:42.629+0800 [clientcursormon] mem (MB) res:5 virt:981
+2014-09-18T21:28:42.629+0800 [clientcursormon]  mapped:880
+2014-09-18T21:28:42.629+0800 [clientcursormon]  connections:2
+2014-09-18T21:33:43.100+0800 [clientcursormon] mem (MB) res:5 virt:981
+2014-09-18T21:33:43.100+0800 [clientcursormon]  mapped:880
+2014-09-18T21:33:43.100+0800 [clientcursormon]  connections:2
+2014-09-18T21:36:14.765+0800 [initandlisten] connection accepted from 127.0.0.1:62700 #12 (3 connections now open)
+2014-09-18T21:38:43.787+0800 [clientcursormon] mem (MB) res:5 virt:982
+2014-09-18T21:38:43.787+0800 [clientcursormon]  mapped:880
+2014-09-18T21:38:43.787+0800 [clientcursormon]  connections:3
+2014-09-18T21:42:47.757+0800 [initandlisten] connection accepted from 127.0.0.1:64081 #13 (4 connections now open)
+2014-09-18T21:43:43.975+0800 [clientcursormon] mem (MB) res:5 virt:983
+2014-09-18T21:43:43.975+0800 [clientcursormon]  mapped:880
+2014-09-18T21:43:43.975+0800 [clientcursormon]  connections:4
+2014-09-18T21:44:27.307+0800 [initandlisten] connection accepted from 127.0.0.1:64443 #14 (5 connections now open)
+2014-09-18T21:46:57.465+0800 [initandlisten] connection accepted from 127.0.0.1:64945 #15 (6 connections now open)
+2014-09-18T21:48:44.140+0800 [clientcursormon] mem (MB) res:5 virt:985
+2014-09-18T21:48:44.140+0800 [clientcursormon]  mapped:880
+2014-09-18T21:48:44.140+0800 [clientcursormon]  connections:6
+2014-09-18T21:51:16.534+0800 [initandlisten] connection accepted from 127.0.0.1:49419 #16 (7 connections now open)
+2014-09-18T21:51:30.334+0800 [conn16] warning database G:\eclipseVOA\VOAMongo\data users could not be opened
+2014-09-18T21:51:30.335+0800 [conn16] DBException 13297: db already exists with different case already have: [Users] trying to create [users]
+2014-09-18T21:51:33.621+0800 [conn16] warning database G:\eclipseVOA\VOAMongo\data users could not be opened
+2014-09-18T21:51:33.621+0800 [conn16] DBException 13297: db already exists with different case already have: [Users] trying to create [users]
+2014-09-18T21:51:55.796+0800 [conn16] warning database G:\eclipseVOA\VOAMongo\data users could not be opened
+2014-09-18T21:51:55.797+0800 [conn16] DBException 13297: db already exists with different case already have: [Users] trying to create [users]
+2014-09-18T21:51:55.818+0800 [conn16] assertion 13297 db already exists with different case already have: [Users] trying to create [users] ns:users.users query:{}
+2014-09-18T21:52:06.147+0800 [conn16] warning database G:\eclipseVOA\VOAMongo\data users could not be opened
+2014-09-18T21:52:06.147+0800 [conn16] DBException 13297: db already exists with different case already have: [Users] trying to create [users]
+2014-09-18T21:53:44.313+0800 [clientcursormon] mem (MB) res:5 virt:986
+2014-09-18T21:53:44.313+0800 [clientcursormon]  mapped:880
+2014-09-18T21:53:44.313+0800 [clientcursormon]  connections:7
+2014-09-18T21:54:13.205+0800 [initandlisten] connection accepted from 127.0.0.1:49998 #17 (8 connections now open)
+2014-09-18T21:56:38.195+0800 [initandlisten] connection accepted from 127.0.0.1:50470 #18 (9 connections now open)
+2014-09-18T21:56:44.370+0800 [clientcursormon] mem (MB) res:6 virt:988
+2014-09-18T21:56:44.370+0800 [clientcursormon]  mapped:880
+2014-09-18T21:56:44.370+0800 [clientcursormon]  connections:9
+2014-09-18T21:56:49.906+0800 [initandlisten] connection accepted from 127.0.0.1:50510 #19 (10 connections now open)
+2014-09-18T22:01:44.416+0800 [clientcursormon] mem (MB) res:6 virt:989
+2014-09-18T22:01:44.416+0800 [clientcursormon]  mapped:880
+2014-09-18T22:01:44.416+0800 [clientcursormon]  connections:10
+2014-09-18T22:06:44.548+0800 [clientcursormon] mem (MB) res:3 virt:989
+2014-09-18T22:06:44.548+0800 [clientcursormon]  mapped:880
+2014-09-18T22:06:44.548+0800 [clientcursormon]  connections:10
+2014-09-18T22:09:44.719+0800 [clientcursormon] mem (MB) res:4 virt:989
+2014-09-18T22:09:44.719+0800 [clientcursormon]  mapped:880
+2014-09-18T22:09:44.719+0800 [clientcursormon]  connections:10
+2014-09-18T22:14:45.035+0800 [clientcursormon] mem (MB) res:4 virt:989
+2014-09-18T22:14:45.035+0800 [clientcursormon]  mapped:880
+2014-09-18T22:14:45.035+0800 [clientcursormon]  connections:10
+2014-09-18T22:19:45.278+0800 [clientcursormon] mem (MB) res:4 virt:989
+2014-09-18T22:19:45.278+0800 [clientcursormon]  mapped:880
+2014-09-18T22:19:45.278+0800 [clientcursormon]  connections:10
+2014-09-18T22:24:45.766+0800 [clientcursormon] mem (MB) res:4 virt:989
+2014-09-18T22:24:45.775+0800 [clientcursormon]  mapped:880
+2014-09-18T22:24:45.775+0800 [clientcursormon]  connections:10
+2014-09-18T22:29:46.147+0800 [clientcursormon] mem (MB) res:4 virt:989
+2014-09-18T22:29:46.147+0800 [clientcursormon]  mapped:880
+2014-09-18T22:29:46.147+0800 [clientcursormon]  connections:10
+2014-09-18T22:34:46.609+0800 [clientcursormon] mem (MB) res:4 virt:989
+2014-09-18T22:34:46.609+0800 [clientcursormon]  mapped:880
+2014-09-18T22:34:46.609+0800 [clientcursormon]  connections:10
+2014-09-18T22:39:47.019+0800 [clientcursormon] mem (MB) res:4 virt:989
+2014-09-18T22:39:47.019+0800 [clientcursormon]  mapped:880
+2014-09-18T22:39:47.019+0800 [clientcursormon]  connections:10
+2014-09-18T22:44:26.628+0800 CTRL_CLOSE_EVENT signal
+2014-09-18T22:44:27.253+0800 [consoleTerminate] got CTRL_CLOSE_EVENT, will terminate after current cmd ends
+2014-09-18T22:44:27.565+0800 [consoleTerminate] now exiting
+2014-09-18T22:44:27.565+0800 [consoleTerminate] dbexit: 
+2014-09-18T22:44:27.565+0800 [consoleTerminate] shutdown: going to close listening sockets...
+2014-09-18T22:44:27.635+0800 [consoleTerminate] closing listening socket: 656
+2014-09-18T22:44:27.805+0800 [consoleTerminate] shutdown: going to flush diaglog...
+2014-09-18T22:44:27.805+0800 [consoleTerminate] shutdown: going to close sockets...
+2014-09-18T22:44:27.928+0800 [consoleTerminate] shutdown: waiting for fs preallocator...
+2014-09-18T22:44:28.026+0800 [consoleTerminate] shutdown: closing all files...
+2014-09-18T22:44:28.821+0800 [consoleTerminate] closeAllFiles() finished
+2014-09-18T22:44:28.821+0800 [consoleTerminate] shutdown: removing fs lock...
+2014-09-18T22:44:28.822+0800 [consoleTerminate] dbexit: really exiting now
+2014-09-18T22:44:28.870+0800 [conn18] end connection 127.0.0.1:50470 (9 connections now open)
+2014-09-18T22:44:28.870+0800 [conn15] end connection 127.0.0.1:64945 (9 connections now open)
+2014-09-18T22:44:28.870+0800 [conn17] end connection 127.0.0.1:49998 (9 connections now open)
+2014-09-18T22:44:28.870+0800 [conn8] end connection 127.0.0.1:59384 (9 connections now open)
+2014-09-18T22:44:28.870+0800 [conn13] end connection 127.0.0.1:64081 (9 connections now open)
+2014-09-18T22:44:28.870+0800 [conn9] end connection 127.0.0.1:60047 (9 connections now open)
+2014-09-18T22:44:28.870+0800 [conn19] end connection 127.0.0.1:50510 (9 connections now open)
+2014-09-18T22:44:28.870+0800 [conn12] end connection 127.0.0.1:62700 (9 connections now open)
+2014-09-18T22:44:28.870+0800 [conn16] end connection 127.0.0.1:49419 (9 connections now open)
+2014-09-18T22:44:28.870+0800 [conn14] end connection 127.0.0.1:64443 (9 connections now open)
