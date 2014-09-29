@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>login</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="../css/animate.css" />
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<!--
+        	作者：1723262513@qq.com
+        	时间：2014-09-17
+        	描述：加上  amui 的 css 标签后，整体效果  变好  
+        -->
+		<link rel="stylesheet" href="../css/amui.all.min.css">
+		<style>
+			html,body {
+				background-color: white;
+				
+			}
+		</style>
+	</head>
+	<style>
+		/*禁止横屏幕 暂时没有办法*/
+		.mui-content{
+			position: relative;
+				margin-left: 2%;
+				margin-right: 2%;
+				/*35*/
+				margin-top: 20%;
+				background-color: white;
+				z-index: 1;
+					
+		}
+		#alert{
+			position: relative;
+			margin-top: 1px;	
+		}
+		#demo-full-img
+		{
+			width: 140px;
+			position: relative;
+			margin-bottom: 20%;
+			/*10*/
+			margin-top: 5%;
+		}
+		.mui-bar{
+			background-color: transparent ;
+		}
+	</style>
+
+	<body>
+		<div id="alert" class="mui-hidden">
+			<button class="mui-btn mui-btn-negative mui-btn-block"></button>
+		</div>
+		<!--
+	这个可以用来 做 头部图片
+	<img src="../../images/6608764172329400246.jpg" alt="..." class="icon-circle" id="demo-full-img" >-->
+		<div class="mui-content">
+
+			<img src="../images/6608764172329400246.jpg" class="am-img-circle am-center" id="demo-full-img">
+
+			<div class="mui-content-padded">
+				<form class="mui-input-group">
+					<div class="mui-input-row">
+						<!-- 无效的标签    <label><span><i class="icon-angle-up"></i></span>邮箱</label>-->
+						<label class="icon-envelope">邮箱</label>
+						<input id="email" type="email" class="mui-input-clear mui-action-next " placeholder="请输入邮箱">
+					</div>
+					<div class="mui-input-row">
+						<!-- 无效的标签    <label><span><i class="icon-angle-up"></i></span>邮箱</label>-->
+						<label class="icon-envelope">密码</label>
+						<input id="pass" type="password" class="mui-input-clear am-text-truncate" placeholder="请输入密码">
+					</div>
+				</form>
+				<div class="icon-align-center">
+					<button class="mui-btn mui-btn-positive mui-btn-block" id="login">登陆</button>
+				</div>
+				<div class="footer">
+				</div>
+			</div>
+		</div>
+		<div class="xu-footer">
+			<footer data-am-widget="footer" class="am-footer">
+				<a id="godesktop" data-rel="desktop" class="am-footer-desktop" href="#">找回密码  &nbsp;&nbsp;</a>
+				<span class="am-footer-divider">|</span>
+				<a id="godesktop" data-rel="desktop" class="am-footer-desktop" href="#">&nbsp;&nbsp;注册账号</a>
+			</footer>
+		</div>
+
+		<!--
+	作者：1723262513@qq.com
+	时间：2014-09-18
+	描述：
+	amui 依赖 amui
+-->
+		<script type="text/javascript" src="../js/zepto.min.js"></script>
+		<script type="text/javascript" src="../js/amui.min.js"></script>
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/md5.js"></script>
+
+		<!--
+	作者：1723262513@qq.com
+	时间：2014-09-25
+	描述：--
+			不需要再手机移动端缓存密码数据，存在更新的延迟性，使用网络验证，
+			手机缓存用户名用于  本地客户端的请求的提交的数据，用于识别身份
+			手机缓存密码  用于 修改密码
+-->
+		<script>
+			mui.init({
+					swipeBack : false,
+			});
+			//ajax请求远程数据
+			function getData(name,pass)
+			{
+				$.ajax({  
+						                type : "GET",  
+						                url : "http://192.168.0.100:8080/VOABack/user/login",  
+						                data :{
+						                       "name":name,
+						                       "pass":pass,
+						                 },
+						                 cache:false,
+						                 timeout:10000, 
+						                 success:function(data){
+											
+										if(data==="success"){
+											localStorage.user = name;
+											localStorage.pass = pass;
+											window.location.href = "D1.html";
+										}else{
+												info("账户名 密码 出问题啦咕~~(╯﹏╰)b");
+										}				
+						               },
+						                 error: function(ex) {
+						                             	info("网络异常，暂时登陆不上了咕~~(╯﹏╰)b");
+						                            },                     
+						                        });
+			}
+			//验证邮箱的合法性
+			function isEmail(name) {  
+			    if (name.search(/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/) != -1) 
+			    { 
+			            return true; 
+			    }else{ 
+			         
+			            return false; 
+			    } 
+			} 	
+			//验证密码的合法性
+			function legalPass(pass){
+			    if (pass===null||pass.length<6) 
+			    { 
+			            return false; 
+			    }else{ 
+			            return true; 
+			    } 
+			}
+			
+			//显示相关提示信息 
+			function info(str){
+				document.getElementById("alert").className="" ;	
+						document.getElementById("alert").querySelector("button").innerHTML = str;//"亲,你的邮箱不正确啊";
+						setTimeout(function (){
+						//这里应该有一个过度的效果
+						//延迟2S实现淡出效果
+						document.getElementById("alert").className="animated zoomOutUp";
+						}, 2000);
+						//这个是用来保证  页面的  原样子恢复
+						//延迟3S实现隐藏
+						setTimeout(function (){
+							document.getElementById("alert").className = "mui-hidden";
+						}, 3000);					
+			}
+			
+			//实现点击登录的判断
+			document.getElementById("login").addEventListener('tap',function()
+			{
+			var name = document.getElementById("email").value;
+			var pass = document.getElementById("pass").value;
+					if(isEmail(name)){
+						if(legalPass(pass)){
+							//ajax异步传输
+							pass = hex_md5(pass);
+							getData(name,pass);
+						}else{
+							info("亲,你的密码~~~");
+						}
+					}else{
+						info("亲,你的邮箱不正确啊");
+						document.getElementById("email").focus();
+					}
+				});
+		</script>
+	</body>
+
+</html>

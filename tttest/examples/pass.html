@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<!--<link href="../css/amui.all.min.css" rel="stylesheet">-->
+
+		<style>
+			html,body {
+				background-color: #efeff4;
+			}
+		#demo-full-img
+	{
+		position: relative;
+		
+	}
+	
+		</style>
+		
+	</head>
+
+	<body>
+
+
+<header class="mui-bar mui-bar-nav">
+	<!----mui-action-back 需要两次 才能返回---->
+    <a class="xu-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <h1 class="mui-title">修改密码</h1>
+</header>
+
+		
+
+<div class="mui-content">
+	
+    <!--<img src="../images/6608764172329400246.jpg"   class="am-img-circle am-center" id="demo-full-img" >-->
+    
+    
+    <div class="mui-content-padded">
+       <form class="mui-input-group">
+            <div class="mui-input-row">
+                <!-- 无效的标签    <label><span><i class="icon-angle-up"></i></span>邮箱</label>-->
+          		<label class="icon-envelope">原来密码</label>
+          		<input  id="origi"    type="password"  class="mui-input-clear mui-action-next " placeholder="请输入邮箱">
+            </div>
+             <div class="mui-input-row">
+                <!-- 无效的标签    <label><span><i class="icon-angle-up"></i></span>邮箱</label>-->
+          		<label class="icon-envelope">新密码</label>
+          		<input  id="pass" type="password"  class="mui-input-clear am-text-truncate" placeholder="请输入密码">	
+             </div>
+             <div class="mui-input-row">
+                <!-- 无效的标签    <label><span><i class="icon-angle-up"></i></span>邮箱</label>-->
+          		<label class="icon-envelope">确认密码</label>
+          		<input  id="confirmpass" type="password"   class="mui-input-clear am-text-truncate" placeholder="请输入密码">	
+          		<br>
+            </div>
+        </form>
+        <div class="icon-align-center">
+                <button class="mui-btn mui-btn-positive mui-btn-block" id="modi">修改密码</button>
+            </div>
+            <div class="footer">
+    </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="../js/zepto.min.js" ></script>	
+<script type="text/javascript" src="../js/xu.js" ></script>	
+<script type="text/javascript" src="../js/mui.min.js" ></script>
+<script type="text/javascript" src="../js/md5.js" ></script>
+<script>
+
+//密码长度的检测
+function legalPass(pass){
+
+    if (pass===null||pass.length<6) 
+    { 
+            return false; 
+    }else{ 
+            return true; 
+    } 
+}
+
+
+var ori_flag = false;
+var con_flag = false;
+//两次密码是否相同
+function confirm()
+{
+	if($("#pass").val() === $("#confirmpass").val() )
+		{
+			
+			con_flag = true;
+			return true;
+		}else{
+			con_flag = false;
+			return false;
+		}
+}
+//比较原密码的函数
+function checkPass(pass)
+{
+//	if(localStorage.pass=== hex_md5(pass))
+if(localStorage.pass=== pass)
+	{
+		return true;
+	}else{
+		alert("原始密码不正确~~(╯﹏╰)b");
+		return false;
+	}
+}
+
+//提交操作
+document.getElementById("modi").addEventListener('tap',function(){
+
+			//检查原来的密码
+			if(checkPass($("#origi").val())===false){
+				return;
+			}else if(legalPass(document.getElementById("pass").value)===false)
+			{
+				//检查密码的长度的合理性 
+				alert("密码长度小于六");
+				return;
+			}else if(confirm()===false){
+			
+				alert("两次密码不匹配");
+				return;
+			}
+	
+		getData(localStorage.user, hex_md5(document.getElementById("pass").value));
+			
+});
+//ajax检验密码的正确性	
+function getData(name,pass)
+{
+	$.ajax({  
+			                type : "GET",  
+			                url : "http://192.168.0.100:8080/VOABack/user/Pass",  
+			                data :{
+			                       "name":name,
+			                       "pass":pass,
+			                 },
+			                 cache:false,
+			                 timeout:1000, 
+			                 success:function(data){
+								
+								if(data==="success"){
+									localStorage.pass = pass;	
+									window.location.href = "login.html";
+									return true;	
+								}else{ 
+									alert("服务器故障啦，暂时登陆不上了咕~~(╯﹏╰)b");
+									return false;
+								}
+								//调用想填充函数
+											
+			                 },
+			                 error: function(ex) {	               
+			                         alert("网络异常，暂时登陆不上了咕~~(╯﹏╰)b");
+			                         return false;
+			                 },           
+			                 
+	});
+}
+
+
+</script>
+</body>
+</html>
+
+

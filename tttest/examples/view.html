@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" href="../css/amui.all.min.css" />
+		<link rel="stylesheet" href="../css/font-awesome.min.css" />
+		<style>
+			html,
+			body {
+				background-color: #efeff4;
+			}
+		</style>
+
+	</head>
+
+	<body>
+
+		<header class="mui-bar mui-bar-nav">
+			<a class="xu-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">所有</h1>
+		</header>
+		<div class="mui-content">
+			<div class="mui-card">
+				<div id="wrapper">
+
+					<div id="scroller">
+
+
+						<ul class="mui-table-view">
+						</ul>
+
+
+						<div>
+			<!--
+                	作者：1723262513@qq.com
+                	时间：2014-09-06
+                	描述：
+                			显示加载块
+                -->
+
+
+							<!--<div data-am-widget="gotop" class="am-gotop am-gotop-fixed">
+  					<a href="#top" title="回到顶部">
+    					<span class="am-gotop-title">回到顶部</span>
+    					<i class="am-gotop-icon am-icon-chevron-up"></i>
+  					</a>
+				</div>-->
+
+							<div class="mui-text-center">
+								<button class="btn mui-btn-primary mui-btn-block" href="#">
+									<i id="label" class="icon-hand-right"></i> 加载更多...
+								</button>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<script src="../js/zepto.min.js"></script>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/iscroll.js"></script>
+		<script type="text/javascript" src="../js/xu.js"></script>
+		<script>
+			//解析参数
+			var index = window.location.search.indexOf("=");
+			var type_origi = window.location.search.substr(index + 1);
+			type = unescape(type_origi);
+
+
+			 //ajax函数
+			function getData(starter, space) {
+				$.ajax({
+					type: "GET",
+					url: "http://192.168.0.100:8080/VOABack/" + type + "/views",
+					data: {
+						starter: starter,
+						space: space
+					},
+					cache: false,
+					timeout: 100000,
+					dataType: "json",
+					success: function(data) {
+ 
+						//进行li对象的插入
+						$.each(data, function(i, item) {
+
+							//添加li  节点
+							var li = '<li  class="mui-table-view-cell"  id="' + item.title + '">' +
+								'<span id="title">' + (item.title).substr(0, 30) + "...." + '</span>' +
+								'<span class="icon-play pull-right" ></span><br>' +
+								'<div class="pull-right" id="time" style="font-style: italic;" >' + item.time + '</div>' +
+								'</li>';
+							$('ul').append($(li));
+
+ 						});
+
+					},
+					error: function(ex) {
+						alert("网络异常，暂时登陆不上了咕~~(╯﹏╰)b");
+					},
+				});
+			};
+
+			 //加载更多
+			var end = 0;
+			$(".mui-text-center .btn").on('tap', function(e) {
+
+				init();
+			});
+
+			function init() {
+				//queryselector  这个 没有办法绑定 addclass  应该是 不兼容
+				//这里可能 还存在 编译器的优化，addClass removeClass 过程中的效果 完全没有显示
+				//	this.querySelector 
+				$('.mui-text-center .btn #label').removeClass('icon-hand-right');
+				$('.mui-text-center .btn #label').addClass("icon-spinner icon-spin icon-2x");
+				getData(end, 10);
+				end = end + 10;
+				//	这个时候  事件 会  在   li节点添加之前被触发
+				//	refresh();
+				setTimeout(function() {
+					$('.mui-text-center .btn #label').removeClass("icon-spinner icon-spin icon-2x");
+					$('.mui-text-center .btn #label').addClass("icon-hand-right");
+					//放在  这里成功了，
+					refresh();
+				}, 1000);
+			}
+
+			 //对每一个超链接 进行事件绑定
+			 //由于新加入的li节点没有响应的事件，所以 这里写成函数 ，便于调用
+			 //避免多次绑定
+
+			function go(str) {
+				
+				var value = type + ".html?title=";
+				escape(str);
+				window.location.href = value + str;
+
+			}
+
+			function refresh() {
+				$('ul li').off(); //('tap',function(e){go(this.getAttribute("id"));});
+				$('ul li').on('tap', function(e) {
+					go(this.getAttribute("id"));
+				});
+			}
+			refresh();
+
+			init();
+			 //已加载的时候进行请求响应
+		</script>
+
+	</body>
+
+</html>

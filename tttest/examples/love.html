@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>VOHelper index</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" href="../css/amui.all.min.css" />
+		<link rel="stylesheet" href="../css/font-awesome.min.css" />
+		<link rel="stylesheet" href="../css/animate.css" />
+
+		<style>
+			html, body {
+				background-color: #efeff4;
+			}
+		</style>
+	</head>
+	<body>
+		<style>
+			.mui-control-content {
+				background-color: white;
+				min-height: 215px;
+			}
+			.mui-control-content . {
+				margin-top: 50px;
+			}
+			.my{
+				background-color: white;
+			}
+			
+		</style>
+		<header class="mui-bar mui-bar-nav">
+			<label class="xu-back  mui-icon mui-icon-arrow-left mui-pull-left"></label>
+			<h1 class="mui-title">收藏</h1>
+		</header>
+		
+		<!--
+        	作者：1723262513@qq.com
+        	时间：2014-09-23
+        	描述：
+        			内容的显示块
+        -->
+		<div class="mui-content">
+			<div class="xu-content">
+
+			</div>
+		<!--
+        	作者：1723262513@qq.com
+        	时间：2014-09-23
+        	描述：
+        		隐藏的加载块
+        		里面的东西  不能 滑动到底端
+        -->	
+        
+			<div id="slider" class="mui-slider">
+				<!--设定滑块的 大小        -->
+				<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-3"></div>
+				<!--滑块设定结束 -->
+				<div class="mui-slider-group">
+					<div id="Article" class="mui-slider-item mui-control-content">
+						<div id="artwrapper">
+							<div id="artscroller">
+								<div id="artpullDown">
+									<!--//通过 css 将 这个被覆盖，拉动的时候，自动 出现-->
+									<!-- 没什么用pullDownIcon-->
+									<div class="mui-text-center">
+									<!--去除了h5标记   	<h5>-->
+										<h5 id="arthDown" class="mui-hidden">
+								<span id='artpullDownIcon' class=""></span>
+								</h5>
+								<!--去除了h5 标记</h5>-->
+										<span class="pullDownLabel"></span>
+									</div>
+								</div>
+							
+								<button class="btn mui-btn-block mui-btn-default">向上滑动加载更多</button>
+								
+								<div id="artpullUp">
+									<!--应该定位在 中间-->
+									<div class="mui-text-center">
+											<h5 id="arth" class="mui-hidden">
+										<span id='artpullUpIcon'></span>
+										</h5>
+										<span class="pullUpLabel"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+
+		<script src="../js/zepto.min.js"></script>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/iscroll.js"></script>
+		<script type="text/javascript" src="../js/xu.js" ></script>
+		<script>
+
+		
+		//利用之前的记录  填充页面
+		function	begin(){
+				//页面加载时候  进行内容的填充
+				
+		}
+		//使用  setTimeout 自动加载，不然会导致  起始界面 假死  
+		setTimeout(begin,100);
+
+var  max;		
+			//下拉刷新的相关函数	
+			function loaded() {
+				var item2;	
+				item2 = 'art';
+				//class="mui-hidden"
+				var pullDownEl, pullDownOffset,
+				pullUpEl, pullUpOffset,
+				generatedCount = 0;
+				
+				pullDownEl = document.getElementById(item2+'pullDown');
+				pullDownOffset = pullDownEl.offsetHeight;
+				pullUpEl = document.getElementById(item2+'pullUp');	
+				pullUpOffset = pullUpEl.offsetHeight;
+				
+				var scroll2;
+				 scroll2 = new iScroll(item2+'wrapper', {
+					useTransition: true,
+					topOffset: pullUpOffset,
+					onRefresh: function () {
+						if (pullUpEl.className.match('loading')) {
+							
+							pullUpEl.className = '';
+							pullUpEl.querySelector('#'+item2+'pullUpIcon').className = '';
+							pullUpEl.querySelector('#'+item2+'h').className = 'mui-hidden';
+							pullUpEl.querySelector('.pullUpLabel').innerHTML = '  ';
+						}
+					},
+					onScrollMove: function () {
+						//-5
+						if (this.y < (this.maxScrollY - 20) && !pullUpEl.className.match('flip')) {
+							pullUpEl.querySelector('#'+item2+'h').className = ' ';
+							pullUpEl.className = 'flip';
+							pullUpEl.querySelector('#'+item2+'pullUpIcon').className = 'icon-arrow-up icon-2x';
+							pullUpEl.querySelector('.pullUpLabel').innerHTML = '松手开始更新...';
+							
+							this.maxScrollY = this.maxScrollY;
+						}
+					},
+					onScrollEnd: function () {
+						if (pullUpEl.className.match('flip')) {
+							pullUpEl.className = 'loading';
+							pullUpEl.querySelector('#'+item2+'pullUpIcon').className = 'icon-spinner icon-spin icon-2x';
+							pullUpEl.querySelector('.pullUpLabel').innerHTML = '&nbsp&nbsp正在加载...';				
+							getData(type);
+							setTimeout(function (){
+							//不加这一句话,会导致 loading....的字样 收不回去
+								scroll2.refresh();
+							}, 1000);
+						
+						}
+							
+					} ,
+					//放大 这个 效果 不是很好
+					zoom:false
+					
+				});
+				
+				setTimeout(function () { document.getElementById(item2+'wrapper').style.left = '0'; }, 800);
+			}
+			
+			document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+			document.addEventListener('DOMContentLoaded', function () { setTimeout(loaded, 200); }, false);
+			//保存相应的最新数据
+			mui.init({
+					swipeBack : false
+			});
+				
+function getData(type){
+	$.ajax({  				
+			type : "GET",  
+             url : "http://192.168.0.100:8080/VOABack/Collect/views",  
+                           data :{
+								"type":type,
+								"user":userName,
+								"starter":starter,
+								"space":space
+                            },
+                            cache: false,
+                            timeout: 800,
+//                          dataType: "json",  
+                            success : function(data) {
+
+								$.each(data, function(i, item) {
+
+				var panel = '<div class="am-panel am-panel-primary animated fadeInDown"><div class="am-panel-hd " id="'+item.title + '">'+item.title+'</div><div class="am-panel-bd">'+
+    '<div ><span id="content">'+item.intro+'</span></div>'+
+    '<div class="mui-pull-right am-text-primary">出版日期:<span id="publish_date">'+ item.publish_time+'</span></div><br>'+
+    '<div class="mui-pull-right am-text-primary">收藏日期:<span id="collect_date">'+item.collect_time+'</span></div><br></div></div>';
+				
+				$('.xu-content').append($(panel));
+				
+			});
+			starter =starter+space;
+                                
+             setTimeout(function () { 
+             	//取消所有panel的单击事件
+//           	document.getElementById(item2+'wrapper').style.left = '0';
+             	
+             	$(".am-panel").off('click', binding);
+             	$(".am-panel").on('click',binding);
+					
+             }, 800);
+                                    
+                           	},
+                             error: function(ex) {
+                             	//对页面进行处理
+                             	//只需要显示  网络无法连接，
+								alert("网络异常，暂时登陆不上了咕~~(╯﹏╰)b");
+                             }
+     });		                  
+}
+			
+function binding(){
+	var hd = this.querySelector(".am-panel-hd");
+	var value = type+".html?title=";
+	var str = hd.getAttribute("id");
+	str = encodeURI(str);
+	window.location.href = value+str;
+}
+						
+	var index = window.location.search.indexOf("=");
+	var title_origi = window.location.search.substr(index+1);
+	
+	type = decodeURI(title_origi);
+	var userName = localStorage.user , starter =0 , space = 2;
+	//进行数据请求
+	getData(type);
+	
+
+		</script>
+	</body>
+
+</html>

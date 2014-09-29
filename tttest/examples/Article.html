@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8" />
+<title>SoundManager 2: Bar UI Player (prototype)</title>
+<meta name="robots" content="noindex" />
+<meta name="viewport" content="width=500, initial-scale=1">
+<!--
+	作者：1723262513@qq.com
+	时间：2014-09-06
+	描述：
+		initial-scale  是初始化大小
+		minimum-scale  是 最小化大小
+		maximum-scale 是 最大化大小
+		取值 一般是 1(正常)  0.5 2.0
+		
+-->
+
+<!--<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />-->
+<link rel="stylesheet" href="../soundmanager/css/bar-ui.css" />
+<link rel="stylesheet" href="../css/amui.all.min.css" />
+<link rel="stylesheet" href="../soundmanager/css/inlineplayer.css" />
+<link rel="stylesheet" href="../css/mui.min.css">
+
+		<!--
+        	article:
+        		加入之后，就没有了  底部 空白的现象
+        -->
+		<style>
+		body{
+			background-color: #efeff4;
+		}
+		.article{
+			margin-left: 5px;
+			margin-right: 5px;
+			margin-bottom: 200px;
+			background-color: #efeff4;
+		}
+		#pod{
+			background-color: #efeff4;
+		}
+		.fix-header{
+			position: absolute;
+			padding-top: 0px;
+ 			top: 0px;
+ 			bottom: auto;
+ 			left: 0px;
+ 			border-radius: 0px;
+ 			/* so the absolutely-positioned playlist can show... */
+ 			overflow: visible;
+ 			/* and this should probably have a high z-index. tweak as needed. */
+ 			z-index: 999;
+		}
+		#sider{
+			margin-left: 10%;
+			margin-right: 10%;
+			margin-top: 40%;
+			/*margin-bottom: 50%;*/
+			color: #999;
+		}
+		#sider ul{
+			position: relative;
+			margin-left: 10%;
+			margin-right: 10%;
+			margin-top: 30%;
+			margin-bottom: 50%;
+			color: #999;
+		}
+		#sider a{
+			postion:relative;
+			font-style: italic;
+			font-weight: bold;
+			font-size: 100%;
+			display: block;
+		}
+		#star{
+			margin-left:10px;
+			margin-bottom:10px;
+		}
+		#content{
+		/*对内容中的字体进行操作*/
+			/*font-style: italic;*/
+			/*font-weight: bold;*/
+			font-size: large;
+			display: block;
+		}
+		</style>
+</head>
+
+<body>
+
+
+<div class="mui-off-canvas-wrap">
+	<div class="mui-inner-wrap">
+		<header class="mui-bar mui-bar-nav  fix-header">
+			<div id="titlebar">
+			<a class="mui-icon mui-icon-bars mui-pull-left" href="#doc-oc-demo1" data-am-offcanvas></a>
+			<a class="xu-back mui-icon mui-icon-close mui-pull-right"></a>
+			<h1 class="mui-title" id="title" />
+			</div>
+		</header>
+		<div class="mui-content article">
+				<div  id="content" class="mui-media-body">
+					
+				</div>
+			
+		</div>
+		<!--
+	作者：1723262513@qq.com
+	时间：2014-09-05
+	描述：
+		mp3功能  固定在底部
+-->
+
+<!--
+	作者：1723262513@qq.com
+	时间：2014-09-05
+	描述：
+			mp3功能结束
+-->
+		
+		<!--
+        	侧边栏布局
+        -->
+		<!-- 侧边栏内容 -->
+<div id="doc-oc-demo1" class="am-offcanvas">
+  <div class="am-offcanvas-bar">
+    <div class="am-offcanvas-content">
+    
+		<div id="sider">	      	
+      	<img src="../images/shuijiao.jpg" alt="..." class="am-img-circle" id="demo-full-img">
+        		<ul class="am-nav">
+        			<li id="D1.html">
+        				<a><span class="am-icon-user"></span>我的</a>
+        			</li>
+        			<li id="love.html?type=Article">
+        				<a><span class="am-icon-bookmark"></span>收藏的</a>
+        			</li>
+        			<li id="view.html?type=Article">
+        				<a><span class="am-icon-book"></span>所有的</a>
+        			</li>
+        			
+        			<li id="collect">
+        				<a><span class="am-icon-star-o">双击收藏</span></a> 
+        			</li>
+        		</ul>
+        		
+        		<!--我不愿让你一个人 <br/>
+        		承受这世界的残忍 <br/>
+        		我不愿眼泪陪你到 永恒-->
+    		
+      </div>
+    </div>
+  </div>
+</div>
+	</div>
+	<!-- off-canvas backdrop -->
+		<div class="mui-off-canvas-backdrop">
+		</div>
+</div>
+
+<!--
+	作者：1723262513@qq.com
+	时间：2014-09-05
+	描述：JS
+-->
+
+<script type="text/javascript" src="../js/zepto.min.js"></script>
+<script type="text/javascript" src="../js/amui.min.js" ></script>
+<script src="../js/mui.min.js"></script>
+<script type="text/javascript" src="../js/xu.js" ></script>
+
+<script>
+
+	
+	mui.init({
+		swipeBack : false
+	});
+		
+	$('.am-nav  li').each(function(index){
+	 			this.addEventListener('doubletap',function(){
+					var str = this.getAttribute("id");
+					if(str==='collect')
+					{
+						love("Article",title,localStorage.user);
+						
+					}else{
+					
+						escape(str);
+						
+		  				window.location.href = str;
+					
+					}
+					
+	  		});
+		});
+
+	//请求json数据的请求
+	function getData(title){
+		                   	$.ajax( {  
+                            type : "GET",  
+                            url : "http://192.168.1.113:8080/VOABack/Article/Article",  
+                            data :{
+//                          	"title":"Rainy Day is Not Enough to Slow the World Cup Party",
+								"title":title
+                            },
+                            cache: false,
+                            timeout: 10000,
+                            dataType: "json",  
+                            success : function(data) {
+                            	//开始渲染界面
+                            	
+                            	$("#title").html(data.title+"\n\\n\n");
+                           		$("#content").html(data.content);
+                           
+                           //没有办法 暂停了
+             
+                            },
+                             error: function(ex) {
+                             	//对页面进行处理
+                             	//只需要显示  网络无法连接，
+                                alert("网络异常，暂时登陆不上了咕~~(╯﹏╰)b");
+                            }  
+                        });
+   }
+	//接受请求的参数
+	var index = window.location.search.indexOf("=");
+	var title_origi = window.location.search.substr(index+1);
+	title = decodeURI(title_origi);
+	//进行数据请求
+	getData(title);
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>VOHelper index</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" href="../css/amui.all.min.css" />
+		<link rel="stylesheet" href="../css/font-awesome.min.css" />
+		<style>
+			html,
+			body {
+				background-color: #efeff4;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<style>
+			.mui-control-content {
+				background-color: white;
+				min-height: 215px;
+			}
+			.mui-control-content . {
+				margin-top: 50px;
+			}
+			.my {
+				background-color: white;
+			}
+		</style>
+		<header class="mui-bar mui-bar-nav">
+			<h1 class="mui-title"> VOAHelper Sample</h1>
+		</header>
+		<div class="mui-content">
+			<div id="slider" class="mui-slider">
+				<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<a class="mui-control-item">
+				我的
+			</a>
+					<a class="mui-control-item">
+				作文
+			</a>
+					<a class="mui-control-item">
+				阅读
+			</a>
+					<a class="mui-control-item">
+				听力
+			</a>
+
+				</div>
+				<!--设定滑块的 大小        -->
+				<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-3"></div>
+				<!--滑块设定结束 -->
+				<div class="mui-slider-group">
+					<!--mui-control-content-->
+					<div id="my" class="mui-slider-item  mui-control-content mui-active">
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell" href="D1.html">我的收藏<span class="am-icon-angle-down"></span>
+							</li>
+							<li class="mui-table-view-cell" href="love.html?type=listening">听力</li>
+							<li class="mui-table-view-cell" href="love.html?type=Reading">阅读</li>
+							<li class="mui-table-view-cell" href="love.html?type=Article">写作</li>
+						</ul>
+						<br>
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell" href="D1.html">安全设置<span class="am-icon-angle-down"></span>
+							</li>
+							<li class="mui-table-view-cell" href="login.html">切换账号</li>
+							<li class="mui-table-view-cell" href="pass.html">修改密码</li>
+						</ul>
+						<br>
+						<div>
+							<button class="btn mui-btn-primary mui-btn-block" id="login" href="login.html">退出当前程序</button>
+						</div>
+					</div>
+					<div id="Article" class="mui-slider-item mui-control-content">
+						<div id="artwrapper">
+							<div id="artscroller">
+								<div id="artpullDown">
+									<!--//通过 css 将 这个被覆盖，拉动的时候，自动 出现-->
+									<!-- 没什么用pullDownIcon-->
+									<div class="mui-text-center">
+										<!--去除了h5标记   	<h5>-->
+										<h5 id="arth" class="mui-hidden">
+								<span id='artpullDownIcon' class=""></span>
+								</h5>
+										<!--去除了h5 标记</h5>-->
+										<span class="pullDownLabel"></span>
+									</div>
+								</div>
+								<ul class="mui-table-view">
+									<li class="mui-table-view-cell" id="英国 United Kingdom">
+										<span id="title">英国 United Kingdom</span>
+										<span class="icon-briefcase icon-3x  pull-left"></span>
+										<br>
+										<div class="pull-left" id="time" style="font-style: italic;">2011-01-31</div>
+										<br>
+									</li>
+									<li class="mui-table-view-cell" id="关于论毅力">
+										<span id="title">关于美国快餐的英语作文</span>
+										<span class="icon-briefcase icon-3x  pull-left"></span>
+										<br>
+										<div class="pull-left" id="time" style="font-style: italic;">2011-01-31</div>
+										<br>
+									</li>
+									<li class="mui-table-view-cell" id="关于论毅力">
+										<span id="title">关于美国快餐的英语作文</span>
+										<span class="icon-briefcase icon-3x  pull-left"></span>
+										<br>
+										<div class="pull-left" id="time" style="font-style: italic;">2011-01-31</div>
+										<br>
+									</li>
+									<li class="mui-table-view-cell" id="关于论毅力">
+										<span id="title">关于美国快餐的英语作文</span>
+										<span class="icon-briefcase icon-3x  pull-left"></span>
+										<br>
+										<div class="pull-left" id="time" style="font-style: italic;">2011-01-31</div>
+										<br>
+									</li>
+									<li class="mui-table-view-cell" id="关于论毅力">
+										<span id="title">关于美国快餐的英语作文</span>
+										<span class="icon-briefcase icon-3x  pull-left"></span>
+										<br>
+										<div class="pull-left" id="time" style="font-style: italic;">2011-01-31</div>
+										<br>
+									</li>
+								</ul>
+								<div id="artpullUp">
+									<!--应该定位在 中间-->
+									<div class="mui-text-center">
+										<span id='artpullUpIcon'></span><span class="pullUpLabel"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 会导致头部上移动
+							<br><br><br><br>
+<br><br>-->
+						<button type="button" class="mui-btn mui-btn-primary   icon-pull-right" id="more" href="view.html?type=Article">
+							<i class="icon-angle-right"></i>
+							<i class="icon-angle-right"></i>更多
+						</button>
+
+					</div>
+
+					<div id="Reading" class="mui-slider-item mui-control-content">
+
+						<div id="reawrapper">
+							<div id="reascroller">
+								<div id="reapullDown">
+									<!--//通过 css 将 这个被覆盖，拉动的时候，自动 出现-->
+									<!-- 没什么用pullDownIcon-->
+									<div class="mui-text-center">
+										<h5 id="reah" class="mui-hidden">
+
+								<span id='reapullDownIcon' class=""></span>
+
+								</h5>	
+										<span class="pullDownLabel"></span>
+									</div>
+								</div>
+
+								<ul class="mui-table-view">
+									<!--
+                    	使用宽屏的设计，空间 感觉 比较 充足，不会太拥挤，体现了 用户友好型
+                    	内容应该  对  各种屏幕都有适应性  才对
+                    -->
+									<li class="mui-table-view-cell" id="英国 United Kingdom">
+										<span id="title">英国 United Kingdom</span>
+										<span class="icon-briefcase icon-3x  pull-left"></span>
+										<br>
+										<div class="pull-left" id="time" style="font-style: italic;">2011-01-31</div>
+										<br>
+									</li>
+
+									<li class="mui-table-view-cell" id="关于论毅力">
+										<span id="title">关于美国快餐的英语作文</span>
+										<span class="icon-briefcase icon-3x  pull-left"></span>
+										<br>
+										<div class="pull-left" id="time" style="font-style: italic;">2011-01-31</div>
+										<br>
+									</li>
+									<li class="mui-table-view-cell" id="关于论毅力">
+										<span id="title">关于美国快餐的英语作文</span>
+										<span class="icon-briefcase icon-3x  pull-left"></span>
+										<br>
+										<div class="pull-left" id="time" style="font-style: italic;">2011-01-31</div>
+										<br>
+									</li>
+									<li class="mui-table-view-cell" id="关于论毅力">
+										<span id="title">关于美国快餐的英语作文</span>
+										<span class="icon-briefcase icon-3x  pull-left"></span>
+										<br>
+										<div class="pull-left" id="time" style="font-style: italic;">2011-01-31</div>
+										<br>
+									</li>
+									<li class="mui-table-view-cell" id="关于论毅力">
+										<span id="title">关于美国快餐的英语作文</span>
+										<span class="icon-briefcase icon-3x  pull-left"></span>
+										<br>
+										<div class="pull-left" id="time" style="font-style: italic;">2011-01-31</div>
+										<br>
+									</li>
+								</ul>
+								<div id="artpullUp">
+									<!--应该定位在 中间-->
+									<div class="mui-text-center">
+										<span id='artpullUpIcon'></span><span class="pullUpLabel"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<button type="button" class="mui-btn mui-btn-primary   icon-pull-right" id="more" href="view.html?type=Reading">
+							<i class="icon-angle-right"></i>
+							<i class="icon-angle-right"></i>更多
+						</button>
+					</div>
+
+					<div id="listening" class="mui-slider-item mui-control-content">
+						<div id="liswrapper">
+							<div id="lisscroller">
+								<div id="lispullDown">
+									<!--//通过 css 将 这个被覆盖，拉动的时候，自动 出现-->
+									<!-- 没什么用pullDownIcon-->
+									<div class="mui-text-center">
+										<h5 id="lish" class="mui-hidden">
+									<span id='lispullDownIcon'></span>
+								</h5 >	
+										<span class="pullDownLabel"></span>
+
+									</div>
+								</div>
+
+								<ul class="mui-table-view">
+									<!--
+
+                    	使用宽屏的设计，空间 感觉 比较 充足，不会太拥挤，体现了 用户友好型
+
+                    -->
+									<li class="mui-table-view-cell" id="Rainy Day is Not Enough to Slow the World Cup Party">
+										<span id="title">Rainy Day is Not Enough to Slow...</span>
+
+										<span class="icon-play pull-right"></span>
+										<br>
+										<div class="pull-right" id="time" style="font-style: italic;">June 19,2014</div>
+									</li>
+									<li class="mui-table-view-cell" href="info.html">
+										<span id="title">Rainy Day is Not Enough to Slow...</span>
+
+										<span class="icon-play pull-right"></span>
+										<br>
+										<div class="pull-right" id="time" style="font-style: italic;">June 19,2014</div>
+									</li>
+									<li class="mui-table-view-cell" href="info.html">
+										<span id="title">Rainy Day is Not Enough to Slow...</span>
+
+										<span class="icon-play pull-right"></span>
+										<br>
+										<div class="pull-right" id="time" style="font-style: italic;">June 19,2014</div>
+									</li>
+									<li class="mui-table-view-cell" href="info.html">
+										<span id="title">Rainy Day is Not Enough to Slow...</span>
+
+										<span class="icon-play pull-right"></span>
+										<br>
+										<div class="pull-right" id="time" style="font-style: italic;">June 19,2014</div>
+									</li>
+									<li class="mui-table-view-cell" href="info.html">
+										<span id="title">Rainy Day is Not Enough to Slow...</span>
+
+										<span class="icon-play pull-right"></span>
+										<br>
+										<div class="pull-right" id="time" style="font-style: italic;">June 19,2014</div>
+									</li>
+								</ul>
+								<div id="lispullUp">
+									<!--应该定位在 中间-->
+									<div class="mui-text-center">
+										<span id='lispullUpIcon'></span><span class="pullUpLabel"></span>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<button type="button" class="mui-btn mui-btn-primary   icon- pull-right" id="more" href="view.html?type=listening">
+							<i class="icon-angle-right"></i>
+
+							<i class="icon-angle-right"></i>
+更多
+						</button>
+						
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+		
+<nav class="mui-bar mui-bar-tab">
+<footer data-am-widget="footer" class="am-footer am-footer-default">
+
+  <div class="am-footer-switch">
+
+    <span class="am-footer-ysp" data-rel="mobile" data-am-modal="{target: '#am-switch-mode'}">为更好生活</span>
+
+    <span class="am-footer-divider">|</span>
+
+    <a id="godesktop" data-rel="desktop" class="am-footer-desktop"
+
+    href="#">移动版</a>
+
+  </div>
+
+  <div class="am-footer-miscs ">
+
+    <p>由&nbsp;<a href="#" title="诺亚方舟" target="_blank">青春动力工作室</a>&nbsp;提供技术支持</p>   
+
+  </div>
+
+</footer>
+</nav>
+		<!--<button id="entrance" >测试入口</button>-->
+		<script src="../js/zepto.min.js"></script>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/iscroll.js"></script>
+
+		<script>	
+		//利用之前的记录  填充页面
+		function	begin(){
+				//页面加载时候  进行内容的填充
+				if(localStorage.listening)
+				{   
+					var temp = localStorage.listening;
+					var data = $.parseJSON(temp);         
+					$.each(data, function(i, item) {
+
+						fillData(item,"listening",i);
+
+					});
+				}
+				if(localStorage.reading)
+				{
+				
+					var temp = localStorage.reading;
+					var data = $.parseJSON(temp); 
+					$.each(data, function(i, item) {
+
+						fillData(item,"Reading",i);
+
+					});
+				}
+				if(localStorage.article)
+				{
+					var temp = localStorage.article;
+					var data = $.parseJSON(temp); 
+					$.each(data, function(i, item) {
+
+						fillData(item,"Article",i);
+
+					});
+				}
+			}
+		//使用  setTimeout 自动加载，不然会导致  起始界面 假死  
+		setTimeout(begin,100);
+		//联网 实时刷新,并且重写 相关记录
+			function Fresh(data,menu)
+			{
+				var result ="[";		
+				$.each(data, function(i, item) {
+
+						if(i!=0)
+
+								result+=",";
+
+						result += '{"time":"'+item.time+'"';
+
+						result += ',"title":"'+item.title+'" ';
+
+						result += '}';	
+						fillData(item,menu,i);
+
+				});
+				if(menu === 'Article')
+				{
+					localStorage.article = result+']';
+				}else if(menu === 'Reading')
+				{
+					localStorage.reading = result+']';
+				}else if(menu === 'listening')
+				{
+						localStorage.listening = result+']';
+				}	
+			}
+			//填充单项纪录
+			function fillData(item,menu,i)
+			{
+				 var li = '#'+menu+' ul li:nth-child('+i+')';
+			            $(li).attr("id",item.title);
+			            //设置过后  并不会 立即反应出来，所以下面的alert 失败，但是  id 最后 是被设置了的
+			            var time = '#'+menu+' ul li:nth-child('+i+') #time';
+			            $(time).html(item.time);
+			            var title = '#'+ menu +' ul li:nth-child('+i+') #title';
+			            $(title).html((item.title));
+			            //简写 .substr(0,15)+"...."
+			}
+
+			
+			function pullDownAction () {
+				//ajax请求  信息
+				getData();
+				setTimeout(function (){
+					//不加这一句话,会导致 loading....的字样 收不回去
+					myScroll.refresh();		
+				}, 1000);
+			}
+			
+			function pullUpAction () {
+					getData();
+					myScroll.refresh();		
+			}
+			//下拉刷新的相关函数	
+			function loaded() {
+				var item2;	
+				item2 = 'lis';
+				//class="mui-hidden"
+				var pullDownEl, pullDownOffset,
+				pullUpEl, pullUpOffset,
+				generatedCount = 0;
+				
+				pullDownEl = document.getElementById(item2+'pullDown');
+				pullDownOffset = pullDownEl.offsetHeight;
+				pullUpEl = document.getElementById(item2+'pullUp');	
+				pullUpOffset = pullUpEl.offsetHeight;
+				
+				var scroll2;
+				 scroll2 = new iScroll(item2+'wrapper', {
+					useTransition: true,
+					topOffset: pullDownOffset,
+					onRefresh: function () {
+						if (pullDownEl.className.match('loading')) {
+							
+							pullDownEl.className = '';
+							pullDownEl.querySelector('#'+item2+'pullDownIcon').className = '';
+							pullDownEl.querySelector('#'+item2+'h').className = 'mui-hidden';
+							pullDownEl.querySelector('.pullDownLabel').innerHTML = '  ';
+						}
+					},
+					onScrollMove: function () {
+						if (this.y > 5 && !pullDownEl.className.match('flip')) {
+							pullDownEl.querySelector('#'+item2+'h').className = ' ';
+							pullDownEl.className = 'flip';
+							pullDownEl.querySelector('#'+item2+'pullDownIcon').className = 'icon-arrow-up icon-2x';
+							pullDownEl.querySelector('.pullDownLabel').innerHTML = '松手开始更新...';
+							this.minScrollY = 0;
+						}
+					},
+					onScrollEnd: function () {
+						if (pullDownEl.className.match('flip')) {
+							pullDownEl.className = 'loading';
+							pullDownEl.querySelector('#'+item2+'pullDownIcon').className = 'icon-spinner icon-spin icon-2x';
+							pullDownEl.querySelector('.pullDownLabel').innerHTML = '&nbsp&nbsp正在加载...';				
+							getData();
+							setTimeout(function (){
+							//不加这一句话,会导致 loading....的字样 收不回去
+								scroll2.refresh();
+							}, 1000);
+						
+						}
+							
+					} ,
+					//放大 这个 效果 不是很好
+					zoom:false
+					
+				});
+				setTimeout(function () { document.getElementById(item2+'wrapper').style.left = '0'; }, 800);
+				
+				
+				item = 'art';
+				var pullDownE2, pullDownOffset2,
+				pullUpE2, pullUpOffset2,
+				generatedCount2 = 0;
+				
+				pullDownE2 = document.getElementById(item+'pullDown');
+				pullDownOffset2 = pullDownEl.offsetHeight;
+				
+				
+				
+				scrol2 = new iScroll(item+'wrapper', {
+					useTransition: true,
+					topOffset: pullDownOffset2,
+					onRefresh: function () {
+						if (pullDownE2.className.match('loading')) {
+							
+							pullDownE2.className = '';
+							pullDownE2.querySelector('#'+item+'pullDownIcon').className = 'hiden';
+							pullDownE2.querySelector('#'+item+'h').className = 'mui-hidden';
+							pullDownE2.querySelector('.pullDownLabel').innerHTML = ' ';
+						}
+					},
+					onScrollMove: function () {
+						if (this.y > 5 && !pullDownE2.className.match('flip')) {
+							pullDownE2.querySelector('#'+item+'h').className = ' ';
+							pullDownE2.className = 'flip';
+							pullDownE2.querySelector('#'+item+'pullDownIcon').className = 'icon-arrow-up icon-2x';
+							pullDownE2.querySelector('.pullDownLabel').innerHTML = '松手开始更新...';
+							this.minScrollY = 0;
+						}
+					},
+					onScrollEnd: function () {
+						if (pullDownE2.className.match('flip')) {
+							pullDownE2.className = 'loading';
+							pullDownE2.querySelector('#'+item+'pullDownIcon').className = 'icon-spinner icon-spin icon-2x';
+							pullDownE2.querySelector('.pullDownLabel').innerHTML = '&nbsp&nbsp正在加载...';				
+			//				pullDownAction();	// Execute custom function (ajax call?)
+							getData();
+							setTimeout(function (){
+							//不加这一句话,会导致 loading....的字样 收不回去
+								scrol2.refresh();		// Remember to refresh when contents are loaded (ie: on ajax completion)
+							}, 1000);
+						
+						}
+						
+					},
+					//放大 这个 效果 具体的做法  不清楚
+					zoom:false
+					
+				});
+				
+				setTimeout(function () { document.getElementById(item+'wrapper').style.left = '0'; }, 800);
+				
+				var item3;	
+				item3 = 'rea';
+				var pullDownE3, pullDownOffset3,
+				pullUpE3, pullUpOffset3,
+				generatedCount3 = 0;
+				
+				pullDownE3 = document.getElementById(item3+'pullDown');
+				pullDownOffset3 = pullDownEl.offsetHeight;
+				pullUpE3 = document.getElementById(item3+'pullUp');	
+				pullUpOffset3 = pullUpEl.offsetHeight;
+				
+				var scroll3;
+				 scroll3 = new iScroll(item3+'wrapper', {
+					useTransition: true,
+					topOffset: pullDownOffset3,
+					onRefresh: function () {
+						if (pullDownE3.className.match('loading')) {
+							
+							pullDownE3.className = '';
+							pullDownE3.querySelector('#'+item3+'pullDownIcon').className = 'hiden';
+							pullDownE3.querySelector('#'+item3+'h').className = 'mui-hidden';
+							pullDownE3.querySelector('.pullDownLabel').innerHTML = ' ';
+						}
+					},
+					onScrollMove: function () {
+						if (this.y > 5 && !pullDownE3.className.match('flip')) {
+							pullDownE3.querySelector('#'+item3+'h').className = ' ';
+							pullDownE3.className = 'flip';
+							pullDownE3.querySelector('#'+item3+'pullDownIcon').className = 'icon-arrow-up icon-2x';
+							pullDownE3.querySelector('.pullDownLabel').innerHTML = '松手开始更新...';
+							this.minScrollY = 0;
+						}
+					},
+					onScrollEnd: function () {
+						if (pullDownE3.className.match('flip')) {
+							pullDownE3.className = 'loading';
+							pullDownE3.querySelector('#'+item3+'pullDownIcon').className = 'icon-spinner icon-spin icon-2x';
+							pullDownE3.querySelector('.pullDownLabel').innerHTML = '&nbsp&nbsp正在加载...';				
+			//				pullDownAction();	// Execute custom function (ajax call?)
+							getData();
+							setTimeout(function (){
+							//不加这一句话,会导致 loading....的字样 收不回去
+								scroll3.refresh();		// Remember to refresh when contents are loaded (ie: on ajax completion)
+							}, 1000);
+						
+						}
+							
+					} ,
+					//放大 这个 效果 具体的做法  不清楚
+					zoom:false
+				});
+				
+				setTimeout(function () { document.getElementById(item3+'wrapper').style.left = '0'; }, 800);
+				
+			}
+			document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+			document.addEventListener('DOMContentLoaded', function () { setTimeout(loaded, 200); }, false);
+			//保存相应的最新数据
+			mui.init({
+					swipeBack : false
+			});
+			function getData(){
+					var time = '';
+					if(all === 'Article')
+					{
+							time= '2009-01-31';
+					}else if(all === 'listening')
+					{
+						time = 'August 12,2014';
+					}else if(all === 'Reading')
+					{
+						time = '2005-01-31';
+					}
+					                   	$.ajax( {  
+			                            type : "GET",  
+			                            url : "http://192.168.0.100:8080/VOABack/"+all+"/Fresh",  
+			                            data :{
+			                            	//从cache中提取本地最新时间
+			                            	"date":time,
+			                            },
+			                            cache: false,
+			                            timeout: 10000,
+			                            dataType: "json",  
+			                            success : function(data) {
+										//调用想填充函数
+										Fresh(data,all);
+			                            },
+			                             error: function(ex) {
+			                             	alert("请求超时");
+			                            },                     
+			                        });
+				};
+				var  all = "我的";
+				//这里有先后顺序 避免点击效果覆盖   具体的对象放在后面
+				document.getElementById("login").addEventListener('tap',function(){
+						if(confirm('确认退出？')){
+							plus.runtime.quit();
+						}
+				});
+			(function($) {
+					 //添加事件   绑定数据
+					$('.mui-table-view  li').each(function(index){
+				 			this.addEventListener('tap',function(){
+								var value = all+".html?title=";
+								var str = this.getAttribute("id");
+								str = encodeURI(str);
+								window.location.href = value+str;
+				  		});
+					});
+				$('#my  .mui-table-view  li').each(function(index){
+				 			this.addEventListener('tap',function(){
+								var desti = this. getAttribute("href");
+			    		  		window.location.href = desti;
+					  			
+				  		});
+					});
+			    $('.mui-slider-item  #more').each(function(index){
+				 			this.addEventListener('tap',function(){
+								var desti = this. getAttribute("href");
+								desti = encodeURI(desti);
+			    		  		window.location.href = desti;	
+				  		});
+					});
+					//设置  滑动的时候的   加载事件  此时的标题并没有发生 改变
+					document.getElementById('slider').addEventListener('slide', function(e) {
+						
+					 	if (e.detail.slideNumber === 0)
+						{
+							all="我的";	
+						}
+						if (e.detail.slideNumber === 1) {
+							all="Article";
+						} else if (e.detail.slideNumber === 2) {
+							all="Reading";
+						}else if (e.detail.slideNumber === 3)
+						{
+							all="listening";
+						}
+					});	
+				})(mui);
+		</script>
+	</body>
+
+</html>
