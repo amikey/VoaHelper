@@ -1,0 +1,10 @@
+使用  htmlparser  解析  错误：
+	content.substring(0,content.lastIndexOf("ul"))
+	
+	解决方案:
+		使用 jsoup 解析
+		
+		
+强制 退出（关闭） mongo
+	use  admin
+	db.shutdownServer()
