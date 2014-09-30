@@ -1,0 +1,34 @@
+htmlParser 解析  mongodb 数据库中  数据的 异常
+
+		Exception in thread "main" java.lang.IllegalArgumentException: can't get the 13characters at position 37 - read beyond end of string
+	at org.htmlparser.lexer.Page.getText(Page.java:1096)
+	at org.htmlparser.nodes.TextNode.toHtml(TextNode.java:114)
+	at org.htmlparser.nodes.AbstractNode.toHtml(AbstractNode.java:130)
+	at org.htmlparser.nodes.TextNode.toPlainTextString(TextNode.java:99)
+	at org.htmlparser.tags.CompositeTag.toPlainTextString(CompositeTag.java:137)
+	at org.xu.converter.ConvertCnt.getDate(ConvertCnt.java:74)
+	at org.xu.converter.ConvertCnt.read(ConvertCnt.java:56)
+	at org.xu.converter.ConvertCnt.main(ConvertCnt.java:87)
+	
+解决方案 :  jsoup
+	
+	
+引入以下内容 出现 问题:
+<dependency>
+			<groupId>org.mortbay.jetty</groupId>
+			<artifactId>maven-jetty-plugin</artifactId>
+			<version>6.1.10</version>
+</dependency>
+
+解决方法:
+	删除		
+	
+jetty下的css 等文件的缓存导致  修改后 不能反映在 页面上
+	http://rongjih.blog.163.com/blog/static/335744612010620341622/	
+	
+
+关于springmvc中文乱码：
+	按网上  在配置文件中  添加了 相关的  操作，仍然失败，
+	于是修改源码
+
+
