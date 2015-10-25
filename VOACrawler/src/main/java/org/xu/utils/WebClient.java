@@ -16,23 +16,22 @@ public class WebClient {
 
 	//日志记录
 	private static  Logger logger = 
-			LoggerFactory.getLogger( Strategy.class);
+			LoggerFactory.getLogger(WebClient.class);
 	
 	/*
 	 * 根据传入的url 得到相应的  输入流
-	 * 
-	*/
+	 * 应该在这里做文章
+	 * 这个应该可以被替换
+	 */
 	@SuppressWarnings("finally")
 	public static InputStream url2sTream(StringBuilder url){
-		
-		
-		
 		InputStream instream = null;
-			
-		System.out.println(url.toString());
+
+		logger.info("即将获取的url链接" + url.toString());
 		try {
 			CloseableHttpClient httpClient = HttpClients.createDefault();
 			String str = url.toString();
+			// 解决一下 root url的问题
 			if(!str.contains("http://")){
 				str = "http://www.51voa.com/"+str;
 			}
@@ -43,7 +42,6 @@ public class WebClient {
 			{
 				instream = entity.getContent();
 			}
-			
 		} catch (ClientProtocolException e1) {
 			// TODO Auto-generated catch block
 			logger.error("url 转转为 stream出错:"+ e1.toString());

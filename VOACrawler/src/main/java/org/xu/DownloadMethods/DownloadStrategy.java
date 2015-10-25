@@ -13,6 +13,7 @@ import org.htmlparser.util.NodeList;
 import org.htmlparser.util.ParserException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 import org.xu.POJO.Page;
 import org.xu.SaveMethods.MongoSave;
 import org.xu.SaveMethods.UrlSave;
@@ -24,18 +25,15 @@ import org.xu.utils.TestLog;
 public class DownloadStrategy {
 
 	private static Logger logger = LoggerFactory.getLogger(DownloadStrategy.class);
-	/*
-	 * url  查找网页地址的url
-	 * urlSave  保存网页信息的 操作
-	 * 
-	 * 这个最好另起一个类
-	 */
+
 	public static void download_all(String url, UrlSave saver,Frontier frontier,String directory) {
 		logger.debug("存储 mp3 目录:"+directory);
 		try {
 
 			Parser parser = new Parser();
+			// 自带了 页面的解析，还是网络的版本
 			parser.setURL("http://www.51voa.com" + url);
+
 			parser.setEncoding("UTF-8");
 			
 			logger.info("需要解析的url地址:"+url);
@@ -53,6 +51,7 @@ public class DownloadStrategy {
 			parser.reset();
 
 			// 获取听力的音频
+			// 有没有类似 lxml的 设置
 			filter = new HasAttributeFilter("id", "mp3");
 			nodeList = parser.extractAllNodesThatMatch(filter);
 			if (nodeList != null && nodeList.size() > 0) {
@@ -69,12 +68,12 @@ public class DownloadStrategy {
 				String link = null;
 				//一般就一个
 				LinkTag node = (LinkTag) nodeList.elementAt(0);
+				link = node.extractLink();
 				// 放入mp3队列
 				frontier.putUrl(link);
 
 				page.setMp3(
-						directory
-								+ link.substring(link.lastIndexOf("/") + 1));	
+						directory + link.substring(link.lastIndexOf("/") + 1));	
 			}
 			parser.reset();
 			
@@ -97,14 +96,5 @@ public class DownloadStrategy {
 			logger.error("下载前解析错误："+e.toString());
 		}
 
-	}
-	
-	public static void main(String[] args) {
-
-		
-		download_all(
-				
-						"/VOA_Standard_English/obama-to-visit-malaysia-amid-mh-criticisms-55971.html",
-				new MongoSave(),new DBFrontier("mp3"),"G://eclipseVOA//crawler//downloader//");
 	}
 }

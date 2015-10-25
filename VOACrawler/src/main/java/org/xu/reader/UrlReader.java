@@ -14,6 +14,7 @@ import org.htmlparser.util.NodeList;
 import org.htmlparser.util.ParserException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 import org.xu.DownloadMethods.Downloader;
 import org.xu.frontier.DBFrontier;
 import org.xu.frontier.Frontier;
@@ -26,18 +27,18 @@ public class UrlReader implements Runnable{
 	private static int count = 0;
 	
 	//日志记录
-	private static Logger logger = LoggerFactory.getLogger( Downloader.class);
+	private static Logger logger = LoggerFactory.getLogger(UrlReader.class);
 	
 	//起始的Url
+	//read from the doc
 	private StringBuilder startUrl = null;
 
-	//预读取到的 url  的 队列
+	//预读取到的url的队列, 这个存放的是 1,2,3,4 等这些页面
 	private Queue<StringBuilder> queues = new ConcurrentLinkedQueue<StringBuilder>();
 
 	//工作队列，共享数据  url 的 保存区域
 	Frontier frontier = null;
 	
-
 	public Frontier getFrontier() {
 		return frontier;
 	}
@@ -53,18 +54,22 @@ public class UrlReader implements Runnable{
 	public UrlReader(StringBuilder startUrl) {
 		this.startUrl = startUrl;
 	}
+
+	public UrlReader(StringBuilder startUrl, Frontier frontier) {
+		this.startUrl = startUrl;
+		this.frontier = frontier;
+	}
 	
 	
 	public void startReader() {
-
 		preReader();
 		produce();
-		System.out.println("结局---->"+count);
-		
+		System.out.println("结束---->"+count);
 	}
 
 	/*
 	 * 将网页 转化成 stream 流 进行处理
+	 * 获取url列表的块
 	 */
 	private void produce(){
 		while(!queues.isEmpty())
@@ -78,13 +83,18 @@ public class UrlReader implements Runnable{
 				continue;
 			}else
 				logger.debug("toString--->"+stream.toString());
-			
+			// 这个应该是 util的工具类
 			StringBuilder builder = Strategy.getList(stream); 
 			logger.debug("builder--->"+builder.toString());
-			in_Produce(builder);
+			try{
+				in_Produce(builder);
+			}catch(Exception e){
+				logger.error("异常发生");
+			}
 		}
 	}
 	
+	// 获取页面文章的超链接放入frontier
 	private void in_Produce(StringBuilder str){
 		
 		Parser  parser = null;
@@ -92,99 +102,74 @@ public class UrlReader implements Runnable{
 		NodeList nodeList = null;
 		
 		try{
-			parser = new Parser(str.toString()) ;
-			filter = new HasAttributeFilter("id","list");
-			nodeList = parser.extractAllNodesThatMatch(filter);
-			parser.reset();
-		}catch(ParserException pe){
-			logger.error("解析出错:"+pe.toString());
-			return;
-		}
-		
-		
-		if(nodeList!=null && nodeList.size() >0 )
-		{
-			Node nameNode = nodeList.elementAt(0);
-			logger.debug("toHtml---->"+nameNode.toHtml());
-			
+			parser = new Parser(str.toString());
 			filter = new NodeClassFilter(LinkTag.class);
-			try {
-				parser.setResource(nameNode.toHtml());
-				nodeList = parser.extractAllNodesThatMatch(filter);
-				if(nodeList==null || nodeList.size()<=0){
-					logger.warn("解析的弄得list 为空 ");
-					return;
-				}
-				for(int i=0;i<nodeList.size();i++)
-				{
-					LinkTag node = (LinkTag) nodeList.elementAt(i);
-					//没有及时回收，导致  8个 就死掉了
-					frontier.putUrl(node.extractLink());
-					count++;
-				}
-			} catch (ParserException e) {
-				// TODO Auto-generated catch block
-				logger.error("解析出错："+e.toString());
-			}
-		}else{
-			return;
+			nodeList = parser.extractAllNodesThatMatch(filter);
+		}catch(ParserException e){
+			// 应该抛出
+			logger.error("解析异常");
 		}
+		if(nodeList!=null || nodeList.size() >0){
+			for(int i=0;i<nodeList.size();i++)
+			{
+				LinkTag node = (LinkTag) nodeList.elementAt(i);
+				logger.info("link index("+i+") : " + node.extractLink()); 
+				//没有及时回收，导致  8个 就死掉了
+				
+				if(node.extractLink().contains("/VOA_Standard_English/") && 
+					!node.extractLink().trim().equals("/VOA_Standard_English/"))
+					frontier.putUrl(node.extractLink());
+				else{
+					logger.debug("无效的link : " + node.extractLink());
+				}
+				count++;
+			}
+
+		}	
 	}
 	/*
 	 * 通过起始 url 得到 待读取 的 url 队列
 	 */
 	private void preReader() {
-
 		in_Queue(Strategy.getPageList(WebClient.url2sTream(startUrl),
 				"pagelist"));
-		
-		return;
 	}
 
 	/*
 	 * 将待读的的 url  提取出来，并放进 队列中
-	 * 
+	 * 这个事读取什么的？
 	 */
 	protected void in_Queue(StringBuilder str) {
+
 		// 正则表达式 匹配
 		Parser parser = null;
 		NodeFilter filter = null;
 		NodeList nodeList = null;
 
 		try {
-
 			// 第一种方案
+			logger.info("获取的字符串 => " + str);
 			parser = new Parser(str.toString()); 
 			filter = new NodeClassFilter(LinkTag.class);
 			
 			nodeList = parser.extractAllNodesThatMatch(filter);
 			if (nodeList == null || nodeList.size() <= 0) {
-				System.out.println("这里为空");
+				logger.warn("这里为空");
 				return;
 			}
 			for (int i = 0; i < nodeList.size(); i++) {
 				LinkTag node = (LinkTag) nodeList.elementAt(i);
-				System.out.println("Link is--->" + node.extractLink());
+				logger.info("Link is--->" + node.extractLink());
 				queues.add(new StringBuilder(node.extractLink()));
 			}
 			parser.reset();
-			
 		} catch (ParserException pe) {
 			logger.error("预读取队列操作解析出错:"+pe.toString());
-		} 
-		return;
+		}
 	}
 
-	//用于测试使用
-	public static void main(String[] args) {
-		UrlReader exmp = new UrlReader(new StringBuilder(
-				"http://www.51voa.com/VOA_Standard_1.html"));
-		exmp.setFrontier(new DBFrontier("Queue"));
-		exmp.startReader();
-	}
-
+	@Override
 	public void run() {
-		// TODO Auto-generated method stub
 		startReader();
 	}
 

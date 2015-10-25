@@ -546,15 +546,9 @@ public class DownloadStrategy {
 				System.out.println("MP3  Download");
 				// 下载mp3
 				frontier.putUrl(link);
-//				Thread th = new Thread(
-//						new MP3(
-//								link,
-//								"G://eclipseVOA//crawler//downloader//"));
-//				th.start();
+
 				page.setMp3(new StringBuilder(link));
-//				System.out.println("article---String--->" + url.toString());
-//				System.out.println(" G://eclipseVOA//crawler//downloader//"
-//						+ link.substring(link.lastIndexOf("/") + 1));
+
 			}
 			parser.reset();
 			
@@ -589,15 +583,6 @@ public class DownloadStrategy {
 	
 	public static void main(String[] args) {
 
-		// download_3p(new StringBuilder("G://eclipseVOA//crawler//web.txt"),new
-		// MongoSave());
-		// download_3p2(new StringBuilder(
-		// "/VOA_Standard_English/ecoliteracy-aug-58186.html"),
-		// new MongoSave(), "P");
-		// download_3p3(
-		// new StringBuilder(
-		// "/VOA_Standard_English/obama-to-visit-malaysia-amid-mh-criticisms-55971.html"),
-		// new MongoSave(), "BR");
 		download_all(
 				new StringBuilder(
 						"/VOA_Standard_English/obama-to-visit-malaysia-amid-mh-criticisms-55971.html"),

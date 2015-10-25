@@ -16,6 +16,7 @@ import org.htmlparser.Parser;
 import org.htmlparser.util.NodeList;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 import org.xu.DownloadMethods.Downloader;
 
 /*
@@ -26,15 +27,15 @@ import org.xu.DownloadMethods.Downloader;
 public class Strategy {
 	
 	private static  Logger logger = 
-			LoggerFactory.getLogger( Strategy.class);
+			LoggerFactory.getLogger(Strategy.class);
 	
-
 	/*
 	 * 将 网页的list标签中的url获取
 	 */
 	@SuppressWarnings("finally")
 	public static StringBuilder getPageList(InputStream stream, String filter) {
 
+		logger.debug("开始解析流");
 		String builder = null;
 		StringBuilder result = null;
 		if (stream == null)
@@ -47,6 +48,7 @@ public class Strategy {
 			while ((builder = reader.readLine()) != null) {
 				if (builder.contains(filter)) {
 					result = new StringBuilder(builder);
+					break;
 				}
 			}
 		} catch (IOException e) {

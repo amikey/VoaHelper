@@ -4,7 +4,7 @@
 	<!--  error  信息的存储   文件形式存储-->
 	<!-- 生产环境下  使用 -->
 	<appender name="ErrFILE" class="ch.qos.logback.core.FileAppender">
-    <file>G:/eclipseVOA/VOACrawler/logger/foo.log</file>
+    <file>/Users/snow_young/tech/VoaHelper/logdir/foo.log</file>
     <filter class="ch.qos.logback.classic.filter.LevelFilter">  
     	<level>ERROR</level>  
     	<onMatch>ACCEPT</onMatch>  

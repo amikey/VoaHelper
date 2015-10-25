@@ -1,6 +1,5 @@
 package org.xu.DownloadMethods;
 
-
 import java.io.BufferedInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -12,9 +11,12 @@ import java.net.URL;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 import org.xu.utils.TestLog;
 
-
+/**
+ * mp3 download is too time-consuming ,so isolate the operation 
+ */
 public class MP3 implements Runnable{
 
 	private static final int BUFFER_SIZE = 4096;
@@ -40,7 +42,7 @@ public class MP3 implements Runnable{
     public void run() {
         try {
             saveToFile(destUrl,fileName);
-            System.out.println("文件："+destUrl+"下载完成，保存为"+fileName);
+            logger.info("文件："+destUrl+"下载完成，保存为"+fileName);
         } catch (IOException e) {
             logger.error("文件下载失败，信息："+e.getMessage());
         }
@@ -72,8 +74,6 @@ public class MP3 implements Runnable{
 
         logger.info("正在获取链接[" + destUrl + "]的内容\n将其保存为文件[" + fileName
                 + "]");
-        
-
         // 保存文件
         while ((size = bis.read(buf)) != -1)
             fos.write(buf, 0, size);
