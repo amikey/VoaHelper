@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="VOABack:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="VOABack.war">
+      <element id="artifact" artifact-name="VOABack:war exploded" />
+    </root>
+  </artifact>
+</component>

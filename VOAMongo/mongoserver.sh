@@ -1,0 +1,1 @@
+mongod  --dbpath "/Users/snow_young/project/VoaHelper/VOAMongo/data" --logpath "/Users/snow_young/project/VoaHelper/VOAMongo/log/log.txt"

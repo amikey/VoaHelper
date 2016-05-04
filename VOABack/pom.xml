@@ -27,20 +27,12 @@
 		</dependencies>
 	</dependencyManagement>
 
-
-
 	<!-- <repositories> <repository> <id> central</id> <name> Maven Repository 
 		Switchboard</name> <layout> default</layout> <url> </url> <snapshots> <enabled> 
 		false</enabled> </snapshots> </repository> </repositories> -->
 
 
-
-
 	<dependencies>
-
-
-
-
 		<!-- mongodb java driver -->
 		<dependency>
 			<groupId>org.mongodb</groupId>
